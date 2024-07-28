@@ -1,0 +1,67 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="image-card" [src]="selectedImage" alt="Selected Image">
+            <div class="small-img">
+                <div class="image-change" *ngFor="let hotel of hotels" (click)="selectImage(hotel.image)">
+                    <img class="img-png" [src]="hotel.image" alt="Hotel Image">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="top-text">
+            <p class="right-amt">$699.99</p>
+            <h5 class="head-txt">Riding the Wawe
+              <p class="accom_ratings">
+  
+                <i class="fa fa-solid fa-star acom-star"></i>
+                <i class="fa fa-solid fa-star acom-star"></i>
+                <i class="fa fa-solid fa-star acom-star"></i>
+                <i class="fa fa-solid fa-star acom-star"></i>
+              </p>
+  
+            </h5>
+          </div>
+       
+       <hr class="line">
+
+       <div class="facilities">
+        <p><i class="fa fa-solid fa-check"></i><span class="policy-sub">Beach side</span> </p>
+
+      </div>
+
+
+      <div class="overview">
+        <h4 class="overview-txt">Overview</h4>
+        <p class="overview-para">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.</p>
+      </div>
+
+      <!-- things to do -->
+      <div class="things-to-do">
+<h1  class="overview-txt">Things to Do</h1>
+<p class="things-para">Located on the ground floor, this air-conditioned room includes free Wi-Fi, a minibar and a flat-screen TV with satellite channels</p>
+
+
+  <div class="row"*ngFor="let data of amenties">
+    <div class="col-sm">
+    <h5 class="amenities"><i class="fa fa-bicycle" aria-hidden="true"></i>  &nbsp;
+      Jetski Ride</h5>
+    </div>
+    <div class="col-sm">
+      <h5 class="amenities"><i class="fa fa-solid fa-mountain"></i> &nbsp; Jetski Tournaments</h5>
+    </div>
+    <div class="col-sm">
+      <h5 class="amenities"><i class="fas fa-swimmer"></i> &nbsp; Swimming</h5>
+    </div>    
+  </div>
+<!-- experience section -->
+<div class="experience-section">
+  <button class="exp-btn">Add this expirience</button>
+</div>
+
+      </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,417 @@
+
+
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    height: 174px;
+    background: #2C321F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px; /* Add some padding to ensure content doesn't touch edges */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.header-profile {
+    /* position: absolute; */
+    width: 1588px;
+    height: 174px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    
+}
+
+.header-content {
+    position: absolute;
+    left: -0.25%;
+    right: 0%;
+    top: 50%;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.header-text {
+    font-weight: 700;
+    font-size: 14px;
+    color: #ECE6DE;
+    text-align: center;
+}
+
+.Inio_Sub {
+    position: absolute;
+    left: 1.8%;
+    right: 89.7%;
+    top: 0%;
+    bottom: 50%;
+    background: url(../../../../../assets/images/iniologo.png);
+    background-size: cover;
+    cursor: pointer;
+    /* ./assets/images/beach.jpg */
+}
+
+/* Frame 664 */
+.Frame_664 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 6px;
+    gap: 50px;
+    position: absolute;
+    left: 87.41%;
+    right: 0%;
+    top: 7.47%;
+    bottom: 58.05%;
+    border-radius: 63px;
+    background-color:#2C321F;
+}
+
+/* Header styles */
+.header {
+    position: relative;
+    width: 100%;
+    height: 174px;
+    background: #2C321F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px; /* Add some padding to ensure content doesn't touch edges */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.header-content {
+    position: absolute;
+    left: -0.25%;
+    right: 0%;
+    top: 50%;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-icon {
+    width: 50px;
+    height: 50px;
+    /* border: 1.5px solid #ECE6DE; */
+    margin-bottom: 5px;
+
+
+   
+}
+
+.header-text {
+    font-weight: 700;
+    font-size: 14px;
+    color: #ECE6DE;
+    text-align: center;
+}
+.frame_img {
+    width: 50px;
+    height: 50px;
+    background: url(https://s3-alpha-sig.figma.com/img/88b5/f602/f07159e285b2d973930075594a819c95?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TA9rUaNsqLB~MHG-JdetmIVSHC3bg~sRoXH1pRRXJB2KLuR6OdjV-JXprKFkJVWw1t6g2qzd2zAzLOqxnIFOWf54146Fg3YKM-3F0uhMWrYMVZNuTUApIwnpgLf45PdXm30Lq8KkXTMSBpVmeet5xJ84tj0Kq07I9B63CVWTv8w3hjT-fh-6VLju5Oxq7BicVUXRZBOlrS8RSVbH0naFEIiW1s8~ooded5vCLJ969SW24LdB8NJg~PD38xMhZj4ippEC0VF~qpYjY1eBgmDZKkfio8v8hz9ZWVzO19o7FeRBKYL~XTkMuV02m8aoBuMODsl-23WF82zEcJyAfVfStw__);
+    background-size: cover; /* or contain, or specific dimensions */
+}
+.hello_text{
+    width: 39px;
+    height: 21px;
+    margin-left: 62px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 151.5%;
+    display: flex;
+    align-items: center;
+    color: #ECE6DE;
+}
+.profile_info{
+    /* John Doe */
+
+width: 58px;
+/* height: 21px; */
+margin-left: 62px;
+font-family: 'Optima';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 151.5%;
+/* or 21px */
+display: flex;
+align-items: center;
+
+color: #ECE6DE;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.header-content {
+    /* border-top: 1px solid white; */
+    width: 55%;
+    margin-left: 37px;
+}
+.header-item {
+    padding-top: 8px; /* Adjust as needed */
+  
+}
+.white_line{
+    width: 3980pc!important;
+border-top: 1px solid white; 
+margin-bottom: 22px;
+}
+
+.font_awesome{
+    color: white;
+    font-size: 35px;
+    margin-top: 8px;
+    /* width: 32px; */
+    height: 44px;
+}
+/* .map{
+    width: 804px;
+    height: 438px;
+    border-radius: 40px;
+    position: absolute;
+    left: 4.05%;
+    right: 49.42%;
+    top: 11.71%;
+    bottom: 67.09%;
+} */
+.map {
+    width: 804px;
+    height: 438px;
+    border-radius: 40px;
+}
+.contact_info{
+    width: 143px;
+    height: 21px;
+    margin-left: 34px;
+    left: 104px;
+    top: 710px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+.follow_us{
+    width: 143px;
+    height: 21px;
+    left: 104px;
+    top: 710px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+.phone{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 56px;
+    font-size: 16px;
+    line-height: 192.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+.phoneicon{
+    position: absolute;
+    left: 12.02%;
+    right: 92.59%;
+    top: 33.64%;
+    bottom: 62.2%;
+}
+
+.lettericon{
+    position: absolute;
+    left: 12.02%;
+    right: 92.59%;
+    top: 70.64%;
+    bottom: 62.2%;
+}
+.fb{
+    height: 21px;
+    width: 21px;
+    color: #2C321F;;
+}
+
+
+
+.map {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+.icons_awesome{
+    margin-left: 34px;
+}
+
+
+.help_text{
+    /* position: absolute;
+    left: 23.92%;
+    right: 34.67%; */
+    /* top: 11.71%; */
+    /* bottom: 85.19%; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+    width: 179.88px;
+    height: 64px;
+
+
+}
+.first_name{
+    width: 87px;
+    height: 21px;
+    left: 949px;
+    top: 341px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+.lastname{
+    margin-left:49px;
+    /* margin-left:40px; */
+}
+.email{
+    width: 88px;
+    height: 21px;
+    left: 949px;
+    top: 397px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+.message{
+    width: 59px;
+    height: 21px;
+    left: 949px;
+    top: 514px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+.send_message{
+    float: inline-end;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    color: white;
+    /* position: absolute; */
+    width: 156px;
+    height: 52px;
+    /* left: 1502px; */
+    top: 773px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    .col-7, .col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .map {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .Frame_664 {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 6px;
+        gap: 50px;
+        position: absolute;
+        left: 56.41%;
+        right: 0%;
+        top: 7.47%;
+        bottom: 58.05%;
+        border-radius: 63px;
+        background-color: #2C321F;
+    }
+    .Inio_Sub{
+        margin-left: 40px;
+        position: absolute;
+        left: -10.2%;
+        right: 68.7%;
+        cursor: pointer;
+        /* position: absolute;
+        left: -10.2%;
+        right: 68.7%;
+        top: 0%;
+        bottom: 50%;
+        background: url(https://s3-alpha-sig.figma.com/img/3f17/e9af/01aa0ec…?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UGnC9Dh6AhUDqPuftOCEjjOGhCk6OiSenwcaPI2AdYqXgbsewmiKw3YG~R0LKkw2D8C6AxUWNWGpq6kWBEG7-s5HrI3EB6sNnihPP0UuXHRC81lhVEiHR4QD8QK9322od5r5dzVTYVCWpe16zYr0Q5lx1Hv8SZsyURssst1lhnd~wqLMbRL4qtrHfwjvrXGfQcxFM31iBQj7ZJ9ciZe23FNWT3KYoc3wpJ5yJaz61UYDq7jAKmSnk8ZOsq8HotpebmhTT-4llVFvjy5RRiuFL1LTP8X9juWLrxUXZfhASDyfE3jsJ1NMk~VX-QwkVuQmssLe~rkEWyV9KSAjFmVEgw__);
+        background-size: cover; */
+    }
+}
+
+
+
+
+
+
+

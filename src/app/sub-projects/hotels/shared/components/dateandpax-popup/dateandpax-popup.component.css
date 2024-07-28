@@ -1,0 +1,284 @@
+::ng-deep .mat-dialog-container {
+    border-radius: 24px; /* Adjust the value to your preferred radius */
+    overflow-x: hidden;
+  }
+
+  
+  /* Apply scrollbar styles within the mat-dialog-container */
+  ::ng-deep .mat-dialog-container::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::ng-deep .mat-dialog-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 10px; /* Adjust the border radius as needed */
+  }
+  
+  ::ng-deep .mat-dialog-container::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the thumb */
+    border-radius: 10px; /* Adjust the border radius as needed */
+  }
+  
+  ::ng-deep .mat-dialog-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
+  }
+  .dialog-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .datepax-container{
+    margin-top: 25px;
+    margin-left: 42px;
+    height: 350px;
+    width: 531px;
+    /* border: 1px solid red; */
+  }
+  .skip-browse{
+    width: 196px;
+    height: 21px;
+    left: calc(50% - 196px / 2 - 167px);
+    top: 341px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+
+  }
+  .head-text{
+    width: 403px;
+    height: 32px;
+    left: 599px;
+    top: 385px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+    margin-top: 23px;
+  }
+  .room-text{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+    color: #6A7486;
+  }
+  .datepaxinfo{
+    height: 218px;
+    width: 531px;
+    /* border: 1px solid green; */
+    margin-top: 34px;
+  }
+  .custom-height {
+    height: 72px!important;
+    width: 260px!important;
+    /* border: olive; */
+  }
+
+  
+ 
+.mat-datepicker-toggle{
+    color: olive;
+}
+
+.mat-form-field-appearance-outline  {
+    color: olive!important;
+}
+.mat-form-field-appearance-outline{
+    color: olive!important;
+}
+
+
+
+.date-sec{
+    border: 1px solid black;
+    height: 72px;
+}
+
+.heading-container {
+    overflow-y: hidden; 
+    margin-top: 27px;
+}
+
+.float-right {
+    margin-right: 16px;
+    width: 82px;
+    color: var(--SlateGray, #6A7486);
+    border-radius: 14px;
+    height: 46px;
+    background-color: white;
+}
+.adult-count{
+    width: 196px;
+    height: 21px;
+    left: 599px;
+    top: 571px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 133.5%;
+    /* display: flex; */
+    align-items: center;
+    color: #2C321F;
+}
+.left-side{
+    margin-left: 5px;
+}
+.adult-subtext{
+    /* width: 160px; */
+    height: 1px;
+    left: 599px;
+    top: 596px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+.show-rooms{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    margin-left: 12rem;
+    margin-bottom: 12px;
+    /* position: absolute; */
+    width: 165px;
+    height: 52px;
+    left: calc(50% - 165px / 2 + 0.5px);
+    top: calc(50% - 52px / 2 + 192.5px);
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    color: #ECE6DE;
+    margin-top: 54px;
+}
+
+  
+
+/* mob-scren */
+@media (max-width: 768px) {
+   
+    .skip-browse{
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 0px;
+        line-height: 133.5%;
+        align-items: center;
+        text-align: center;
+        color: #A09935;
+        width: 100%;
+        display: block;
+        height: 16px;
+        
+    }
+    .head-text{
+     position: static;
+     width: 289px;
+     height: 62px;
+     left: 0px;
+     top: 48px;
+     font-family: 'Optima';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 23px;
+     line-height: 133.5%;
+     display: flex;
+     align-items: center;
+     text-align: center;
+     color: #2C321F;
+     margin-top: 23px;
+    
+    }
+    .datepax-container{
+        margin-top: 27px;
+        margin-left: 7px;
+        height: 438px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .room-text{
+      width: 100%;
+      height: 22.64px;
+      left: 0px;
+      top: 117px;
+      font-family: 'Optima';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 133.5%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #6A7486;
+      margin-left: 6.5px;
+      margin-top: 25px;
+    }
+   
+    
+    .datepaxinfo{
+    width: fit-content;
+    margin-top: 15px;
+    }
+    .left-side{
+        margin-left: 0px;
+    }
+    .show-rooms{
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 67px;
+      width: 165px;
+      margin-bottom: 11px;
+      margin-left: 61px;
+      height: 52px;
+      left: calc(50% - 165px / 2 + 0.5px);
+      top: calc(50% - 52px / 2 + 192.5px);
+      background: #A09935;
+      border: 1px solid #A09935;
+      border-radius: 50px;
+      color: #ECE6DE;
+    
+    }
+    .custom-height{
+        height: 58px !important;
+        width: 261px
+     !important;
+    }
+    ::ng-deep .mat-dialog-container::-webkit-scrollbar-thumb {
+      background: white; /* Color of the thumb */
+      border-radius: 10px; /* Adjust the border radius as needed */
+    }
+    .cdk-overlay-pane{
+      max-width: 95vw!important;
+    }
+    .adult-subtext{
+     height: auto;
+    }
+  }
+ 
+  
+  

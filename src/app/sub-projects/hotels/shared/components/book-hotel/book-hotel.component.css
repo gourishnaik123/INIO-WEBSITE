@@ -1,0 +1,1912 @@
+.blog-header {
+    height:
+        174px;
+    background: #2C321F;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    width: 90%;
+    /* Adjust width to a relative unit */
+    max-width: 1588px;
+    /* Set a maximum width */
+    height: 174px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    box-sizing: border-box;
+}
+
+.Inio_Sub {
+    background: url(../../../../../../assets/images/iniologo.png);
+    background-size: cover;
+    position: absolute;
+    left: -1.2%;
+    right: 92.7%;
+    top: 0%;
+    bottom: 50%;
+    cursor: pointer;
+}
+
+.usericon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 6px;
+    gap: 10px;
+    position: absolute;
+    left: 87.41%;
+    top: 7.47%;
+    border-radius: 63px;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.insid_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 118px;
+    height: 50px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ECE6DE;
+    margin: 0;
+    /* Remove default margin */
+
+
+}
+
+.name_text {
+    font-family: 'Optima';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 21px;
+    color: #ECE6DE;
+    margin: 0;
+    /* Remove default margin */
+    font-weight: 700;
+    font-size: 14px;
+
+
+
+
+}
+
+.down_arrow {
+    float: right;
+}
+
+.font_icon {
+    width: 10px;
+    height: 5px;
+    color: #ECE6DE;
+}
+
+
+
+
+
+.attraction {
+    position: absolute;
+    width: 90%;
+    max-width: 1592px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    /* height: 87px;
+   border: 1px solid black; */
+}
+
+.hr_line1 {
+    position: absolute;
+    left: 0.25%;
+    right: 0%;
+    top: 0%;
+    bottom: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.hr_line2 {
+    position: absolute;
+    left: 0.25%;
+    right: 0%;
+    top: 0%;
+    bottom: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 87px;
+}
+
+.all_icon {
+    position: absolute;
+    width: 47.72px;
+    height: 50.53px;
+    left: 4px;
+    top: 10px;
+
+}
+
+.fass {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    left: 15.62%;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+}
+
+.fascity {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    /* left: 163.62%; */
+    left: 97px;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+}
+
+.city {
+    position: absolute;
+    /* left: 142.76%; */
+    left: 175.76%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.dest_name {
+    position: absolute;
+    left: 0.25%;
+    right: 96.75%;
+    top: 83.03%;
+    bottom: 22.38%;
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ECE6DE;
+
+
+}
+
+.guest_icon {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    /* left: 163.62%; */
+    left: 210.52px;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+
+}
+
+.guest_text {
+    position: absolute;
+    left: 410.78%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+
+}
+
+.home_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 313px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+
+}
+
+
+.home_text {
+    position: absolute;
+    left: 626.78%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+
+.experinces_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left:
+        427.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.experinces_text {
+    position: absolute;
+    left:
+        410.51px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.destination_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 535.17px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+.estimated-arrival{
+    width: 217px;
+    height: 15px;
+    left: 0px;
+    top: 25px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+
+}
+
+.destination_text {
+    position: absolute;
+    left: 515.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.transport_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 640.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.transport_text {
+    position: absolute;
+    left: 628.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+.internet_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 726.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+
+.internet_text {
+    position: absolute;
+    left: 716.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.nomads_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 811.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.nomads_text {
+    position: absolute;
+    left: 801.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.header_btn {
+    float: right;
+}
+
+.header-section {
+    margin-top: 150px;
+    color: #F4F4F4;
+}
+
+.register_btn {
+    position: absolute;
+    left: 83%;
+    font-family: Optima;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.24px;
+    width: 104px;
+    height: 52px;
+    top: 17px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    position: absolute;
+    width: 104px;
+    height: 52px;
+    border: 1px solid #ECE6DE;
+    border-radius: 15px;
+    gap: 0px;
+    opacity: 0px;
+    background: transparent;
+    color: var(--Ivory, rgba(236, 230, 222, 1));
+
+}
+
+.signin_btn {
+    position: absolute;
+    left: 92.6%;
+    font-family: Optima;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.24px;
+    width: 104px;
+    height: 52px;
+    top: 17px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    position: absolute;
+    width: 104px;
+    height: 52px;
+    border: 1px solid #ECE6DE;
+    border-radius: 15px;
+    gap: 0px;
+    opacity: 0px;
+    /* background: transparent; */
+    color: var(--Khaki, rgba(44, 50, 31, 1));
+    ;
+}
+
+.buttons {
+    float: inline-end;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.section-image {
+    background: url('../../../../../../assets/images/secbar.jpg') no-repeat center center;
+    background-size: cover;
+    /* This will make sure the image covers the entire div */
+    width: 740px;
+    height: 51px;
+    margin: 53px auto 0;
+    /* Centers the div horizontally and adds a top margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enter-detail {
+    height: 32px;
+    left: 71px;
+    top: 320px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    /* margin-left: 71px; */
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+
+}
+
+.details {
+    margin: 42px auto 0px 57px;
+}
+
+.req-field {
+    position: absolute;
+    width: 372px;
+    height: 21px;
+    left: 71px;
+    top: 357px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.boxes {
+    margin-left: 28px;
+    margin-top: 30px;
+}
+
+.left-card {
+    height: 793px;
+    max-width: 1068px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 29px;
+}
+
+mat-form-field {
+    width: calc(50% - 10px);
+    height: 59px;
+    /* margin-bottom: 20px; */
+}
+
+
+.name_label {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.email-verification {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    max-width: 100%;
+    /* Adjust the maximum width as needed */
+    width: 98%;
+    /* Ensure it takes full width within .left-card */
+}
+
+.forms {
+    /* margin-left: 40px;
+    margin-top: 16px;
+    position: absolute; */
+    margin-top: 16px;
+    position: relative;
+    margin-left: 40px;
+
+}
+
+.validate-txt {
+    position: absolute;
+    width: 280px;
+    height: 19px;
+    /* left: 105px; */
+    top: 257px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.special-request {
+    margin-top: 82px;
+
+}
+
+.special-txt {
+    height: 21px;
+    left: 107px;
+    top: 709px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+
+.request-txt {
+    height: 14px;
+    /* left: 107px; */
+    /* top: 734px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.spl-txt {
+    margin-top: 17px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.arrival-txt {
+    margin-top: 35.5px;
+    height: 21px;
+    left: 107px;
+    top: 709px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+
+}
+
+
+
+
+.long-field {
+    border: none;
+    border-bottom: 1px solid rgba(106, 116, 134, 1);
+    outline: none;
+    margin-top: 95.5px;
+    max-width: 98%;
+    width: 100%;
+}
+
+.long-field:focus {
+    border: none;
+    border-bottom: 1px solid rgba(106, 116, 134, 1);
+    margin-top: 95.5px;
+    outline: none;
+    width: 1005px;
+}
+
+.esstimated-arrival {
+    height: 21px;
+    /* left: 105px; */
+    /* top: 949px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.select-sec {
+    width: 363px;
+}
+
+.form-control {
+    border-radius: 50px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+    height: 46px;
+}
+
+.continue {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    color: #fff;
+    /* position: absolute; */
+    width: 130px;
+    height: 52px;
+    left: 105px;
+    top: 1062px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+}
+
+.right-card {
+    margin-top: 29px;
+}
+
+.hotel-card {
+    width: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    /* height: 190px; */
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.ammenities-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    padding-top: 4px;
+    margin-bottom: 16px;
+
+}
+
+.stars {
+    width: auto;
+    height: 20.31px;
+    left: 366.69px;
+    top: 5123.13px;
+    gap: 6px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    margin-right: 26.51px;
+    display: flex;
+    /* margin-top: 15.8px; */
+    align-items: center;
+    color: #2C321F;
+    float: inline-end;
+    margin: 0 3px;
+    color: gold;
+}
+
+.ratings-box {
+    background-color: olive;
+    /* margin-top: 20px; */
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    float: inline-end;
+}
+
+.rating-num {
+    font-size: 16px;
+    color: white;
+    font-family: optima;
+}
+
+.name-ratings {
+    margin-top: 20px;
+    width: 490px;
+}
+
+.hotel-name {
+
+    height: 21px;
+    left: 24px;
+    top: 22px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+
+.location {
+    /* width: 280px; */
+    height: 21px;
+    left: 24px;
+    top: 47px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+
+    .ammenities {
+        margin-left: 24px;
+        height: 18px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 130%;
+        color: #6A7486;
+    }
+.icons{
+    display: inline-block;
+    margin-right: 18px;
+    height: 9px;
+
+}
+
+
+.booking-details {
+    margin-top: 20px;
+    width: 500px;
+    /* height: 230px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.cancel-details {
+    margin-top: 20px;
+    width: 500px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.cancel-text{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    margin-left: 16.5px;
+    color: #6A7486;
+
+}
+
+.booking-text {
+    font-family: 'Optima';
+    font-style: normal;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 22px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+
+}
+
+.checkin-checkout {
+    height: 66px;
+    width: 365px;
+    /* border: 1px solid blue; */
+    margin-left: 24px;
+}
+
+.checkout {
+    float: inline-end;
+}
+
+.checkout-txt {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 133.5%;
+    /* or 21px */
+    display: flex;
+    align-items: center;
+
+    color: #A09935;
+
+
+}
+
+.checkout-date {
+    top: 703px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 130%; */
+    /* display: flex; */
+    align-items: center;
+    color: #6A7486;
+
+}
+
+.checkout-time {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.stay-length {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    margin-top: 35px;
+    margin-left: 24px;
+    align-items: center;
+    color: #6A7486;
+}
+
+.week {
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    display: flex;
+    align-items: center;
+
+    color: #6A7486;
+
+
+}
+
+
+.pax {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 24px;
+    align-items: center;
+    width: 100%;
+    color: #6A7486;
+}
+
+.summary-card {
+    height: 434px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    padding: 1px;
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+.original-price {
+    margin-left: 22px;
+    /* border: 1px solid rebeccapurple; */
+    width: 90%;
+}
+
+.original-amt {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    /* float: unset; */
+    /* display: flex; */
+    align-items: center;
+    float: inline-end;
+    margin-right: 10px;
+    color: #6A7486;
+}
+
+.def-price {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+
+}
+
+.price-box {
+    margin-top: 24px;
+    background: var(--Ivory, rgba(236, 230, 222, 1));
+    height: 157px;
+    padding: 1px;
+}
+
+.inside-price {
+    margin-left: 22px;
+    border: 1px solid var(--Ivory, rgba(236, 230, 222, 1));
+    ;
+    width: 90%;
+    height: 30px;
+    margin-top: 36px;
+}
+
+.left-price {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+    margin-top: 27px;
+}
+
+.right-price {
+    float: inline-end;
+}
+
+.big-price {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    /* float: inline-end; */
+
+    margin-left: 152px;
+
+    margin-top: 36px;
+    align-items: center;
+    color: #2C321F;
+
+}
+
+.extra {
+    width: 308px;
+    height: 21px;
+    position: absolute;
+    /* left: 1332px; */
+    /* top: 1105px; */
+    left: 203px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    color: #6A7486;
+
+}
+
+.cut-price {
+    text-decoration: line-through;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    align-items: center;
+    float: inline-end;
+    margin-right: 10px;
+}
+
+.your-sum {
+    margin-left: 22px;
+    font-family: 'Optima';
+    font-style: normal;
+    /* margin-left: 25px; */
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 22px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+
+.inclusive {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 22px;
+    line-height: 133.5%;
+    /* display: flex; */
+    align-items: center;
+    color: #6A7486;
+}
+
+
+
+
+
+/* Media queries for smaller resolutions */
+@media (max-width: 768px) {
+
+    .large-screen {
+        display: none;
+    }
+
+    .usericon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 6px;
+        gap: 10px;
+        position: absolute;
+        left: 58.41%;
+        top: 7.47%;
+        border-radius: 63px;
+    }
+
+    .navbar {
+        background-color: #2C321F;
+        height: 65px;
+        width: 100%;
+
+    }
+
+    .navbar-brand {
+        margin-top: -20px;
+    }
+
+    .mobilesignin_btn {
+        /* Frame 36929 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 15px;
+        gap: 10px;
+
+        width: 78px;
+        height: 36px;
+
+        background: #ECE6DE;
+        border-radius: 10px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+    }
+
+    .Inio_Sub {
+        height: 65px;
+        width: 101.49px;
+        position: relative;
+        left: 19px;
+        right: 0;
+        float: left;
+        /* margin: 0 auto; */
+        margin-bottom: -24px;
+        cursor: pointer;
+    }
+
+    .mob-backgrounds {
+
+        background-size: cover;
+        background-position: center;
+        height: 1194px;
+        width: 100%;
+    }
+
+    .mobile-attraction {
+        border: 1px solid;
+        height: 92.94px;
+        /* width: 375px; */
+        /* margin-top: 8.47px; */
+    }
+
+    .line {
+        /* position: absolute; */
+        left: 0.25%;
+        right: 0%;
+        top: 0%;
+        bottom: 100%;
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        margin-top: 87px;
+
+    }
+
+    .all_mobicon {
+        position: absolute;
+        /* width: 100%; */
+        /* width: -webkit-fill-available; */
+        width: 300px;
+        height: 50.53px;
+        margin-top: 8.75px;
+        margin-left: 18px;
+        display: flex;
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        white-space: nowrap;
+    }
+
+    .all_mobicon::-webkit-scrollbar {
+        display: none;
+        /* Hide scrollbar for WebKit-based browsers */
+    }
+
+    .mobicon_item {
+        display: inline-block;
+        text-align: center;
+        margin-right: 10px;
+        /* Adjust as necessary for spacing */
+    }
+
+    .mobicon_item i {
+        font-size: 16px;
+        display: block;
+        /* margin-bottom: 5px; */
+    }
+
+    .fass {
+        width: 24.33px;
+        height: 24.33px;
+        position: absolute;
+        left: 25px;
+        right: 15.63%;
+        top: 12.49%;
+        color: #ECE6DE;
+        font-size: 22px;
+        bottom: 12.51%;
+    }
+
+    .sub-txt {
+        color: white;
+        color: white;
+        margin-top: 32px;
+        margin-left: -4px;
+        padding-left: 18px;
+    }
+
+    .guest_icon {
+        left: 176.52px;
+    }
+
+    .home_icon {
+        left: 260px;
+    }
+
+    .experinces_icon {
+        left: 334px;
+    }
+
+    .destination_icon {
+        left: 420.17px;
+    }
+
+    .internet_icon {
+        left: 579.51px;
+    }
+
+    .transport_icon {
+        left: 512.51px;
+    }
+
+    .nomads_icon {
+        left: 649.51px;
+
+    }
+
+    .mobile-attraction {
+        background-color: #2C321F;
+    }
+
+    .mobilesec-image {
+        background: url('../../../../../../assets/images/mobilesec.jpg') no-repeat center center;
+        width: 343px;
+        height: 51px;
+        margin: 30px auto 0px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hotel-mobile {
+        margin-top: 30.34px;
+        width: 344px;
+        /* height: 291px; */
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        margin-left: 15.5px;
+        padding: 1px;
+
+    }
+
+    .mobilehotel-name {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 133.5%;
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        margin-left: 10px;
+        color: #2C321F;
+    }
+
+    .mobilehotel-loc {
+        height: 4px;
+        font-family: 'Optima';
+        font-style: normal;
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .ratings-sec {
+        margin-top: 10px;
+        border: 1px solid white;
+        width: 324px;
+        height: 42px;
+        margin-left: 10px;
+    }
+
+    .stars {
+        width: auto;
+        gap: 6px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 130%;
+        margin-right: 9.51px;
+        display: flex;
+        align-items: center;
+        color: #2C321F;
+        float: left;
+        color: gold;
+        margin-top: 13px;
+
+    }
+
+    .mobile-ammenities {
+        margin-top: 15px;
+        width: 324px;
+        height: auto;
+        /* border: 1px solid blue; */
+        margin-left: 10px;
+
+        /* height: 18px; */
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 130%;
+        /* display: flex; */
+        /* align-items: center; */
+        color: #6A7486;
+    }
+
+    .mobilebooking-card {
+        margin-top: 20px;
+        width: 343px;
+        height: 283px;
+        border-radius: 15px;
+        margin-left: 16px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        padding: 1px;
+    }
+
+    .mobilebooking-txt {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 133.5%;
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        margin-left: 10px;
+        color: #2C321F;
+    }
+
+    .mobilecheck {
+        margin-top: 17px;
+        /* border: 1px solid green; */
+        height: 92px;
+        margin-left: 10px;
+        width: 322px;
+    }
+
+    .mobile-checkout {
+        float: inline-end;
+    }
+
+    .mobilecheckout-txt {
+        width: 85px;
+        height: 21px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #A09935;
+    }
+
+    .mobilecheckout-date {
+        width: 100%;
+        height: 42px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        /* display: flex; */
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .mobilecheckout-time {
+        width: 85px;
+        height: 0px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        /* line-height: 95.5%; */
+        display: flex;
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .mobilecheckin-date {
+        width: 97%;
+        height: 42px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        /* display: flex; */
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .stay-length {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 133.5%;
+        display: flex;
+        margin-top: 35px;
+        margin-left: 0px;
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .week {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        /* line-height: 130%; */
+        margin-top: 21px;
+        float: inline-end;
+        /* display: flex; */
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .pax {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        align-items: center;
+        display: contents;
+        color: #6A7486;
+        margin-left: 0px;
+    }
+
+    .room-detail {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 11px;
+        align-items: center;
+        height: 5px;
+        /* max-width: 225px; */
+        float: inline-end;
+        /* align-items: center; */
+        color: #6A7486;
+        display: flex;
+    }
+
+    .price-summary {
+        border-radius: 15px;
+        margin-left: 16px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        height: 392.6px;
+        width: 344px;
+        margin-top: 20px;
+        padding: 1px;
+    }
+
+    .mobile-summary {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        margin-left: 16.59px;
+        margin-top: 19.59px;
+        /* line-height: 133.5%; */
+        /* display: flex; */
+        align-items: center;
+        color: #2C321F;
+    }
+
+    .mobile-amt {
+        width: 100px;
+        height: 21px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        display: flex;
+        float: right;
+        align-items: center;
+        /* text-align: right; */
+        color: #6A7486;
+    }
+
+    .mobile-orignal {
+        width: 97px;
+        height: 18px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        margin-left: 16.5px;
+        font-size: 16px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .mobile-early {
+        height: 18px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        margin-left: 16.5px;
+        font-size: 16px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .mobile-discountamt {
+        width: 0px;
+        height: 21px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        display: flex;
+        float: right;
+        align-items: center;
+        /* text-align: right; */
+        color: #6A7486;
+    }
+
+    .mobileprice-main {
+        height: 132.65px;
+        width: 344px;
+        background: var(--Ivory, rgba(236, 230, 222, 1));
+        margin-top: 22.73px;
+
+    }
+
+    .extra {
+        width: 218px;
+        height: 38px;
+        left: 123.38px;
+        /* top: 76.06px; */
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 133.5%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #6A7486;
+    }
+
+    .mobile-taxes {
+        height: 11px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 14.04px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .mobile-forms {
+        height: 886.95px;
+        width: 343px;
+        margin-top: 40px;
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); */
+        padding: 1px;
+        margin-left: 16px;
+    }
+    .mobile-footer{
+        margin-top: 112px;
+    }
+
+    .mobile-details {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        height: 14px;
+        font-size: 20px;
+        line-height: 133.5%;
+        /* display: flex; */
+        align-items: center;
+        color: #2C321F;
+    }
+
+    .mobreq-field {
+        /* position: absolute; */
+        width: 343px;
+        /* height: 35px; */
+        left: 0px;
+        top: 34px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        /* margin-bottom: 8px; */
+        font-size: 16px;
+        line-height: 133.5%;
+        /* display: flex; */
+        align-items: center;
+        color: #6A7486;
+    }
+
+    .mat-form-field {
+        width: 100%;
+        height: 50px
+    }
+    .ammenities {
+     margin-left: 7px;
+    }
+
+    .mobile-need {
+        width: 280px;
+        height: 19px;
+
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 133.5%;
+        /* identical to box height, or 19px */
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        color: #6A7486;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+    }
+
+    .specialmobile-req{
+        height: 67px;
+        width: auto;
+        /* border: 1px solid black; */
+        margin-top: 46px;
+    }
+
+    .mob-spl{
+        font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+    }
+    .mobile-sub{
+        width: 343px;
+    height: 22px;
+    left: 0px;
+    top: 25px;
+    margin-top: 25px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+    }
+    .type-req{
+        margin-top: 33px;
+        color: #6A7486;
+        font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    }
+    .long-field{
+        border: none;
+    border-bottom: 1px solid rgba(106, 116, 134, 1);
+    outline: none;
+    margin-top: 47.5px;
+    max-width: 98%;
+    width: 100%;
+    }
+    .long-field:focus {
+        border: none;
+        border-bottom: 1px solid rgba(106, 116, 134, 1);
+        margin-top: 47.5px;
+        outline: none;
+        width: 1005px;
+    }
+    .select-sec{
+        width: 343px 
+    }
+    .mobile-cont{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 30px;
+        gap: 10px;
+        color: #fff;
+        width: 343px;
+        height: 52px;
+        background: #A09935;
+        border: 1px solid #A09935;
+        border-radius: 50px;
+    }
+    .icons{
+        height: 18px;
+    }
+    .cancel-text{
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 10px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        /* margin-left: 25px; */
+        color: #6A7486;
+    }
+    .cancel-details{
+        margin-top: 20px;
+        width: 343px;
+        margin-left: 16px;
+        height: auto;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+    .cancel-head{
+        font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 16.59px;
+    color: #2C321F;
+    }
+}
+
+/* large screen */
+@media (min-width: 768px) {
+    .mobile-sec {
+        display: none;
+    }
+
+}

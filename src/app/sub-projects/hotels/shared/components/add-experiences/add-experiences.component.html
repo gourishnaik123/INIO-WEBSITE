@@ -1,0 +1,314 @@
+<!--############# mobile section ##############  -->
+<div class="mobile-sec">
+  <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand">
+          <div class="Inio_Sub" routerLink="/" (click)="homeroute()"></div>
+      </a>
+      <div class="usericon" *ngIf="this.userDetails">
+          <div class="insid_cont">
+              <img routerLink="/profile-setting" class="logo"
+                  [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+              <div class="text-container">
+                  <p class="top_text">hello</p>
+                  <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+              </div>
+          </div>
+          <div class="down_arrow">
+              <i class="fa fa-solid fa-caret-down font_icon"></i>
+          </div>
+      </div>
+      <button *ngIf="!this.userDetails" routerLink="/login" class="mobilesignin_btn">Sign in</button>
+  </nav>
+
+
+
+  <div class="mob-backgrounds">
+      <div class="mobile-attraction">
+          <div class="all_mobicon">
+              <i class="fa fa-solid fa-hotel fass"></i>
+              <p class="sub-txt">Resorts</p>
+
+              <i class="fa fa-solid fa-city fascity"></i>
+              <p class="sub-txt">City hotels</p>
+
+              <i class="fa fa-solid fa-house-user guest_icon"></i>
+              <p class="sub-txt">Guest house</p>
+
+              <i class="fa fa-home home_icon" aria-hidden="true"></i>
+              <p class="sub-txt">home stay</p>
+
+              <i class="fa fa-solid fa-ship experinces_icon"></i>
+              <p class="sub-txt">Experinces</p>
+
+              <i class="fa fa-regular fa-map destination_icon"></i>
+              <p class="sub-txt">Destinations</p>
+
+              <i class="fa fa-solid fa-taxi transport_icon"></i>
+              <p class="sub-txt">Transport</p>
+
+              <i class="fa fa-solid fa-globe internet_icon"></i>
+              <p class="sub-txt">Internet</p>
+
+              <i class="fa fa-solid fa-child nomads_icon"></i>
+              <p class="sub-txt">Nomads</p>
+          </div>
+          <!-- <div class="line"></div> -->
+      </div>
+
+    <p class="mobileexp-text">Experiences near the booking</p>
+    <p class="subtext">Fill in the &nbsp; <span class="text-danger"> * </span> &nbsp; required fields to continue to the next step</p>
+
+    <div class="buttons">
+      <button class="skip"routerLink="/book-hotel">Skip</button>
+      <button class="continue"routerLink="/book-hotel">Continue</button>
+  </div>
+
+  <div class="row exp-sec">
+    <div class="col-4 custom-margin-top" *ngFor="let hotel of hotels; let i = index">
+      <div class="card" [ngStyle]="{'background-image': 'url(' + hotel.image + ')'}">
+
+
+        <div *ngIf="hotel.preimgtext"> 
+        <svg class="boat-icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M36.7794 5.43073C31.0926 6.32276 23.0813 8.949 17.0165 13.381C17.0486 13.3971 17.0808 13.4212 17.113 13.4373C17.4991 13.6867 17.8208 14.0245 18.038 14.4347C23.3467 10.614 30.3607 8.13257 35.6533 7.10299V32.8305H37.1012V6.45146C37.077 6.03319 36.8518 5.48301 36.7794 5.43073ZM9.03727 5.88841C7.53634 5.88841 6.21157 7.36843 6.21157 9.33509C6.21157 11.3058 7.53634 12.7858 9.03727 12.7858C10.5414 12.7858 11.8605 11.3058 11.8605 9.33509C11.8605 7.36843 10.5414 5.88841 9.03727 5.88841ZM6.75531 13.4775C5.41607 16.8719 4.85624 20.4192 4.47095 23.6849C6.4384 23.6125 8.35115 23.4918 10.1794 23.3229C10.0347 22.1727 9.94619 21.0305 9.89792 19.8883C9.25444 19.4137 8.59487 18.8587 7.93611 18.2715L8.90053 17.1937C9.77727 17.9739 10.6299 18.6737 11.386 19.1644C12.134 19.6631 12.8016 19.9285 13.1475 19.9526H13.1556C13.1153 19.9526 13.3245 19.9205 13.614 19.7274C13.8956 19.5263 14.2575 19.2046 14.6275 18.8024C15.3675 18.0061 16.1719 16.88 16.7751 15.7619C16.8797 15.5689 16.8797 15.408 16.7993 15.2069C16.7269 15.0058 16.5499 14.7887 16.3247 14.6519C16.1075 14.5071 15.8582 14.4428 15.6491 14.4669C15.4399 14.491 15.2388 14.5715 15.0136 14.8771L12.8579 17.7648L9.47966 14.2015C9.33488 14.2256 9.19009 14.2336 9.03727 14.2336C8.18787 14.2336 7.40925 13.9521 6.75531 13.4775ZM22.3252 22.9127C17.2497 24.0629 9.92206 25.1166 1.87047 25.1729V32.75H13.0269C17.3543 30.538 20.7728 26.3393 22.3252 22.9127ZM5.49007 34.037C4.42993 34.037 3.13572 34.3829 2.04341 34.7127C1.95654 34.7368 1.87369 34.7609 1.79004 34.7931V36.3053C1.99837 36.2409 2.22359 36.1686 2.46248 36.0962C3.5017 35.7825 4.78143 35.4848 5.49007 35.4848C6.1987 35.4848 6.96123 35.7583 7.8058 36.0801C8.65118 36.4018 9.57618 36.7718 10.6379 36.7718C11.6997 36.7718 12.6247 36.4018 13.4693 36.0801C14.3138 35.7583 15.078 35.4848 15.7858 35.4848C16.4936 35.4848 17.2578 35.7583 18.1023 36.0801C18.9469 36.4018 19.8719 36.7718 20.9337 36.7718C21.9954 36.7718 22.9204 36.4018 23.765 36.0801C24.6096 35.7583 25.3737 35.4848 26.0815 35.4848C26.7894 35.4848 27.5535 35.7583 28.3981 36.0801C29.2426 36.4018 30.1676 36.7718 31.2294 36.7718C32.2911 36.7718 33.2161 36.4018 34.0607 36.0801C34.9053 35.7583 35.6694 35.4848 36.3773 35.4848C37.0851 35.4848 38.364 35.7825 39.4016 36.0962C39.6429 36.1686 39.8681 36.2409 40.0773 36.3053V34.7931C39.9968 34.7609 39.9164 34.7368 39.8279 34.7127C38.734 34.3829 37.439 34.037 36.3773 34.037C35.3155 34.037 34.3905 34.407 33.5459 34.7288C32.7014 35.0505 31.9372 35.324 31.2294 35.324C30.5216 35.324 29.7574 35.0505 28.9128 34.7288C28.0683 34.407 27.1433 34.037 26.0815 34.037C25.0198 34.037 24.0948 34.407 23.2502 34.7288C22.4056 35.0505 21.6415 35.324 20.9337 35.324C20.2258 35.324 19.4617 35.0505 18.6171 34.7288C17.7725 34.407 16.8475 34.037 15.7858 34.037C14.724 34.037 13.799 34.407 12.9545 34.7288C12.1099 35.0505 11.3458 35.324 10.6379 35.324C9.9301 35.324 9.16596 35.0505 8.32139 34.7288C7.47682 34.407 6.5502 34.037 5.49007 34.037Z" fill="#ECE6DE"/>
+          </svg>
+        <p class="riding-text">Riding the Waves</p>
+        <p class="price">$699.99</p>
+        <div class="view-add">
+          <button class="view-btn"(click)="viewexperience()">View</button>
+          <button class="add-btn" (click)="changeImage(i)">Add</button>
+        </div>
+      </div>
+
+
+      <div *ngIf="!hotel.preimgtext" class="tick-container"> 
+        <div class="tick">
+          <img class="tick-img" src="../../../../../../assets/images/Frame.jpg" alt="Tick Image">
+        </div>
+     
+        <h5 class="bill-added">Added to your bill</h5>
+        <p class="waves-txt">Riding the Waves</p>
+        <h4 class="amt">$699.99</h4>
+      <button class="remove-btn" (click)="revertImage(i)">Remove</button>
+
+      </div>
+
+
+
+    
+
+
+
+</div>
+</div>
+
+
+  <!-- pagination mob -->
+
+  <div class="pagination">
+    <h3 class="prev"><i class="fa fa-solid fa-arrow-left"></i>Prev </h3>
+    <div class="numbers">
+        <div class="numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>...</p>
+            <h3 class="next">Next <i class="fa fa-solid fa-arrow-right"></i> </h3>
+        </div>
+    </div>
+</div>
+
+<!-- footer ----->
+
+<div class="footer">
+  <app-common-footer></app-common-footer>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--**************** laptop screen or larger ****************** -->
+
+<div class="large-screen">
+    <div class="container-fluid blog-header">
+        <div class="container-fluid header">
+            <div class="inio_png">
+                <div class="Inio_Sub" routerLink="/" (click)="homeroute()"></div>
+
+
+                <div class="usericon" *ngIf="this.userDetails">
+                    <div class="insid_cont">
+                        <img routerLink="/profile-setting" class="logo"
+                            [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+                        <div class="text-container">
+                            <p class="top_text">hello</p>
+                            <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+                        </div>
+                    </div>
+                    <div class="down_arrow">
+                        <i class="fa fa-solid fa-caret-down font_icon"></i>
+
+                    </div>
+                </div>
+
+                <div class="header_btn" *ngIf="!this.userDetails">
+                    <button routerLink="/sign-up" class="register_btn">Register</button>
+                    <button routerLink="/login" class="signin_btn">Sign in</button>
+                </div>
+
+
+                
+
+
+            </div>
+        </div>
+
+
+        <!-----attraction-->
+        <div class="attraction">
+            <div class="hr_line1"></div>
+
+            <div class="all_icon">
+                <i class="fa fa-solid fa-hotel fass"></i>
+                <p class="dest_name">Resorts</p>
+
+                <i class="fa fa-solid fa-city fascity"></i>
+                <p class="city">City hotels</p>
+
+                <i class="fa fa-solid fa-house-user guest_icon"></i>
+                <p class="guest_text">Guest house</p>
+
+                <i class="fa fa-home home_icon" aria-hidden="true"></i>
+                <p class="home_text">home stay</p>
+
+                <i class="fa fa-solid fa-ship experinces_icon"></i>
+                <p class="experinces_text">Experinces</p>
+
+                <i class="fa fa-regular fa-map destination_icon"></i>
+                <p class="destination_text">Destinations</p>
+
+                <i class="fa fa-solid fa-taxi transport_icon"></i>
+                <p class="transport_text">Transport</p>
+
+                <i class="fa fa-solid fa-globe internet_icon"></i>
+                <p class="internet_text">Internet</p>
+
+                <i class="fa fa-solid fa-child nomads_icon"></i>
+                <p class="nomads_text">Nomads</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid property">
+        <div class="exp-section city-hotels">
+
+            <div class="buttons">
+                <button class="skip"routerLink="/book-hotel">Skip</button>
+                <button class="continue"routerLink="/book-hotel">Continue</button>
+            </div>
+
+
+
+            <h5 class="exp-text">Experiences near the booking</h5>
+            <p class="fill-field">Fill in the &nbsp;<span class="text-danger">*</span>&nbsp;required fields to continue
+                to the next step</p>
+
+              
+                <div class="row exp-sec">
+                    <div class="col-4 custom-margin-top" *ngFor="let hotel of hotels; let i = index">
+                      <div class="card" [ngStyle]="{'background-image': 'url(' + hotel.image + ')'}">
+
+
+                        <div *ngIf="hotel.preimgtext"> 
+                        <svg class="boat-icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M36.7794 5.43073C31.0926 6.32276 23.0813 8.949 17.0165 13.381C17.0486 13.3971 17.0808 13.4212 17.113 13.4373C17.4991 13.6867 17.8208 14.0245 18.038 14.4347C23.3467 10.614 30.3607 8.13257 35.6533 7.10299V32.8305H37.1012V6.45146C37.077 6.03319 36.8518 5.48301 36.7794 5.43073ZM9.03727 5.88841C7.53634 5.88841 6.21157 7.36843 6.21157 9.33509C6.21157 11.3058 7.53634 12.7858 9.03727 12.7858C10.5414 12.7858 11.8605 11.3058 11.8605 9.33509C11.8605 7.36843 10.5414 5.88841 9.03727 5.88841ZM6.75531 13.4775C5.41607 16.8719 4.85624 20.4192 4.47095 23.6849C6.4384 23.6125 8.35115 23.4918 10.1794 23.3229C10.0347 22.1727 9.94619 21.0305 9.89792 19.8883C9.25444 19.4137 8.59487 18.8587 7.93611 18.2715L8.90053 17.1937C9.77727 17.9739 10.6299 18.6737 11.386 19.1644C12.134 19.6631 12.8016 19.9285 13.1475 19.9526H13.1556C13.1153 19.9526 13.3245 19.9205 13.614 19.7274C13.8956 19.5263 14.2575 19.2046 14.6275 18.8024C15.3675 18.0061 16.1719 16.88 16.7751 15.7619C16.8797 15.5689 16.8797 15.408 16.7993 15.2069C16.7269 15.0058 16.5499 14.7887 16.3247 14.6519C16.1075 14.5071 15.8582 14.4428 15.6491 14.4669C15.4399 14.491 15.2388 14.5715 15.0136 14.8771L12.8579 17.7648L9.47966 14.2015C9.33488 14.2256 9.19009 14.2336 9.03727 14.2336C8.18787 14.2336 7.40925 13.9521 6.75531 13.4775ZM22.3252 22.9127C17.2497 24.0629 9.92206 25.1166 1.87047 25.1729V32.75H13.0269C17.3543 30.538 20.7728 26.3393 22.3252 22.9127ZM5.49007 34.037C4.42993 34.037 3.13572 34.3829 2.04341 34.7127C1.95654 34.7368 1.87369 34.7609 1.79004 34.7931V36.3053C1.99837 36.2409 2.22359 36.1686 2.46248 36.0962C3.5017 35.7825 4.78143 35.4848 5.49007 35.4848C6.1987 35.4848 6.96123 35.7583 7.8058 36.0801C8.65118 36.4018 9.57618 36.7718 10.6379 36.7718C11.6997 36.7718 12.6247 36.4018 13.4693 36.0801C14.3138 35.7583 15.078 35.4848 15.7858 35.4848C16.4936 35.4848 17.2578 35.7583 18.1023 36.0801C18.9469 36.4018 19.8719 36.7718 20.9337 36.7718C21.9954 36.7718 22.9204 36.4018 23.765 36.0801C24.6096 35.7583 25.3737 35.4848 26.0815 35.4848C26.7894 35.4848 27.5535 35.7583 28.3981 36.0801C29.2426 36.4018 30.1676 36.7718 31.2294 36.7718C32.2911 36.7718 33.2161 36.4018 34.0607 36.0801C34.9053 35.7583 35.6694 35.4848 36.3773 35.4848C37.0851 35.4848 38.364 35.7825 39.4016 36.0962C39.6429 36.1686 39.8681 36.2409 40.0773 36.3053V34.7931C39.9968 34.7609 39.9164 34.7368 39.8279 34.7127C38.734 34.3829 37.439 34.037 36.3773 34.037C35.3155 34.037 34.3905 34.407 33.5459 34.7288C32.7014 35.0505 31.9372 35.324 31.2294 35.324C30.5216 35.324 29.7574 35.0505 28.9128 34.7288C28.0683 34.407 27.1433 34.037 26.0815 34.037C25.0198 34.037 24.0948 34.407 23.2502 34.7288C22.4056 35.0505 21.6415 35.324 20.9337 35.324C20.2258 35.324 19.4617 35.0505 18.6171 34.7288C17.7725 34.407 16.8475 34.037 15.7858 34.037C14.724 34.037 13.799 34.407 12.9545 34.7288C12.1099 35.0505 11.3458 35.324 10.6379 35.324C9.9301 35.324 9.16596 35.0505 8.32139 34.7288C7.47682 34.407 6.5502 34.037 5.49007 34.037Z" fill="#ECE6DE"/>
+                          </svg>
+                        <p class="riding-text">Riding the Waves</p>
+                        <p class="price">$699.99</p>
+                        <div class="view-add">
+                          <button class="view-btn"(click)="viewexperience()">View</button>
+                          <button class="add-btn" (click)="changeImage(i)">Add</button>
+                        </div>
+                      </div>
+
+
+
+                      <div *ngIf="!hotel.preimgtext" class="tick-container"> 
+                        <div class="tick">
+                          <img class="tick-img" src="../../../../../../assets/images/Frame.jpg" alt="Tick Image">
+                        </div>
+                     
+                        <h5 class="bill-added">Added to your bill</h5>
+                        <p class="waves-txt">Riding the Waves</p>
+                        <h4 class="amt">$699.99</h4>
+                      <button class="remove-btn" (click)="revertImage(i)">Remove</button>
+
+                      </div>
+
+                    </div>
+
+
+                    </div>
+                  
+                   
+                  </div>
+
+              <!-- #### pagination ######## -->
+              <div class="pagination">
+                <h3 class="prev"><i class="fa fa-solid fa-arrow-left"></i>Prev </h3>
+                <div class="numbers">
+                  <div class="numbers">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>...</p>
+                    <h3 class="next">Next <i class="fa fa-solid fa-arrow-right"></i> </h3>
+          
+                  </div>
+                </div>
+
+                </div>
+        
+
+ 
+    </div>
+</div>
+  <!-- footer -->
+  <div class="footer">
+    <app-common-footer></app-common-footer>
+  </div>
+
+</div>
+
+
+
+
+

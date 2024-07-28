@@ -1,0 +1,1471 @@
+<!-- small screen -->
+<div class="mobile-section">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <app-loader [show]="isLoading"></app-loader>
+    <a class="navbar-brand">
+      <div class="Inio_Sub" routerLink="/" (click)="homeroute()"></div>
+    </a>
+    <div class="usericon" *ngIf="this.userDetails">
+      <div class="insid_cont">
+        <img routerLink="/profile-setting" class="logo" [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+        <div class="text-container">
+          <p class="top_text">hello</p>
+          <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+        </div>
+      </div>
+      <div class="down_arrow">
+        <i class="fa fa-solid fa-caret-down font_icon"></i>
+      </div>
+    </div>
+    <button *ngIf="!this.userDetails" routerLink="/login" class="mobilesignin_btn">Sign in</button>
+  </nav>
+
+  <!-- mob-background -->
+  <div class="mob-backgrounds">
+    <div class="mobile-attraction">
+      <div class="all_mobicon">
+        <i class="fa fa-solid fa-hotel fass"></i>
+        <p class="sub-txt">Resorts</p>
+
+        <i class="fa fa-solid fa-city fascity"></i>
+        <p class="sub-txt">City hotels</p>
+
+        <i class="fa fa-solid fa-house-user guest_icon"></i>
+        <p class="sub-txt">Guest house</p>
+
+        <i class="fa fa-home home_icon" aria-hidden="true"></i>
+        <p class="sub-txt">home stay</p>
+
+        <i class="fa fa-solid fa-ship experinces_icon"></i>
+        <p class="sub-txt">Experinces</p>
+
+        <i class="fa fa-regular fa-map destination_icon"></i>
+        <p class="sub-txt">Destinations</p>
+
+        <i class="fa fa-solid fa-taxi transport_icon"></i>
+        <p class="sub-txt">Transport</p>
+
+        <i class="fa fa-solid fa-globe internet_icon"></i>
+        <p class="sub-txt">Internet</p>
+
+        <i class="fa fa-solid fa-child nomads_icon"></i>
+        <p class="sub-txt">Nomads</p>
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <!-- hotel name -->
+    <div class="hotelname-abt">
+      <h5 class="hotel-head">{{this.roomAvailabilityData.hotelDetails[0].hotelName}}</h5>
+      <p class="hotel-para">
+{{this.roomAvailabilityData.hotelDetails[0].description}}
+      </p>
+    </div>
+
+    <!-- search -->
+    <p class="search_section">Search your stay</p>
+    <div class="search-card">
+      <div class="inner-search">
+        <div *ngIf="showText" class="search-country"(click)="getAllDestinations()"><i class="fa fa-solid fa-bed"></i><span class="country-head">Where are you going?</span>  <span>  </span></div>
+
+        <div *ngIf="destinationOptions.length > 0">
+          <i class="fa fa-solid fa-bed search-bed"></i>
+        <select  class="select-sec" [(ngModel)]="selectedDestination">
+          <option *ngFor="let option of destinationOptions" [value]="option.destinationName">
+            {{ option.destinationName }}
+          </option>
+        </select>
+        </div>
+        <div class="search-city" (click)="datepaxdialogue()">
+          <i class="fa fa-solid fa-calendar"></i>
+          <span class="country-head">
+            <span *ngIf="this.roomsdata.checkIn; else defaultCheckIn">{{this.roomsdata.checkIn  | date }} - &nbsp; </span>
+            <span *ngIf="this.roomsdata.checkOut; else defaultCheckOut">{{ this.roomsdata.checkOut | date }}</span>
+          </span>
+          <span>
+            <i class="fa fa-solid fa-caret-down"></i>
+          </span>
+        
+          <!-- Default texts -->
+          <ng-template #defaultCheckIn>
+            <span>Check-in date &nbsp;</span>
+          </ng-template>
+          <ng-template #defaultCheckOut>
+            <span>Check-out date</span>
+          </ng-template>
+        </div>
+
+        <div class="search-city"(click)="paxpopup()"><i class="fa fa-regular fa-user"></i><span class="country-head">{{totalAdults}} adults &nbsp; {{totalChildrens}} children &nbsp; {{ roomsAndPaxs ? roomsAndPaxs.length : 1 }} room &nbsp;</span>  <span>  <i class="fa fa-solid fa-caret-down"></i></span></div>
+        <button (click)="search()" class="search">search</button>                 
+      </div>
+    </div>
+  </div>
+  
+  <!-- date&rate -->
+  <div class="date-rate">
+    <p class="night-price">Prices for {{ numberOfNights > 1 ? numberOfNights + ' nights' : '1 night' }} </p>
+    <p class="stay-date">{{this.newCheckIn}} - {{this.newCheckout}}</p>
+  </div>
+
+<!-- property -->
+<div class="prop-info"*ngFor="let data of roomValue;let i = index">
+
+
+
+  <div class="hotel-sec">
+    <div class="hotel-img"></div>
+
+    <div class="propdetails">
+      <p class="accom-right">{{data.roomName}}</p>
+      <p  class="accom_ratings" >
+
+        <i *ngFor="let star of getStarArray(this.hoteldatas. starRating)"class="fa fa-solid fa-star acom-star"></i>
+       
+      </p>
+    </div>
+    <p class="bed-type">
+      {{data.bedRoom||'NA'}} King bed  , {{data.bathRoom||'NA'}} bathroom
+    </p>
+    <!-- policy -->
+    <!-- <div class="policy"*ngFor="let policy of data.cancellationPolicy| slice:0:2">
+      <p><i class="fa fa-solid fa-check"></i><span class="policy-sub">{{policy}}</span> </p>
+
+    </div> -->
+
+   
+
+    <div class="ammenities-container" *ngFor="let room of roomAvailabilityData.hotelDetails; let i = index">
+      <div class="ammenities" *ngFor="let amenity of getVisibleAmenities(room.hotelAmenities, i)">
+        <h3>.{{amenity}},</h3>
+      </div>
+      <p class="showmore-click" *ngIf="!expandedCards[i] && room.hotelAmenities.length > 4" (click)="toggleAmenities(i)">
+        ... Show More
+      </p>
+      <p class="showmore-click" *ngIf="expandedCards[i]" (click)="toggleAmenities(i)">
+        Show Less
+      </p>
+    </div>
+    
+  </div>
+
+  
+
+  <!-- guest-information -->
+  <div *ngFor="let rate of data.ratePlans; let j = index">
+    <div class="guest-info" > 
+      <div class="guest-sec"> 
+        <h5 class="guest-head">Guests</h5>
+        <!-- <p><i class="fa fa-solid fa-user user-icon"></i></p> -->
+        <p >
+          <span *ngFor="let _ of adultsArray">
+            <i class="fa fa-solid fa-user user-icon"></i>
+          </span>
+          <span *ngFor="let _ of childArray">
+            <i class="fa fa-solid fa-user user-child"></i>
+          </span>
+          </p>
+      </div>
+      <div class="price-box">
+        <h4 class="eight-days">Price (8 Days)</h4>
+        <span class="price">{{rate.price.mop | number:'1.0-0'}} {{ this.roomAvailabilityData.hotelDetails[0].currency}}</span>
+        <h4 class="sell-price">{{rate.price.finalPrice | number:'1.0-0'}} {{ this.roomAvailabilityData.hotelDetails[0].currency}}</h4>
+      </div>
+      <div class="free-cancel">
+        <h4 class="eight-days">Charges and choices</h4>
+        <h5 class="cancel-div"*ngFor="let policy of data.cancellationPolicy"><i class="fa fa-solid fa-check"></i> {{policy}}</h5>
+        <!-- <h5 class="cancel-charge">+20,000 LKR tax and charges</h5> -->
+      </div>
+      <div class="free-cancel">
+        <h4 class="eight-days">Meal plans</h4>
+        <h5 class="good-dinner">{{rate.mealPlan.mealPlanName}}</h5> <br>
+       
+      </div>
+      <button (click)="ReserveProperty(rate,data)"  class="reserve-button"routerLink="/add-experiences">Reserve</button>
+    </div>
+  
+  
+
+  
+
+
+</div>
+
+
+
+
+</div>
+
+
+<!--####### mobile pagination #####-->
+
+<div class="pagination">
+  <h3 class="prev"><i class="fa fa-solid fa-arrow-left"></i>Prev </h3>
+  <div class="numbers">
+      <div class="numbers">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>...</p>
+          <h3 class="next">Next <i class="fa fa-solid fa-arrow-right"></i> </h3>
+      </div>
+  </div>
+</div>
+
+<!-- review box -->
+
+
+<div class="review-box"> 
+  <h4 class="review-head">Reviews</h4> 
+  <div class="rating-container">
+    <div class="ratings-box">
+      <span class="rating-num">8.2</span>
+    </div>
+    <p class="excellent-text">Excellent</p><br>
+    <p class="review-num">1,229 Reviews</p>
+  </div>
+</div>
+<div class="progress-section"> 
+<div class="prog-card">
+  <p class="progress-point">8.8</p>
+  <p class="progress-name">staff</p>
+  <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+ 
+<div class="prog-card">
+  <p class="progress-point">5.1</p>
+  <p class="progress-name">Facilities</p>
+  <div class="progress">
+    <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+
+<div class="prog-card">
+  <p class="progress-point">9.1</p>
+  <p class="progress-name">Clean</p>
+  <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+
+<div class="prog-card">
+  <p class="progress-point">8.5</p>
+  <p class="progress-name">Comfort</p>
+  <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+
+<div class="prog-card">
+  <p class="progress-point">2.5</p>
+  <p class="progress-name">Value for money</p>
+  <div class="progress">
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+<div class="prog-card">
+  <p class="progress-point">4.5</p>
+  <p class="progress-name">Location</p>
+  <div class="progress">
+    <div class="progress-bar bg-success"role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+<div class="prog-card">
+  <p class="progress-point">2.5</p>
+  <p class="progress-name">Free wifi</p>
+  <div class="progress">
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  </div>
+
+
+
+
+    
+
+
+</div>
+
+
+<div class="testimonials">
+
+  
+      <div class="card-body testimonial-card">
+        <div class="card-content">
+          <h5 class="card-logo"></h5>
+          <div>
+            <p class="awesome">This place is awesome to stay</p>
+            <p class="short-termtxt">Short term stay</p>
+          </div>
+        </div>
+        <p class="stars">
+          <i class="fa fa-solid fa-star acom-star"></i>
+          <i class="fa fa-solid fa-star acom-star"></i>
+          <i class="fa fa-solid fa-star acom-star"></i>
+          <i class="fa fa-solid fa-star acom-star"></i>
+        </p>
+        <span class="testimonial-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.
+        </span>
+      </div>
+    
+
+    
+      <div class="card-body testimonial-card">
+        <div class="card-content">
+          <h5 class="card-logo"></h5>
+          <div>
+            <p class="awesome">This place is awesome to stay</p>
+            <p class="short-termtxt">Short term stay</p>
+          </div>
+        </div>
+        <p class="stars">
+          <i class="fa fa-solid fa-star acom-star"></i>
+          <i class="fa fa-solid fa-star acom-star"></i>
+          <i class="fa fa-solid fa-star acom-star"></i>
+          <i class="fa fa-solid fa-star acom-star"></i>
+        </p>
+        <span class="testimonial-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.
+        </span>
+      </div>
+
+    </div>
+    <h2 class="see-allreview">See all reviews <span class="review-arrow"> <i
+      class="fa fa-solid fa-arrow-right"></i></span>
+</h2>
+
+
+ <!--############# frequently asked questions #################-->
+
+  <h5 class="frequent-text">Frequently asked questions</h5>
+
+  <div class="accordin-mobile"> 
+
+  <div class="accordion">
+    <div class="card place-card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0 place-text">
+          This place is awesome to stay ?
+        </h5>
+        <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse1"
+          aria-expanded="false" aria-controls="collapseOne"><i class="fa fa-solid fa-greater-than"></i></p>
+      </div>
+
+      <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Content related to the question goes here...</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion">
+      <div class="card place-card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0 place-text">
+            This place is awesome to stay ?
+          </h5>
+          <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse2"
+            aria-expanded="false" aria-controls="collapseOne"><i class="fa fa-solid fa-greater-than"></i></p>
+        </div>
+
+        <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Content related to the question goes here...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="card place-card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0 place-text">
+            This place is awesome to stay ?
+          </h5>
+          <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse3"
+            aria-expanded="false" aria-controls="collapse3"><i class="fa fa-solid fa-greater-than"></i></p>
+        </div>
+
+        <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Content related to the question goes here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="card place-card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0 place-text">
+              This place is awesome to stay ?
+            </h5>
+            <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse4"
+              aria-expanded="false" aria-controls="collapse4"><i class="fa fa-solid fa-greater-than"></i></p>
+          </div>
+
+          <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>Content related to the question goes here...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="accordion">
+      <div class="card place-card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0 place-text">
+            This place is awesome to stay ?
+          </h5>
+          <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse5"
+            aria-expanded="false" aria-controls="collapse5"><i class="fa fa-solid fa-greater-than"></i></p>
+        </div>
+
+        <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Content related to the question goes here...</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion">
+        <div class="card place-card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0 place-text">
+              This place is awesome to stay ?
+            </h5>
+            <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse8"
+              aria-expanded="false" aria-controls="collapse8"><i class="fa fa-solid fa-greater-than"></i></p>
+          </div>
+
+          <div id="collapse8" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>Content related to the question goes here...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+  
+  </div>
+
+
+  <div class="surrounding-location">
+
+    <h5 class="surrounding-text"> Surrounding locations</h5>
+
+    <div class="card-container">
+      <div class="surr-card">
+        <div class="surrn-img1">
+
+        </div>
+        <h5 class="srn-text">The beach park</h5>
+        <span class="srn-dist">500m</span>
+
+      </div>
+      <div class="surr-card">
+        <div class="surrn-img2">
+
+        </div>
+        <h5 class="srn-text">Dino park</h5>
+        <span class="srn-dist">3.5km</span>
+
+
+      </div>
+      <div class="surr-card">
+        <div class="surrn-img3">
+
+        </div>
+        <h5 class="srn-text">Kotuwa ground</h5>
+        <span class="srn-dist">3.6km</span>
+      </div>
+      <div class="surr-card">
+        <div class="surrn-img1">
+
+        </div>
+        <h5 class="srn-text">The beach park</h5>
+        <span class="srn-dist">500m</span>
+
+      </div>
+      <div class="surr-card">
+        <div class="surrn-img2">
+
+        </div>
+        <h5 class="srn-text">Dino park</h5>
+        <span class="srn-dist">3.5km</span>
+      </div>
+    </div>
+
+
+
+</div>
+
+</div>
+
+<div class="site-detail">
+
+<div class="sitecard1">
+  <h5 class="site-head">Cafes and Restaurants</h5>
+  <p class="nearby-site">Oysters Restaurant <span class="site-distance">1km</span></p>
+  <p class="nearby-site">Rodeo pub and restaurant <span class="site-distance">2km</span></p>
+  <p class="nearby-site">t Lounge <span class="site-distance">1km</span></p>
+  <p class="nearby-site">Rodeo pub <span class="site-distance">2km</span></p>
+
+</div>
+
+
+<div class="sitecard1">
+  <h5 class="site-head">Beaches</h5>
+  <p class="nearby-site">Negombo Beach <span class="site-distance">1km</span></p>
+  <p class="nearby-site">Poruthota Beach<span class="site-distance">2km</span></p>
+  <p class="nearby-site">Wellaweediya Beach<span class="site-distance">1km</span></p>
+  <p class="nearby-site">Kammala Beach <span class="site-distance">2km</span></p>
+</div>
+
+<div class="sitecardairport">
+  <h5 class="site-head">Closest airports</h5>
+  <p class="nearby-site">Bandaranaike International Airport <span class="site-distance">1km</span></p>
+  <p class="nearby-site">Ratmalana International Airport<span class="site-distance">2km</span></p>
+  <p class="nearby-site">Katugastota Polgolla Reservoir Seaplane Base <span class="site-distance">1km</span></p>
+
+</div>
+
+
+</div>
+<!-- related hotels -->
+
+<div class="releated-hotel">
+  <h5 class="releated-text">Related hotels</h5> 
+  
+  <div class="accom_sub_card"*ngFor="let data of question; let i = index" [ngClass]="{'margin-top-30': i !== 0}">
+    <div class="nomad_img image-fluid"></div>
+
+    <div class="cardetails">
+      <p class="accom-right">Samann Grand</p>
+      <p class="accom_ratings">
+
+        <i class="fa fa-solid fa-star acom-star"></i>
+        <i class="fa fa-solid fa-star acom-star"></i>
+        <i class="fa fa-solid fa-star acom-star"></i>
+        <i class="fa fa-solid fa-star acom-star"></i>
+      </p>
+    </div>
+    <p class="mald_text">Male, Maldives</p>
+
+    <div class="view_section">
+      <h5 class="accom_amt">
+        $ 1,700 USD <span class="onwards">&nbsp; Onwards</span>
+      </h5>
+      <button class="view_accom">View</button>
+    </div>
+    <p class="strike_price">$1,890</p>
+  </div>
+
+
+
+  
+  
+
+
+</div>
+<div class="footer">
+  <app-common-footer></app-common-footer>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--**************** laptop screen or larger ****************** -->
+
+<div class="large-screen">
+  <div class="container-fluid blog-header">
+    <app-loader [show]="isLoading"></app-loader>
+
+    <div class="container-fluid header">
+      <div class="inio_png">
+        <div class="Inio_Sub" routerLink="/" (click)="homeroute()"></div>
+
+       
+        <div class="usericon" *ngIf="this.userDetails">
+          <div class="insid_cont">
+            <img routerLink="/profile-setting" class="logo"
+              [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+            <div class="text-container">
+              <p class="top_text">hello</p>
+              <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+            </div>
+          </div>
+          <div class="down_arrow">
+            <i class="fa fa-solid fa-caret-down font_icon"></i>
+
+          </div>
+        </div>
+
+        <div class="header_btn" *ngIf="!this.userDetails">
+          <button routerLink="/sign-up" class="register_btn">Register</button>
+          <button routerLink="/login" class="signin_btn">Sign in</button>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <!-----attraction-->
+    <div class="attraction">
+      <div class="hr_line1"></div>
+
+      <div class="all_icon">
+        <i class="fa fa-solid fa-hotel fass"></i>
+        <p class="dest_name">Resorts</p>
+
+        <i class="fa fa-solid fa-city fascity"></i>
+        <p class="city">City hotels</p>
+
+        <i class="fa fa-solid fa-house-user guest_icon"></i>
+        <p class="guest_text">Guest house</p>
+
+        <i class="fa fa-home home_icon" aria-hidden="true"></i>
+        <p class="home_text">home stay</p>
+
+        <i class="fa fa-solid fa-ship experinces_icon"></i>
+        <p class="experinces_text">Experinces</p>
+
+        <i class="fa fa-regular fa-map destination_icon"></i>
+        <p class="destination_text">Destinations</p>
+
+        <i class="fa fa-solid fa-taxi transport_icon"></i>
+        <p class="transport_text">Transport</p>
+
+        <i class="fa fa-solid fa-globe internet_icon"></i>
+        <p class="internet_text">Internet</p>
+
+        <i class="fa fa-solid fa-child nomads_icon"></i>
+        <p class="nomads_text">Nomads</p>
+      </div>
+
+
+      <div class="hr_line2"></div>
+      <div class="header-section">
+        <div class="row">
+          <div class="col-7">
+            <h4 class="left-head"> {{this.roomAvailabilityData.hotelDetails[0].hotelName}}</h4>
+            <div class="left-para">
+              <p class="para-text">{{this.roomAvailabilityData.hotelDetails[0].description}}</p>
+
+
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col-5 rightsec">
+    
+
+
+            <div *ngIf="this.hoteldatas.hotelImageUrl.length > 0" class="rightimg-card" [style.background-image]="'url(' + backgroundImage + ')'">
+              <div *ngFor="let url of hoteldatas.hotelImageUrl| slice:0:6" class="small-card" (click)="changeBackground(url)">
+                <img [src]="url" alt="Card Image" style="width:100%; height:100%; border-radius: inherit;">
+              </div>
+            </div>
+            
+            
+
+            <button class="virtual-tour"><i class="fa fa-solid fa-globe"></i>&nbsp;Virtual Tour</button>
+
+          </div>
+          <!-- search -->
+          <div>
+            <p class="search_section ml-4">Search your stay</p>
+            <div class="search_card">
+              <div class="auto-layout">
+              
+                <div *ngIf="destinationOptions.length > 0">
+                  <i class="fa fa-solid fa-bed search-bed"></i>
+                <select  class="select-sec" [(ngModel)]="selectedDestination">
+                  <option *ngFor="let option of destinationOptions" [value]="option.destinationName">
+                    {{ option.destinationName }}
+                  </option>
+                </select>
+              </div>
+
+
+              <div *ngIf="showText" class="country-selector"(click)="getAllDestinations()">
+                <i class="fa fa-solid fa-bed"></i>
+                <p >Where are you going?</p>
+              </div>
+
+              <span class="line" style="    margin-left: 100px;
+              color: #fff;">|</span>
+      
+      <div class="country-selector" (click)="datepaxdialogue()">
+        <i class="fa fa-solid fa-calendar"></i>
+        <p *ngIf="this.roomsdata.checkIn; else defaultCheckIn">{{this.roomsdata.checkIn  | date }} - </p>
+        <p *ngIf="this.roomsdata.checkOut; else defaultCheckOut">{{ this.roomsdata.checkOut | date }}</p>
+        <span class="line">|</span>
+      
+        <!-- Default texts -->
+        <ng-template #defaultCheckIn>
+          <p>Check-in date</p>
+        </ng-template>
+        <ng-template #defaultCheckOut>
+          <p>Check-out date</p>
+        </ng-template>
+      </div>
+      
+      <div class="country-selector"(click)=" paxpopup()">
+        <i class="fa fa-regular fa-user"></i>
+        <p>{{this.totalAdults}} adults <span class="pax-no">{{totalChildrens}} children</span> <span class="pax-no"> {{ roomsAndPaxs ? roomsAndPaxs.length : 1 }} room</span> </p>  
+        <i class="fa fa-solid fa-caret-down"></i>        
+      </div>
+      <button (click)="search()" class="align-right">Search</button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <!-- room details -->
+  <div class="room-details">
+    <h2 class="price-text">Prices for {{ numberOfNights > 1 ? numberOfNights + ' nights' : '1 night' }} <span class="date-text">{{this.newCheckIn}} - {{this.newCheckout}}</span></h2>
+
+    <div class="row details-sec"*ngFor="let data of roomValue">
+      <div class="col-3">
+        <div class="hotel-sec">
+          <div class="hotel-img"></div>
+
+          <div class="propdetails">
+            <p class="accom-right">{{data.roomName}}</p>
+            <p class="accom_ratings" >
+
+              <i class="fa fa-solid fa-star acom-star"*ngFor="let star of getStarArray(this.hoteldatas. starRating)"></i>
+              
+            </p>
+     
+            
+          </div>
+          <p class="bed-type">
+            {{data.bedRoom||'NA'}} King bed  , {{data.bathRoom||'NA'}} bathroom
+          </p>
+          <!-- policy -->
+          <!-- <div class="policy"*ngFor="let policy of data.cancellationPolicy| slice:0:2">
+            <p><i class="fa fa-solid fa-check"></i><span class="policy-sub">{{ policy }}</span> </p>
+           
+          </div> -->
+
+       
+          
+          <div class="ammenities-container" *ngFor="let room of roomAvailabilityData.hotelDetails; let i = index">
+            <div class="ammenities" *ngFor="let amenity of getVisibleAmenities(room.hotelAmenities, i)">
+              <h3>.{{amenity}},</h3>
+            </div>
+            <p class="showmore-click" *ngIf="!expandedCards[i] && room.hotelAmenities.length > 4" (click)="toggleAmenities(i)">
+              ... Show More
+            </p>
+            <p class="showmore-click" *ngIf="expandedCards[i]" (click)="toggleAmenities(i)">
+              Show Less
+            </p>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+      </div>
+
+
+      <div class="col-9">
+        <!-- Content for the second column -->
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>Guests</th>
+              <th style="width: 133px;">Price (8 Days)</th>
+              <th>Charges and choices</th>
+              <th>Meal plans</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="table-horizontal-line">
+              <td colspan="5"></td>
+            </tr>
+            <tr *ngFor="let rate of data.ratePlans">
+              <span *ngFor="let _ of adultsArray">
+                <i class="fa fa-solid fa-user user-icon"></i>
+              </span>
+              <span *ngFor="let _ of childArray">
+                <i class="fa fa-solid fa-user user-child"></i>
+              </span>
+              <td><span class="price">{{rate.price.mop | number:'1.0-0'}} {{ this.roomAvailabilityData.hotelDetails[0].currency}}</span> <br><span class="sell-price">{{rate.price.finalPrice | number:'1.0-0'}} {{ this.roomAvailabilityData.hotelDetails[0].currency}}</span></td>
+              <td><span class="cancel"*ngFor="let policy of data.cancellationPolicy"><i class="fa fa-solid fa-check"></i> {{policy}}</span> </td>
+                
+                <!-- <span class="cancel-charge">+20,000 LKR tax and charges</span></td> -->
+              <td><span class="breakfast">{{rate.mealPlan.mealPlanName}}</span>
+                <br>
+                <!-- <span class="good-dinner">Good dinner 1,200 LKR</span> -->
+                
+              </td>
+              <td class="reserve-btn"routerLink="/add-experiences"(click)="ReserveProperty(rate,data)">Reserve</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+
+
+
+    <!-- **** PAGINATION ***** -->
+
+    <div class="pagination">
+      <h3 class="prev"><i class="fa fa-solid fa-arrow-left"></i>Prev </h3>
+      <div class="numbers">
+        <div class="numbers">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          <p>...</p>
+          <h3 class="next">Next <i class="fa fa-solid fa-arrow-right"></i> </h3>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- reviews card -->
+  <div class="review-card">
+    <h4 class="review-head">Reviews</h4>
+
+    <div class="rating-container">
+      <div class="ratings-box">
+        <span class="rating-num">8.2</span>
+      </div>
+      <p class="excellent-text">Excellent</p><br>
+      <p class="review-num">1,229 Reviews</p>
+    </div>
+    <!-- progeration bar -->
+    <div class="progration-bar">
+      <div class="row">
+        <div class="col-4">
+          <div class="cards">
+            <p class="progress-point">8.8</p>
+            <p class="progress-name">staff</p>
+            <div class="progress">
+
+              <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="cards">
+            <p class="progress-point">5.1</p>
+            <p class="progress-name">Facilities</p>
+            <div class="progress">
+
+              <div class="progress-bar bg-secondary" role="progressbar" style="width: 85%" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="cards">
+            <p class="progress-point">9.1</p>
+            <p class="progress-name">Cleanness</p>
+            <div class="progress">
+
+              <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row top-prog">
+      <div class="col-4">
+        <div class="cards">
+          <p class="progress-point">8.8</p>
+          <p class="progress-name">Comfort</p>
+          <div class="progress">
+
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="cards">
+          <p class="progress-point">5.1</p>
+          <p class="progress-name">Value for me</p>
+          <div class="progress">
+
+            <div class="progress-bar bg-secondary" role="progressbar" style="width: 85%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="cards">
+          <p class="progress-point">9.1</p>
+          <p class="progress-name">Location</p>
+          <div class="progress">
+
+            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row top-prog">
+      <div class="col-4">
+        <div class="cards">
+          <p class="progress-point">8.8</p>
+          <p class="progress-name">hygiene</p>
+          <div class="progress">
+
+            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="cards">
+          <p class="progress-point">5.1</p>
+          <p class="progress-name">Free wifi</p>
+          <div class="progress">
+
+            <div class="progress-bar bg-secondary" role="progressbar" style="width: 85%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+
+      </div>
+    </div>
+
+
+    <!-- testimonials -->
+    <div class="testimonials">
+
+      <div class="row">
+        <div class="col-6">
+          <div class="card-body testimonial-card">
+            <div class="card-content">
+              <h5 class="card-logo"></h5>
+              <div>
+                <p class="awesome">This place is awesome to stay</p>
+                <p class="short-termtxt">Short term stay</p>
+              </div>
+            </div>
+            <p class="stars">
+              <i class="fa fa-solid fa-star acom-star"></i>
+              <i class="fa fa-solid fa-star acom-star"></i>
+              <i class="fa fa-solid fa-star acom-star"></i>
+              <i class="fa fa-solid fa-star acom-star"></i>
+            </p>
+            <span class="testimonial-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.
+            </span>
+          </div>
+        </div>
+
+        <div class="col-6 ">
+          <div class="card-body testimonial-card">
+            <div class="card-content">
+              <h5 class="card-logo"></h5>
+              <div>
+                <p class="awesome">This place is awesome to stay</p>
+                <p class="short-termtxt">Short term stay</p>
+              </div>
+            </div>
+            <p class="stars">
+              <i class="fa fa-solid fa-star acom-star"></i>
+              <i class="fa fa-solid fa-star acom-star"></i>
+              <i class="fa fa-solid fa-star acom-star"></i>
+              <i class="fa fa-solid fa-star acom-star"></i>
+            </p>
+            <span class="testimonial-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <h2 class="see-allreview">See all reviews <span class="review-arrow"> <i
+          class="fa fa-solid fa-arrow-right"></i></span>
+    </h2>
+
+    <!--############# frequently asked questions #################-->
+    <div class="frequent-question">
+      <h5 class="frequent-text">Frequently asked questions</h5>
+
+      <div class="row question-topfirst">
+        <div class="col-6 ">
+
+          <div class="accordion">
+            <div class="card place-card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0 place-text">
+                  This place is awesome to stay ?
+                </h5>
+                <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse1"
+                  aria-expanded="false" aria-controls="collapseOne"><i class="fa fa-solid fa-greater-than"></i></p>
+              </div>
+
+              <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Content related to the question goes here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6">
+
+          <div class="accordion">
+            <div class="card place-card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0 place-text">
+                  This place is awesome to stay ?
+                </h5>
+                <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse2"
+                  aria-expanded="false" aria-controls="collapseOne"><i class="fa fa-solid fa-greater-than"></i></p>
+              </div>
+
+              <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Content related to the question goes here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- second -->
+
+      <div class="row question-top">
+        <div class="col-6 ">
+
+          <div class="accordion">
+            <div class="card place-card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0 place-text">
+                  This place is awesome to stay ?
+                </h5>
+                <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse3"
+                  aria-expanded="false" aria-controls="collapse3"><i class="fa fa-solid fa-greater-than"></i></p>
+              </div>
+
+              <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Content related to the question goes here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6">
+
+          <div class="accordion">
+            <div class="card place-card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0 place-text">
+                  This place is awesome to stay ?
+                </h5>
+                <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse4"
+                  aria-expanded="false" aria-controls="collapse4"><i class="fa fa-solid fa-greater-than"></i></p>
+              </div>
+
+              <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Content related to the question goes here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- third -->
+      <div class="row question-top">
+        <div class="col-6 ">
+
+          <div class="accordion">
+            <div class="card place-card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0 place-text">
+                  This place is awesome to stay ?
+                </h5>
+                <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse5"
+                  aria-expanded="false" aria-controls="collapse5"><i class="fa fa-solid fa-greater-than"></i></p>
+              </div>
+
+              <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Content related to the question goes here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6">
+
+          <div class="accordion">
+            <div class="card place-card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0 place-text">
+                  This place is awesome to stay ?
+                </h5>
+                <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse6"
+                  aria-expanded="false" aria-controls="collapse6"><i class="fa fa-solid fa-greater-than"></i></p>
+              </div>
+
+              <div id="collapse6" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Content related to the question goes here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- fourth -->
+      <div class="row question-top">
+        <div class="col-6 ">
+
+          <div class="accordion">
+            <div class="card place-card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0 place-text">
+                  This place is awesome to stay ?
+                </h5>
+                <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse7"
+                  aria-expanded="false" aria-controls="collapse7"><i class="fa fa-solid fa-greater-than"></i></p>
+              </div>
+
+              <div id="collapse7" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Content related to the question goes here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6">
+
+          <div class="accordion">
+            <div class="card place-card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0 place-text">
+                  This place is awesome to stay ?
+                </h5>
+                <p id="accordionExample" type="button" data-toggle="collapse" data-target="#collapse8"
+                  aria-expanded="false" aria-controls="collapse8"><i class="fa fa-solid fa-greater-than"></i></p>
+              </div>
+
+              <div id="collapse8" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Content related to the question goes here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="surrounding-location">
+
+      <h5 class="surrounding-text"> Surrounding locations</h5>
+
+      <div class="card-container">
+        <div class="surr-card">
+          <div class="surrn-img1">
+
+          </div>
+          <h5 class="srn-text">The beach park</h5>
+          <span class="srn-dist">500m</span>
+
+        </div>
+        <div class="surr-card">
+          <div class="surrn-img2">
+
+          </div>
+          <h5 class="srn-text">Dino park</h5>
+          <span class="srn-dist">3.5km</span>
+
+
+        </div>
+        <div class="surr-card">
+          <div class="surrn-img3">
+
+          </div>
+          <h5 class="srn-text">Kotuwa ground</h5>
+          <span class="srn-dist">3.6km</span>
+        </div>
+        <div class="surr-card">
+          <div class="surrn-img1">
+
+          </div>
+          <h5 class="srn-text">The beach park</h5>
+          <span class="srn-dist">500m</span>
+
+        </div>
+        <!-- <div class="surr-card"> -->
+          <!-- <div class="surrn-img2">
+
+          </div> -->
+          <!-- <h5 class="srn-text">Dino park</h5>
+          <span class="srn-dist">3.5km</span> -->
+        <!-- </div> -->
+      </div>
+
+      <!-- site-seen -->
+      <div class="site-seen">
+        <div class="sitecard1">
+          <h5 class="site-head">Cafes and Restaurants</h5>
+          <p class="nearby-site">Oysters Restaurant <span class="site-distance">1km</span></p>
+          <p class="nearby-site">Rodeo pub and restaurant <span class="site-distance">2km</span></p>
+          <p class="nearby-site">t Lounge <span class="site-distance">1km</span></p>
+          <p class="nearby-site">Rodeo pub <span class="site-distance">2km</span></p>
+
+        </div>
+
+        <div class="sitecard1">
+          <h5 class="site-head">Beaches</h5>
+          <p class="nearby-site">Negombo Beach <span class="site-distance">1km</span></p>
+          <p class="nearby-site">Poruthota Beach<span class="site-distance">2km</span></p>
+          <p class="nearby-site">Wellaweediya Beach<span class="site-distance">1km</span></p>
+          <p class="nearby-site">Kammala Beach <span class="site-distance">2km</span></p>
+        </div>
+
+        <div class="sitecardairport">
+          <h5 class="site-head">Closest airports</h5>
+          <p class="nearby-site">Bandaranaike International Airport <span class="site-distance">1km</span></p>
+          <p class="nearby-site">Ratmalana International Airport<span class="site-distance">2km</span></p>
+          <p class="nearby-site">Katugastota Polgolla Reservoir Seaplane Base <span class="site-distance">1km</span></p>
+
+        </div>
+
+      </div>
+      <!-- releated hotels -->
+      <div class="releated-hotels">
+        <h5 class="releated-text">Related hotels</h5>
+        <div class="property-cards">
+          <div class="row travels-row">
+            <!-- first -->
+            <div class="col-md-3">
+              <div class="accom_sub_card">
+
+                <div class="nomad_img image-fluid">
+
+                </div>
+
+                <div class="cardetails">
+                  <p class="accom-right">Samann Grand</p>
+                  <p class="accom_ratings">
+
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                  </p>
+                </div>
+                <p class="mald_text">Male, Maldives</p>
+
+                <div class="view_section">
+                  <h5 class="accom_amt">
+                    $ 1,700 LKR <span class="onwards">&nbsp; Onwards</span>
+                  </h5>
+                  <button class="view_accom">View</button>
+                </div>
+                <!-- $1,890 -->
+                <p class="strike_price">$1,890</p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="accom_sub_card">
+
+                <div class="nomad_img image-fluid">
+
+                </div>
+
+                <div class="cardetails">
+                  <p class="accom-right">Samann Grand</p>
+                  <p class="accom_ratings">
+
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                  </p>
+                </div>
+                <p class="mald_text">Male, Maldives</p>
+
+                <div class="view_section">
+                  <h5 class="accom_amt">
+                    $ 1,700 LKR <span class="onwards">&nbsp; Onwards</span>
+                  </h5>
+                  <button class="view_accom">View</button>
+                </div>
+                <!-- $1,890 -->
+                <p class="strike_price">$1,890</p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="accom_sub_card">
+
+                <div class="nomad_img image-fluid">
+
+                </div>
+
+                <div class="cardetails">
+                  <p class="accom-right">Samann Grand</p>
+                  <p class="accom_ratings">
+
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                  </p>
+                </div>
+                <p class="mald_text">Male, Maldives</p>
+
+                <div class="view_section">
+                  <h5 class="accom_amt">
+                    $ 1,700 USD <span class="onwards">&nbsp; Onwards</span>
+                  </h5>
+                  <button class="view_accom">View</button>
+                </div>
+                <!-- $1,890 -->
+                <p class="strike_price">$1,890</p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="accom_sub_card">
+
+                <div class="nomad_img image-fluid">
+
+                </div>
+
+                <div class="cardetails">
+                  <p class="accom-right">Samann Grand</p>
+                  <p class="accom_ratings">
+
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                  </p>
+                </div>
+                <p class="mald_text">Male, Maldives</p>
+
+                <div class="view_section">
+                  <h5 class="accom_amt">
+                    $ 1,700 USD <span class="onwards">&nbsp; Onwards</span>
+                  </h5>
+                  <button class="view_accom">View</button>
+                </div>
+                <!-- $1,890 -->
+                <p class="strike_price">$1,890</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+<div class="footer">
+  <app-common-footer></app-common-footer>
+</div>
+</div>

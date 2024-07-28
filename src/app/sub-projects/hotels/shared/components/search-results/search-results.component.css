@@ -1,0 +1,1583 @@
+.blog-header {
+    /* height: 
+    1117px; */
+    height:
+        912px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../../../../../../assets/images/embrace.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    /* Ensure that child elements do not overflow */
+}
+
+.header {
+    position: absolute;
+    width: 90%;
+    /* Adjust width to a relative unit */
+    max-width: 1588px;
+    /* Set a maximum width */
+    height: 174px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    box-sizing: border-box;
+}
+
+.Inio_Sub {
+    background: url(../../../../../../assets/images/iniologo.png);
+    background-size: cover;
+    position: absolute;
+    left: -1.2%;
+    right: 92.7%;
+    top: 0%;
+    bottom: 50%;
+    cursor: pointer;
+}
+
+.usericon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 6px;
+    gap: 10px;
+    position: absolute;
+    left: 87.41%;
+    top: 7.47%;
+    border-radius: 63px;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.insid_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 118px;
+    height: 50px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ECE6DE;
+    margin: 0;
+    /* Remove default margin */
+
+
+}
+
+.name_text {
+    font-family: 'Optima';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 21px;
+    color: #ECE6DE;
+    margin: 0;
+    /* Remove default margin */
+    font-weight: 700;
+    font-size: 14px;
+
+
+
+
+}
+
+.down_arrow {
+    float: right;
+}
+
+.font_icon {
+    width: 10px;
+    height: 5px;
+    color: #ECE6DE;
+}
+
+
+
+
+
+.attraction {
+    position: absolute;
+    width: 90%;
+    max-width: 1592px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    /* height: 87px;
+   border: 1px solid black; */
+}
+
+.hr_line1 {
+    position: absolute;
+    left: 0.25%;
+    right: 0%;
+    top: 0%;
+    bottom: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.hr_line2 {
+    position: absolute;
+    left: 0.25%;
+    right: 0%;
+    top: 0%;
+    bottom: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 87px;
+}
+
+.all_icon {
+    position: absolute;
+    width: 47.72px;
+    height: 50.53px;
+    left: 4px;
+    top: 17px;
+
+}
+
+.fass {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    left: 15.62%;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+}
+
+.fascity {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    /* left: 163.62%; */
+    left: 97px;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+}
+
+.city {
+    position: absolute;
+    /* left: 142.76%; */
+    left: 175.76%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.dest_name {
+    position: absolute;
+    left: 0.25%;
+    right: 96.75%;
+    top: 83.03%;
+    bottom: 22.38%;
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ECE6DE;
+
+
+}
+
+.guest_icon {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    /* left: 163.62%; */
+    left: 210.52px;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+
+}
+
+.guest_text {
+    position: absolute;
+    left: 410.78%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+
+}
+
+.home_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 313px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+
+}
+
+
+.home_text {
+    position: absolute;
+    left: 626.78%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+
+.experinces_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left:
+        427.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.experinces_text {
+    position: absolute;
+    left:
+        410.51px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.destination_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 535.17px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+
+.destination_text {
+    position: absolute;
+    left: 515.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.transport_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 640.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.transport_text {
+    position: absolute;
+    left: 628.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+.internet_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 726.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+
+.internet_text {
+    position: absolute;
+    left: 716.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.nomads_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 811.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.nomads_text {
+    position: absolute;
+    left: 801.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.header_btn {
+    float: right;
+}
+
+.register_btn {
+    position: absolute;
+    left: 83%;
+    font-family: Optima;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.24px;
+    width: 104px;
+    height: 52px;
+    top: 17px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    position: absolute;
+    width: 104px;
+    height: 52px;
+    border: 1px solid #ECE6DE;
+    border-radius: 15px;
+    gap: 0px;
+    opacity: 0px;
+    background: transparent;
+    color: var(--Ivory, rgba(236, 230, 222, 1));
+
+}
+
+.signin_btn {
+    position: absolute;
+    left: 92.6%;
+    font-family: Optima;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.24px;
+    width: 104px;
+    height: 52px;
+    top: 17px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    position: absolute;
+    width: 104px;
+    height: 52px;
+    border: 1px solid #ECE6DE;
+    border-radius: 15px;
+    gap: 0px;
+    opacity: 0px;
+    /* background: transparent; */
+    color: var(--Khaki, rgba(44, 50, 31, 1));
+    ;
+}
+
+
+
+
+.Embrace_text {
+    position: absolute;
+    width: 909px;
+    height: 128px;
+    left: calc(50% - 909px / 2 + 0.5px);
+    top: 99px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+.search_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    isolation: isolate;
+    position: absolute;
+    /* width: 1407px; */
+    width: 100%;
+    height: 79px;
+    border-radius: 50px;
+    left: 0%;
+    left: calc(50);
+    top: 665px;
+    background: rgba(44, 50, 31, 0.5);
+
+}
+.select-sec{
+    width: 214px;
+    /* background: none; */
+    height: 36px;
+    color: #fff;
+    border: 1px solid rgba(44, 50, 31, 0.5);
+    outline: none;
+    background: rgba(44, 50, 31, 0.5);
+    margin-left: 14px;
+    /* font-family: 'Optima'; */
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.align-right {
+    margin-left: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 11px;
+    width: 115px;
+    height: 52px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    flex: none;
+    margin-right: 50px;
+    order: 1;
+    flex-grow: 0;
+    color: rgba(236, 230, 222, 1);
+}
+
+.auto-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
+    /* Adjusted for better spacing */
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 28px;
+    top: 14px;
+    z-index: 1;
+}
+
+.country-selector {
+    display: flex;
+    align-items: center;
+    /* Ensures items are centered vertically */
+    padding: 0;
+    gap: 16px;
+    /* Adjusted for tighter spacing between elements */
+    font-family: Optima;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgba(236, 230, 222, 1);
+}
+
+.country-selector i,
+.country-selector p {
+    margin: 0;
+    /* Removes default margins */
+    padding: 0;
+    /* Removes default padding */
+}
+
+.country-selector .line {
+    margin-left: 100px;
+    /* Adds space before the separator line */
+}
+.pax-no{
+    padding-left: 10px;
+}
+.align-right {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    width: 115px;
+    height: 52px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    color: rgba(236, 230, 222, 1);
+}
+
+.line {
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.accommodations_text {
+    position: absolute;
+    width: 252px;
+    height: 32px;
+    left: calc(50% - 252px / 2);
+    /* top: 1254px; */
+    top: 960px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A09935;
+}
+
+.property-cards {
+    width: 780px;
+    margin-top: 243px;
+    height: 371px;
+    float: inline-end;
+
+}
+
+.accom_sub_card {
+
+    max-width: 375px;
+    height: 371px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+
+}
+
+.nomad_img {
+    max-width: 90%;
+    /* width: 609px; */
+    height: 214.69px;
+    border-radius: 10px;
+    margin-top: 11.81px;
+    /* background: url(../../../../../../assets/images/nomad1.jpg); */
+    margin-left: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.cardetails {
+    display: flex;
+    justify-content: space-between;
+}
+.showmore{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+    cursor: pointer;
+}
+.accom-right {
+    width: 159.68px;
+    height: 22.54px;
+    left: 94.92px;
+    top: 5120.87px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 14.5px;
+    line-height: 130%;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+
+.accom_ratings {
+    width: auto;
+    height: 20.31px;
+    left: 366.69px;
+    top: 5123.13px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    margin-right: 26.51px;
+    display: flex;
+    margin-top: 15.8px;
+    align-items: center;
+    color: #2C321F;
+   
+}
+.acom-star{
+    margin: 0 8px;
+    color: gold;
+}
+.mald_text {
+    width: 100%;
+    left: 95px;
+    top: 5143.08px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    margin-top: -9.92px;
+    color: #6A7486;
+    margin-left: 24px;
+}
+
+.accom_amt {
+    margin-top: 29.99px;
+    width: 171.31px;
+    /* height: 23.69px; */
+    left: 95px;
+    top: 5325px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    margin-left: 24px;
+    align-items: center;
+    color: #A09935;
+
+}
+
+.view_accom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    /* position: absolute; */
+    width: 109.75px;
+    height: 44.01px;
+    left: 708px;
+    color: #fff;
+    top: 7857px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    margin-right: 27px;
+    margin-top: 22.5px;
+}
+
+.view_section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -24px;
+}
+
+.onwards {
+    width: 51.99px;
+    height: 13.95px;
+    left: 547.51px;
+    top: 7870px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+    margin-top: 1.99px;
+}
+
+.strike_price {
+
+    width: 58.92px;
+    height: 17.18px;
+    left: 493.16px;
+    top: 7885.62px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 12px;
+    margin-top: -10px;
+    margin-left: 24px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-decoration-line: line-through;
+    color: #6A7486;
+}
+
+.view-detailscard {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.filter-sec {
+    margin-top: 60px;
+}
+
+.filter-card {
+    max-width: 369px;
+    height: auto;
+    /* margin-bottom: 135px; */
+    background: #FFFFFF;
+}
+
+.filter-category {
+    margin-top: 35px;
+    margin-left: 18px;
+    max-width: 330.92px;
+    margin-bottom: 35px;
+    /* border: 1px solid red; */
+}
+
+.clear-filters {
+    float: inline-end;
+
+    height: 21px;
+    margin-top: 11px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 133.5%;
+    /* or 21px */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #A09935;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.filter-text {
+    /* Filter */
+    /* width: 54.83px; */
+    height: 32px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    /* identical to box height, or 32px */
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+/* .filter-names{
+    margin-top: 30px;
+} */
+.filter-head{
+    height: 27px;
+    margin-top: 30px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+.form-check-label{
+    /* Parking */
+/* height: 42px; */
+left: 29.91px;
+top: 41px;
+
+font-family: 'Optima';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 133.5%;
+/* or 21px */
+display: flex;
+align-items: center;
+
+color: #2C321F;
+
+
+}
+.checkboxresults-length{
+    float: inline-end;
+    margin-right: 10px;
+}
+
+.malidives-text {
+    float: inline-end;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    /* or 21px */
+    display: flex;
+    align-items: center;
+
+    color: #A09935;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+
+}
+.malidives-text i {
+    margin: 0 12px;
+}
+.product-card{
+    margin-top: 25px;
+}
+.left-side{
+    max-width: 1146px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    /* height: 4696px; */
+    background: #FFFFFF;
+}
+.filter-btn{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    /* width: 109.75px; */
+    height: 44.01px;
+    left: 708px;
+    color: #fff;
+    top: 7857px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    /* margin-right: 27px; */
+    /* margin-top: 22.5px; */
+
+}
+.city-hotels{
+    max-width: 1146px;
+}
+.hotel-card{
+    max-width: 364px;
+    height: 350px;
+    background: #FFFFFF;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+border-radius: 15px;
+padding: 1px;
+}
+.product_img {
+    /* max-width: 330px; */
+    max-width: 90%;
+    height: 183px;
+    margin-top: 18px;
+    border-radius: 10px;
+    /* margin-top: 11.81px; */
+    /* background: url(../../../../../../assets/images/resortpic.jpg); */
+    margin-left: 13.04px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.pagination {
+    margin-top: 80px;
+    height: 24px;
+    width: 419px;
+    margin-left: 46%;
+}
+
+.prev {
+    width: 32px;
+    height: 21px;
+    left: 688.5px;
+    top: 1266.96px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 130%; */
+    display: flex;
+    align-items: center;
+    color: #A09935;
+
+}
+
+.prev i {
+    margin-right: 10px;
+    /* Adjust as needed */
+    margin-top: 3px;
+}
+
+/* align-items: center;
+  margin-left: 24px; */
+.next i {
+    margin-left: 10px;
+    /* Adjust as needed */
+    margin-top: 3px;
+}
+
+.next {
+    width: 32px;
+    height: 21px;
+    left: 688.5px;
+    top: 1266.96px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 130%; */
+    display: flex;
+    align-items: center;
+    color: #A09935;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.numbers {
+    display: flex;
+    margin-left: 35px;
+
+}
+.no-rooms{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    width: 95%;
+    cursor: not-allowed;
+    /* width: 109.75px; */
+    height: 44.01px;
+    left: 708px;
+    color: #fff;
+    top: 7857px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    margin-left: 7px;
+    /* margin-right: 16px; */
+    /* margin-top: 26px; */
+    margin-top: 33.5px;
+}
+.numbers p {
+    margin-right: 29px;
+    /* Adjust as needed */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.search-bed{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(236, 230, 222, 1);
+    cursor: pointer;
+}
+.search_section {
+    position: absolute;
+    width: 100%;
+    height: 21px;
+    top: 625px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.footer{
+    margin-top: 80px;
+}
+
+
+
+
+/* mobile screen */
+
+/* large screen */
+@media (min-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-sec {
+        display: none;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+
+.large-screen{
+    display: none;
+}
+.navbar {
+    background-color: #2C321F;
+    height: 65px;
+    width: 100%;
+
+}
+
+.navbar-brand {
+    margin-top: -20px;
+}
+.mobilesignin_btn {
+    /* Frame 36929 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 15px;
+    gap: 10px;
+
+    width: 78px;
+    height: 36px;
+
+    background: #ECE6DE;
+    border-radius: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.Inio_Sub {
+    height: 65px;
+    width: 101.49px;
+    /* position: relative; */
+    left: 19px;
+    right: 0;
+    float: left;
+    /* margin: 0 auto; */
+    margin-bottom: -24px;
+    cursor: pointer;
+}
+.mob-backgrounds {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../../../../../../assets/images/embrace.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 687.18px;
+    width: 100%;
+}
+
+.mobile-attraction {
+    border: 1px solid;
+    height: 92.94px;
+    /* width: 375px; */
+    /* margin-top: 8.47px; */
+}
+
+.line {
+    /* position: absolute; */
+    left: 0.25%;
+    right: 0%;
+    top: 0%;
+    bottom: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 87px;
+
+}
+
+.all_mobicon {
+    position: absolute;
+    /* width: 100%; */
+    /* width: -webkit-fill-available; */
+    width: 300px;
+    height: 50.53px;
+    margin-top: 8.75px;
+    margin-left: 18px;
+    display: flex;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    white-space: nowrap;
+}
+
+.all_mobicon::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for WebKit-based browsers */
+}
+
+.mobicon_item {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    /* Adjust as necessary for spacing */
+}
+
+.mobicon_item i {
+    font-size: 16px;
+    display: block;
+    /* margin-bottom: 5px; */
+}
+
+.fass {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    left: 25px;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+}
+
+.sub-txt {
+    color: white;
+    color: white;
+    margin-top: 32px;
+    margin-left: -4px;
+    padding-left: 18px;
+}
+
+.guest_icon {
+    left: 176.52px;
+}
+
+.home_icon {
+    left: 260px;
+}
+
+.experinces_icon {
+    left: 334px;
+}
+
+.destination_icon {
+    left: 420.17px;
+}
+
+.internet_icon {
+    left: 579.51px;
+}
+
+.transport_icon {
+    left: 512.51px;
+}
+
+.nomads_icon {
+    left: 649.51px;
+
+}
+.embrace{
+    position: absolute;
+    width: 343px;
+    height: 172px;
+    left: calc(50% - 343px / 2);
+    top: 210px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+
+.search_section {
+    margin-top: 236.14px;
+    width: fit-content;
+    left: 6%;
+    margin-left: 26px;
+}
+
+.search-card {
+    height: 244px;
+    /* width: 100; */
+    max-width: 90%;
+    width: 90%;
+    border-radius: 19px;
+    margin-left: 16px;
+    /* margin-top: 308px; */
+    background: #2C321F80;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(25px);
+}
+
+.inner-search {
+    /* border: 1px solid green; */
+    margin-top: 32px;
+    width: 303px;
+    height: 153px;
+}
+
+.search {
+    margin-top: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+
+    width: 303px;
+    height: 36px;
+
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    color: #ECE6DE;
+}
+
+.search-country {
+    color: white;
+    height: 24px;
+    font-size: 16px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* width: 303px; */
+}
+
+.fa-caret-down {
+    float: inline-end;
+}
+
+.country-head {
+    margin-left: 14px;
+}
+
+.search-city {
+    margin-top: 20px;
+    color: white;
+    height: 24px;
+    font-size: 16px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.hotel-filter{
+    margin-top: 30px;
+    height: 106.82px;
+    width: 100%;
+}
+.malidives-text{
+    float: inline-end;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+
+}
+.clear-all{
+    display: flex;
+    gap: 100px;
+}
+.filter-textmob{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 133.5%;
+    /* identical to box height, or 19px */
+    display: flex;
+    align-items: center;
+    
+    color: #2C321F;
+    
+    
+}
+.clear-filt{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.filt-icon{
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    font-size: 16px;
+    flex-grow: 0;
+
+}
+.filter-names{
+    width: 88%;
+    margin-left: 10px;
+
+}
+.hotel-card{
+    width: 343px;
+}
+.product_img{
+    max-width: 314.08px;
+}
+.pagination{
+    margin-top: 40px;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 20px;
+}
+.next{
+    margin-left: 0px;
+}
+.numbers{
+    margin-left: 20px;
+}
+.mobile-footer{
+    margin-top: 60px;
+}
+.usericon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 5px;
+    gap: 10px;
+    /* position: absolute; */
+    /* left: 87.41%; */
+    top: 7.47%;
+    border-radius: 63px;
+    cursor: pointer;
+    position: relative;
+    left: 0%;
+
+}
+.logo{
+    height: 40px;
+width: 44px;
+border-radius: 25px;
+
+
+}
+.product_img{
+    background: none;
+}
+.fa-caret-down {
+    float: inline-end;
+    float: inline-end;
+    margin-right: 30px;
+    margin-top: 3px;
+
+}
+.select-sec{
+    width: 82%;
+    height: 36px;
+    color: #fff;
+    border: 1px solid rgba(44, 50, 31, 0.5);
+    outline: none;
+    background: rgba(44, 50, 31, 0.5);
+    margin-left: 6px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+.fa-bed{
+    color: #fff;
+}
+.search-card{
+    margin-top: 18rem;
+}
+}

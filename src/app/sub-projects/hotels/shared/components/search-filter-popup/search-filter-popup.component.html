@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <h1 class="right">Clear all filters</h1>
+    <h1 class="left">Filter</h1>
+
+  <button class="apply-filter">Apply Filter</button>
+    
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="well">Facilities</div>
+<div class="check-sec"> 
+        <div class="form-check" *ngFor="let facility of this.data.facilitity">
+            <div class="checkboxresults-length"></div>
+            <input class="form-check-input" type="checkbox" [value]="facility.id" id="{{facility.id}}">
+            <label class="form-check-label" [for]="facility.id">
+              {{facility.name}}
+            </label>
+          </div>
+      </div>
+    </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="well">Property rating</div>
+        <div class="check-sec"> 
+        <div *ngFor="let star of this.data.starRatings" class="form-check">
+            <div class="checkboxresults-length"></div>
+            <input class="form-check-input" type="checkbox" [value]="star" [id]="star">
+            <label class="form-check-label" [for]="star">
+              {{ star }}
+            </label>
+          </div>
+</div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="well">Room facilities</div>
+        <div class="check-sec"> 
+            <div class="form-check" *ngFor="let room of this.data.Allrooms">
+                <div class="checkboxresults-length"></div>
+                <input class="form-check-input" type="checkbox"  [value]="room.id" id="{{room.id}}">
+                <label class="form-check-label" [for]="room.id">
+                  {{room.name}}
+                </label>
+              </div>
+            </div>
+      </div>
+    </div>
+
+    <div  class="apply-div">
+        <button  class="apply-filter">Apply Filter</button>
+    
+    </div>
+
+   
+ 
+    
+  </div>

@@ -1,0 +1,542 @@
+.blog-header {
+    height: 738px;
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(../../../../../assets/images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden; /* Ensure that child elements do not overflow */
+}
+
+.header {
+    position: absolute;
+    width: 90%; /* Adjust width to a relative unit */
+    max-width: 1588px; /* Set a maximum width */
+    height: 174px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    box-sizing: border-box; 
+}
+
+.Inio_Sub {
+    background: url(https://s3-alpha-sig.figma.com/img/3f17/e9af/01aa0ece27c0706393000b4a364c59cd?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UGnC9Dh6AhUDqPuftOCEjjOGhCk6OiSenwcaPI2AdYqXgbsewmiKw3YG~R0LKkw2D8C6AxUWNWGpq6kWBEG7-s5HrI3EB6sNnihPP0UuXHRC81lhVEiHR4QD8QK9322od5r5dzVTYVCWpe16zYr0Q5lx1Hv8SZsyURssst1lhnd~wqLMbRL4qtrHfwjvrXGfQcxFM31iBQj7ZJ9ciZe23FNWT3KYoc3wpJ5yJaz61UYDq7jAKmSnk8ZOsq8HotpebmhTT-4llVFvjy5RRiuFL1LTP8X9juWLrxUXZfhASDyfE3jsJ1NMk~VX-QwkVuQmssLe~rkEWyV9KSAjFmVEgw__);
+    background-size: cover;
+    position: absolute;
+    left: -1.2%;
+    right: 92.7%;
+    top: 0%;
+    bottom: 50%;
+    cursor: pointer;
+}
+
+.usericon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 6px;
+    gap: 10px;
+    position: absolute;
+    left: 87.41%;
+    top: 7.47%;
+    border-radius: 63px;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.insid_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 118px;
+    height: 50px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ECE6DE;
+    margin: 0; /* Remove default margin */
+
+    
+}
+
+.name_text {
+    font-family: 'Optima';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 21px;
+    color: #ECE6DE;
+    margin: 0; /* Remove default margin */
+    font-weight: 700;
+    font-size: 14px;
+
+
+
+    
+}
+.down_arrow{
+    float: right;
+}
+.font_icon{
+    width: 10px;
+    height: 5px;
+    color: #ECE6DE;
+}
+
+
+
+
+
+.attraction{
+    position: absolute;
+    width: 90%; 
+    max-width: 1592px; 
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+   /* height: 87px;
+   border: 1px solid black; */
+}
+.hr_line1{
+position: absolute;
+left: 0.25%;
+right: 0%;
+top: 0%;
+bottom: 100%;
+width: 100%; 
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.hr_line2{
+position: absolute;
+left: 0.25%;
+right: 0%;
+top: 0%;
+bottom: 100%;
+width: 100%; 
+border: 1px solid rgba(255, 255, 255, 0.3);
+margin-top: 87px;
+}
+.all_icon{
+    position: absolute;
+    width: 47.72px;
+    height: 50.53px;
+    left: 4px;
+    top: 17px;
+
+}
+.fass{
+width:24.33px;
+height:24.33px;
+position: absolute;
+left: 15.62%;
+right: 15.63%;
+top: 12.49%;
+color: #ECE6DE;
+font-size: 22px;
+bottom: 12.51%;
+}
+
+.fascity{
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    /* left: 163.62%; */
+    left: 97px;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+}
+.city{
+    position: absolute;
+    /* left: 142.76%; */
+    left: 175.76%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+.dest_name{
+position: absolute;
+left: 0.25%;
+right: 96.75%;
+top: 83.03%;
+bottom: 22.38%;
+
+font-family: 'Optima';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #ECE6DE;
+
+
+}
+
+.guest_icon{
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    /* left: 163.62%; */
+    left: 210.52px;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+   
+}
+.guest_text{
+    position: absolute;
+    left: 410.78%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+
+}
+
+.home_icon{
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 313px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+  
+}
+
+
+.home_text{
+    position: absolute;
+    left: 626.78%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+
+.experinces_icon{
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 
+    427.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+.experinces_text{
+    position: absolute;
+    left: 
+    410.51px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.destination_icon{
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 535.17px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+
+.destination_text{
+    position: absolute;
+    left: 515.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.transport_icon{
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 640.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+.transport_text{
+    position: absolute;
+    left: 628.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+.internet_icon{
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 726.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+
+.internet_text{
+    position: absolute;
+    left:716.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.nomads_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 811.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.nomads_text{
+    position: absolute;
+    left:801.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.discovery_head{
+    position: absolute;
+    width: 535px;
+    height: 64px;
+    /* left: calc(50% - 535px / 2 - 526.5px); */
+    top: 132px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #ECE6DE;
+}
+.discovery_text{
+    position: absolute;
+    width: 928px;
+    height: 1px;
+    left: 0px;
+    top: 300px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #F4F4F4;
+
+}
+
+/* adventure */
+.adventure{
+    width: 1588px;
+height: 511px;
+top: 798px;
+left: 70px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+}
+
+
+
+
+
+
+/* Media queries for smaller resolutions */
+@media (max-width: 768px) {
+    .Inio_Sub {
+        background-size: cover;
+        position: absolute;
+        left: -1.2%;
+        right: 56.7%;
+        top: 0%;
+        bottom: 50%;
+        cursor: pointer;
+    }
+    .usericon{
+     left: 57.41%;
+    }
+    .discovery_text{
+        position: absolute;
+        width: 331px;
+        height: 1px;
+        left: 0px 
+    px
+    ;
+        top: 356px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #F4F4F4;
+
+    }
+    .discovery_head{
+        position: absolute;
+    width: 535px;
+    height: 64px;
+    top: 132px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #ECE6DE;
+    }
+}
+
+

@@ -1,0 +1,354 @@
+.right_side {
+    margin-top: 100px;
+}
+
+.logo, .signlogo {
+    width: 110px;
+    height: 55px;
+}
+
+.signlogo {
+    margin-top: 10px;
+}
+
+.createacc {
+    font-family: 'Optima';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 130%;
+    margin-top: 30px;
+    color: #2C321F;
+}
+
+.welcome {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2C321F;
+    margin-left: 25px;
+}
+
+.forgotpassword {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #A3A3A3;
+    margin-top: 15px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.signinuser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    width: 328px;
+    height: 52px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    color: white;
+    text-transform: none !important;
+    margin-left: 25px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.left-line, .right-line {
+    flex: 1;
+    height: 1px;
+    background-color: black;
+}
+
+.right-line {
+    margin-right: 28px;
+}
+
+.acc {
+    color: var(--Olive, #A09935);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    padding: 0 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 45px 23px;
+    gap: 10px;
+    width: 418px;
+    height: 611px;
+    margin-top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.email_password {
+    height: 87px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.member_section {
+    height: 190px;
+    width: 372px;
+}
+
+.terms_cond {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+    color: #2C321F;
+}
+
+.icon_text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    align-items: center;
+    color: #2C321F;
+    text-align: center;
+}
+
+.error_text {
+    color: #D93941;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+.form-title {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    color: #2C321F;
+}
+
+.name_label {
+    width: 87px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.password_label {
+    width: 160px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.leftimg {
+    background: url(../../../../../../assets/images/beachpic.jpg);
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100%;
+}
+.example-full-width{
+    width: 328px;
+}
+/* responsiveness */
+
+@media only screen and (max-width: 768px) {
+
+  
+    /* .d-flex {
+        margin-top: 69.86px;
+    } */
+    .signlogo{
+        width: 134px;
+    height: 85.15px;
+    margin-top: 69.86px;
+    margin-left: 29.5px;
+    margin-left: 0px;
+
+    }
+.welcome{
+    margin-left: 86px;
+}
+
+.cards {
+    width: 85%;
+    height: 510px;
+    padding: 8px 0px;
+    margin-right: 1rem;
+    margin-top: 21px;
+    background: #FFFFFF;
+    box-shadow: none;
+    border-radius: 20px;
+    /* margin-left: -1pc; */
+}
+.email_password{
+    height: 87px;
+    margin-top: 52px;
+    /* width: 343px; */
+    margin-left: 0px;
+}
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    .unlockinio {
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+
+    .icon_text {
+        font-size: 14px;
+    }
+
+    .icon_card {
+        padding: 10px;
+    }
+
+    .terms_cond {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .col-12 {
+        order: unset;
+    }
+
+    .col-12.order-1 {
+        order: 1;
+    }
+
+    .col-12.order-2 {
+        order: 2;
+    }
+
+    .leftimg {
+        background: none;
+    }
+
+    .image-mob {
+        /* background: url(../../../../../../assets/images/beachpic.jpg); */
+        background-size: cover !important;
+        background-position: center !important;
+        height: 120%!important;
+    }
+
+  
+    .example-full-width{
+        width: 343px;
+    }
+.forgotpassword{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #A3A3A3;
+    margin-top: 18px;
+    margin-left: 0px;
+    cursor: pointer;
+
+}
+
+
+    .signinuser{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 30px;
+        gap: 10px;
+        /* position: absolute; */
+        width: 343px;
+        height: 52px;
+        margin-left: 0px;
+        /* left: 16px; */
+        /* top: 415.84px; */
+        background: #A09935;
+        border: 1px solid #A09935;
+        border-radius: 50px;
+    
+    }
+  .line{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .acc{
+    color: var(--Olive, #A09935);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    padding: 0 10px;
+    margin-left: 10px;
+    margin-top: 4px;
+
+  }
+  .right-line{
+    margin-right: 24px;
+  }
+    .createacc{
+        margin-right: 14.5px;
+    }
+    .terms_cond{
+        width: 321px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .h-100{
+    height: 0px!important;
+  }
+  .gap{
+    height: 114.86px;
+  }
+}

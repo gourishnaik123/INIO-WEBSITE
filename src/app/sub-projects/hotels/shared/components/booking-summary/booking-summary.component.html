@@ -1,0 +1,422 @@
+<!--############# mobile section ##############  -->
+<div class="mobile-sec">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand">
+            <div class="Inio_Sub" routerLink="/" (click)="homeroute()"></div>
+        </a>
+        <div class="usericon" *ngIf="this.userDetails">
+            <div class="insid_cont">
+                <img routerLink="/profile-setting" class="logo"
+                    [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+                <div class="text-container">
+                    <p class="top_text">hello</p>
+                    <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+                </div>
+            </div>
+            <div class="down_arrow">
+                <i class="fa fa-solid fa-caret-down font_icon"></i>
+            </div>
+        </div>
+        <button *ngIf="!this.userDetails" routerLink="/login" class="mobilesignin_btn">Sign in</button>
+    </nav>
+
+
+    <div class="mob-backgrounds">
+        <div class="mobile-attraction">
+            <app-loader [show]="isLoading"></app-loader>
+
+            <div class="all_mobicon">
+                <i class="fa fa-solid fa-hotel fass"></i>
+                <p class="sub-txt">Resorts</p>
+
+                <i class="fa fa-solid fa-city fascity"></i>
+                <p class="sub-txt">City hotels</p>
+
+                <i class="fa fa-solid fa-house-user guest_icon"></i>
+                <p class="sub-txt">Guest house</p>
+
+                <i class="fa fa-home home_icon" aria-hidden="true"></i>
+                <p class="sub-txt">home stay</p>
+
+                <i class="fa fa-solid fa-ship experinces_icon"></i>
+                <p class="sub-txt">Experinces</p>
+
+                <i class="fa fa-regular fa-map destination_icon"></i>
+                <p class="sub-txt">Destinations</p>
+
+                <i class="fa fa-solid fa-taxi transport_icon"></i>
+                <p class="sub-txt">Transport</p>
+
+                <i class="fa fa-solid fa-globe internet_icon"></i>
+                <p class="sub-txt">Internet</p>
+
+                <i class="fa fa-solid fa-child nomads_icon"></i>
+                <p class="sub-txt">Nomads</p>
+            </div>
+            <!-- <div class="line"></div> -->
+        </div>
+
+        <div class="mobilesec-image">
+
+        </div>
+
+        <div class="hotel-mobile">
+            <h5 class="mobilehotel-name">{{this.propertydetails.hotelName}}</h5>
+            <p class="mobilehotel-loc">{{this.propertydetails.address}}</p>
+
+
+            <div class="ratings-sec">
+                <div class="ratings-box">
+                    <span class="rating-num">{{this.propertydetails.starRating}}</span>
+                </div>
+                <p class="stars"*ngFor="let star of [].constructor(propertydetails.starRating)">
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                   
+                </p>
+
+            </div>
+
+            
+            <div class="ammenities-container">
+                <div class="ammenities" *ngFor="let amenity of this.rooomAvailablity.hotelDetails[0].hotelAmenities">
+                  <h3>. {{amenity}},</h3>
+                </div>
+
+
+                <h5 class="cancel-head">Inclusions</h5>
+                <p *ngFor="let data of this.rateplan.inclusions" class="cancel-text">. {{data}}</p>
+               
+              </div>
+
+
+        </div>
+
+        <!-- mobilebooking card -->
+
+        <div class="mobilebooking-card">
+            <p class="mobilebooking-txt">Your booking details</p>
+
+            <div class="mobilecheck">
+
+                <div class="mobile-checkout">
+                    <p class="mobilecheckout-txt">Check-out</p>
+                    <p class="mobilecheckout-date">{{this.newCheckout}}</p>
+                    <p class="mobilecheckout-time">12:00 - 23:30</p>
+                </div>
+
+                <div class="mobile-checkin">
+                    <p class="mobilecheckout-txt">Check-In</p>
+                    <p class="mobilecheckin-date"> {{this.newCheckIn}}</p>
+                    <p class="mobilecheckout-time">12:00 - 23:30</p>
+                </div>
+                <span class="week">{{ numberOfNights > 1 ? numberOfNights + ' nights' : '1 night' }}</span>
+                <h5 class="stay-length">Total length of stay : </h5>
+                <h5 class="pax">You selected : <span class="room-detail">{{ this.noOfRooms}} room for {{this.totalAdults}} adults &nbsp; <span class="room-detail"*ngIf="this.noOfchildren>0">{{this.noOfchildren}} childrens</span> ({{this.selectedProprety}})</span></h5>
+
+
+            </div>
+
+        </div>
+
+
+                  <!--######### cancel details ########### ----->
+
+                  <div class="cancel-details">
+                    <h5 class="cancel-head">Cancellation policy</h5>
+                    <p *ngFor="let data of this.cancellationpolicy" class="cancel-text">. {{data}}</p>
+                   
+                </div>
+
+        <!-- ##### price summmary #####s -->
+
+        <div class="price-summary">
+            <p class="mobile-summary">Your price summary</p>
+
+            <div class="mobile-price">
+                <p class="mobile-amt">$ {{this.rateplan.price.mop|number:'1.0-0'}}</p>
+                <p class="mobile-orignal">Original price</p>
+            </div>
+
+            <div class="mobile-price">
+                <p class="mobile-discountamt text-danger">-${{strikeprice| number:'1.0-0'}}</p>
+                <p class="mobile-early">Early 2024 Deal</p>
+            </div>
+
+         
+            <!-- mobile main price -->
+            <!-- <div class="mobileprice-main">
+        dd
+     </div> -->
+
+
+            <div class="price-box">
+                <div class="inside-price">
+
+                    <div class="right-price">
+                        <p class="cut-price text-danger">$ {{this.rateplan.price.mop|number:'1.0-0'}}</p>
+
+                        <p class="big-price">$ {{this.rateplan.price.finalPrice|number:'1.0-0'}}</p>
+
+                        <p class="extra">+$10 taxes and charges in property currency</p>
+                    </div>
+
+
+
+                    <h1 class="left-price">Price</h1>
+                </div>
+
+            </div>
+
+            <h4 class="mobile-summary">Your price summary</h4>
+            <p class="mobile-taxes">Excluded $10 in taxes and charges</p>
+            <p class="mobile-taxes">10% property service charge $10</p>
+
+
+        </div>
+
+    
+
+        <button class="pay" (click)="Booking()">Proceed to Payment</button>
+
+  
+
+    <div class="mobile-footer">
+        <app-common-footer></app-common-footer>
+
+    </div>
+        </div>
+
+      
+       
+
+
+   
+
+</div>
+
+
+<!--**************** laptop screen or larger ****************** -->
+
+<div class="large-screen">
+    <div class="container-fluid blog-header">
+        <app-loader [show]="isLoading"></app-loader>
+
+        <div class="container-fluid header">
+            <div class="inio_png">
+                <div class="Inio_Sub" routerLink="/" (click)="homeroute()"></div>
+
+
+                <div class="usericon" *ngIf="this.userDetails">
+                    <div class="insid_cont">
+                        <img routerLink="/profile-setting" class="logo"
+                            [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+                        <div class="text-container">
+                            <p class="top_text">hello</p>
+                            <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+                        </div>
+                    </div>
+                    <div class="down_arrow">
+                        <i class="fa fa-solid fa-caret-down font_icon"></i>
+
+                    </div>
+                </div>
+
+                <div class="header_btn" *ngIf="!this.userDetails">
+                    <button routerLink="/sign-up" class="register_btn">Register</button>
+                    <button routerLink="/login" class="signin_btn">Sign in</button>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-----attraction-->
+        <div class="attraction">
+            <div class="hr_line1"></div>
+
+            <div class="all_icon">
+                <i class="fa fa-solid fa-hotel fass"></i>
+                <p class="dest_name">Resorts</p>
+
+                <i class="fa fa-solid fa-city fascity"></i>
+                <p class="city">City hotels</p>
+
+                <i class="fa fa-solid fa-house-user guest_icon"></i>
+                <p class="guest_text">Guest house</p>
+
+                <i class="fa fa-home home_icon" aria-hidden="true"></i>
+                <p class="home_text">home stay</p>
+
+                <i class="fa fa-solid fa-ship experinces_icon"></i>
+                <p class="experinces_text">Experinces</p>
+
+                <i class="fa fa-regular fa-map destination_icon"></i>
+                <p class="destination_text">Destinations</p>
+
+                <i class="fa fa-solid fa-taxi transport_icon"></i>
+                <p class="transport_text">Transport</p>
+
+                <i class="fa fa-solid fa-globe internet_icon"></i>
+                <p class="internet_text">Internet</p>
+
+                <i class="fa fa-solid fa-child nomads_icon"></i>
+                <p class="nomads_text">Nomads</p>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+      <!-- section -->
+      <div class="container-fluid">
+        <div class="section-image">
+
+            
+
+        </div>
+
+        <!-- <div class="mainbook">
+            <div class="booking-card">
+                <h5 class="bookingsum">Booking summary</h5>
+                <p class="payment-check">Check your details and proceed to payment</p>
+            </div>
+        </div> -->
+
+        <div class="mainbook">
+            <div class="booking-card">
+                <h5 class="bookingsum">Booking summary</h5>
+                <p class="payment-check">Check your details and proceed to payment</p>
+            </div>
+        </div>
+        
+
+        
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+            
+            <div class="right-card">
+                <div class="hotel-card">
+
+                    <div class="name-ratings">
+                        <div class="ratings-box">
+                            <span class="rating-num">{{this.propertydetails.starRating}}</span>
+                        </div>
+                        <p class="stars"*ngFor="let star of [].constructor(propertydetails.starRating)">
+                            <i class="fa fa-solid fa-star acom-star"></i>
+                           
+                        </p>
+                        <p class="hotel-name">{{this.propertydetails.hotelName}}</p>
+                        <p class="location">{{this.propertydetails.address}}</p>
+
+
+                        <div class="ammenities-container">
+                            <div class="ammenities" *ngFor="let amenity of this.rooomAvailablity.hotelDetails[0].hotelAmenities">
+                              <h3>. {{amenity}},</h3>
+                            </div>
+                          </div>
+
+                          <h5 class="booking-text">Inclusions</h5>
+                          <p *ngFor="let data of this.rateplan.inclusions" class="cancel-text">. {{data}}</p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                     <!--######### booking details ########### ----->
+
+                     <div class="booking-details">
+                        <h5 class="booking-text">Your booking details</h5>
+
+                        <div class="checkin-checkout">
+                            <div class="checkout">
+                                <p class="checkout-txt">Check-out</p>
+                                <p class="checkout-date">{{this.newCheckout}} </p>
+                                <p class="checkout-time">12:00 - 23:30</p>
+                            </div>
+
+                            <div class="check-in">
+                                <p class="checkout-txt">Check-in</p>
+                                <p class="checkout-date">{{this.newCheckIn }}</p>
+                                <p class="checkout-time">10:00 - 4:30</p>
+                            </div>
+                        </div>
+
+                        <h5 class="stay-length">Total length of stay : <span class="week"> {{ numberOfNights > 1 ? numberOfNights + ' nights' : '1 night' }}</span></h5>
+                        <h5 class="pax">You selected : <span class="week">{{ this.noOfRooms}} room for {{this.totalAdults}} adults &nbsp; <span class="week"*ngIf="this.noOfchildren>0">{{this.noOfchildren}} childrens</span> ({{this.selectedProprety}})</span>
+                        </h5>
+
+
+                    </div>
+
+
+                      <!--######### cancel details ########### ----->
+
+                      <div class="cancel-details">
+                        <h5 class="booking-text">Cancellation policy</h5>
+                        <p *ngFor="let data of this.cancellationpolicy" class="cancel-text">. {{data}}</p>
+                       
+                    </div>
+                <!-- summary card -->
+                <div class="summary-card">
+                    <h5 class="booking-text">Your price summary</h5>
+
+                    <div class="original-price">
+                        <p class="original-amt">$ {{this.rateplan.price.mop| number:'1.0-0'}}</p>
+                        <p class="def-price">Original price</p>
+                    </div>
+
+                    <div class="original-price">
+                        <p class="original-amt text-danger">-$ {{strikeprice| number:'1.0-0'}}</p>
+                        <p class="def-price">Early 2024 Deal</p>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="inside-price">
+
+                            <div class="right-price">
+                                <p class="cut-price text-danger">$ {{this.rateplan.price.mop| number:'1.0-0'}}</p>
+
+                                <p class="big-price">$ {{this.rateplan.price.finalPrice| number:'1.0-0'}}</p>
+
+                                <p class="extra">+$10 taxes and charges in property currency</p>
+                            </div>
+
+
+
+                            <h1 class="left-price">Price</h1>
+                        </div>
+
+
+
+                    </div>
+                    <p class="your-sum">Your price summary</p>
+                    <p class="inclusive">Excluded $10 in taxes and charges</p>
+                    <p class="inclusive">10% property service charge $10</p>
+                </div>
+                <button class="pay"  (click)="Booking()">Proceed to Payment</button>
+            </div>
+           
+        </div>
+
+
+
+
+
+
+
+        </div>
+       <!-- footer -->
+<div class="footer">
+    <app-common-footer></app-common-footer>
+</div>
+        </div>
+

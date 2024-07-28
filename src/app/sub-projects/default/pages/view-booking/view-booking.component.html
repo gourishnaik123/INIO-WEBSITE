@@ -1,0 +1,344 @@
+  <div class="profile_setting">
+    <div routerLink="/home-page" class="Inio_Sub"></div>
+  
+    <div class="profile_entities">
+      <span routerLink="/profile-setting" routerLinkActive="active-link"class="profile_subtext">Personal Information</span>
+      <span routerLink="/payment-page" class="profile_subtext profile_space"routerLinkActive="active-link">Payments</span>
+      <span routerLink="/change-password" class="profile_subtext profile_space"routerLinkActive="active-link">Security</span>
+      <span routerLink="/booking-details" class="profile_subtext profile_space"routerLinkActive="active-link">Bookings</span>
+      <span routerLink="/Cancellations-refund" class="profile_subtext"routerLinkActive="active-link">Cancellations and refunds</span>
+    </div>
+  </div>
+  
+  
+  <!-- for mobile -->
+
+  <nav style="background-color: #2C321F;" class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" ><div routerLink="/home-page" class="Inio_Sub"></div></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="color: white;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/profile-setting"routerLinkActive="active-link">Personal Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/payment-page"routerLinkActive="active-link">Payments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/change-password"routerLinkActive="active-link">Security</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/booking-details"routerLinkActive="active-link">Bookings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Cancellations-refund"routerLinkActive="active-link">Cancellations and refunds</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  
+  <!-- view booking top big screen -->
+  <div class="bigscreen-booking">
+  <div class="booking-section">
+    <h4 class="view_booking">Your confirmed booking details</h4>
+    <div class="print">
+        <button class="print-btn">
+            <i class="fa fa-solid fa-print"></i>
+            <p class="print-text">Print</p>
+        </button>
+        <button class="download-btn">
+            <i class="fa fa-solid fa-download"></i>
+            <p class="download-text">Download</p>
+        </button>
+    </div>
+    
+</div>
+
+<!-- view details -->
+<div class="view-detailscard">
+<div class="hotel-card">
+    <div class="left-img">
+    
+    </div>
+    <h3 class="resort-text">Resort details</h3>
+    <p class="hotel-name">Samann Grand Resort</p>
+
+    <h2 class="address">Address</h2>
+    <p class="sub-address">Samann Grand, 123 Ocean View Lane,  
+        Beachfront City.</p>
+
+    <h2 class="email">Email</h2>    
+    <p class="email-id">samanngrandemail.com</p>
+
+    <h2 class="Contact">Contact</h2>
+    <p class="contact-number">+11 22 213 1233 / +11 23 43 553</p>
+</div>
+
+
+</div>
+
+
+<!-- right side -->
+<div class="right">
+    <h1 class="booking-text">Booking Details</h1>
+
+    <div class="booking-details">
+    <div class="detail-item">
+        <h5 class="table_head">Reservation number</h5>
+        <span class="tplaces">124140104015SMNN</span>
+    </div>
+    <div class="detail-item">
+        <h5 class="table_head">Room Type</h5>
+        <span class="tplaces">Deluxe Ocean View Room</span>
+    </div>
+    <div class="detail-item">
+        <h5 class="table_head">Check-in date</h5>
+        <span class="tplaces">27th September 2024</span>
+    </div>
+    <div class="detail-item">
+        <h5 class="table_head">Check-out date</h5>
+        <span class="tplaces">30th September 2024</span>
+    </div>
+    <div class="detail-item">
+        <h5 class="table_head">Booking date</h5>
+        <span class="tplaces">29th January 2024</span>
+    </div>
+    <div class="detail-item">
+        <h5 class="table_head">Booking time</h5>
+        <span class="tplaces">11.47am</span>
+    </div>
+    </div>
+
+
+    <div class="detail-item guest">
+        <h5 class="table_head">Number of Guests</h5>
+        <span class="tplaces">2 Adults, 2 Children</span>
+    </div>
+
+
+    <!-- line -->
+    <div class="line">
+
+    </div>
+
+    <!-- experinces -->
+    <div class="experinces">
+    <h1 class="exp-text">Experience add-ons</h1>
+
+    <div class="exp-card"*ngFor="let exp of experiences">
+        <div class="exp-img"></div>
+        
+        <div class="experiences-set">
+            <h5 class="exp-head">Experience</h5>
+            <span class="exp-sub">{{ exp.name }}</span>
+        </div>
+        
+        <div class="experiences-set">
+            <h5 class="exp-head">Description</h5>
+            <span class="exp-sub">{{ exp.description }}</span>
+        </div>
+    
+        <div class="experiences-set">
+            <h5 class="exp-head">Location</h5>
+            <span class="exp-sub">{{ exp.location }}</span>
+        </div>
+    
+        <div class="experiences-set">
+            <h5 class="exp-head">Price</h5>
+            <span class="exp-sub">{{ exp.price }}$</span>
+        </div>
+    
+        <button class="req">Request removal</button>
+    </div>
+    
+</div>
+
+<div class="line">
+
+</div>
+
+
+<!-- payment details -->
+<div class="payment">
+    <h1 class="exp-text">Payment details</h1>
+    <div class="exp-card">
+   
+        
+        <div class="experiences-set">
+            <h5 class="exp-head">Payment method</h5>
+            <span class="exp-sub">Master card</span>
+        </div>
+
+        <div class="experiences-set">
+            <h5 class="exp-head">Payment done by</h5>
+            <span class="exp-sub">**** 1278</span>
+        </div>
+
+        <div class="experiences-set">
+            <h5 class="exp-head">Payment date</h5>
+            <span class="exp-sub">10/03/2024</span>
+        </div>
+
+        <div class="experiences-set">
+            <h5 class="exp-head">Payment time</h5>
+            <span class="exp-sub">12.02pm</span>
+        </div>
+
+        <div class="experiences-set">
+            <h5 class="exp-head">Total cost</h5>
+            <span class="exp-sub">$500.00</span>
+        </div>
+
+        <div class="experiences-set">
+            <h5 class="exp-head">Payment status</h5>
+            <span class="exp-sub">Processing</span>
+        </div>
+
+        
+</div>
+
+
+<div class="line">
+
+</div>
+
+
+
+<!-- ##### MANAGE BOOKING ###### -->
+<div class="manage-booking">
+
+    <div class="manage-card"> 
+    <h1 class="exp-text">Manage Booking</h1>
+
+    <button  class="float-right">Request a cancellation</button>
+    <h4 class="cancel-text">Free cancellation until 30th March 2024. After this date, a cancellation fee equivalent to one night's stay will apply.</h4>
+
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<!-- mobile section -->
+<div class="mobile-section">
+ <h1 class="booking-heading">Your confirmed booking details</h1>
+ <!-- booking-card -->
+ <div class="booking-card">
+    <div class="property-image"></div>
+    <div class="resort-details">Resort details</div>
+    <div class="resort-name">Sanam Grand resort</div>
+    <div class="property-address">Address</div>
+    <div class="property-detailadd">Samann Grand, 123 Ocean View Lane,  
+        Beachfront City.</div>
+        <div class="email-head">Email</div>
+        <div class="email-address">samanngrandemail.com</div>
+        <div class="contact-text">Contact</div>
+        <div class="contact-id">+11 22 213 1233 / +11 23 43 553</div>
+ </div>
+
+ <!-- ***booking-detail card -->
+<div class="guest-booking">
+<div class="booking-head">Booking Details</div>
+<div class="reservation-number">Reservation number</div>
+<div class="reservation-id">124140104015SMNN</div>
+<div class="room-type">Room Type</div>
+<div class="reservation-id">Deluxe Ocean View Room</div>
+
+<div class="room-type">Check-in date</div>
+<div class="reservation-id">27th September 2024</div>
+
+<div class="room-type">Check-out date</div>
+<div class="reservation-id">27th September 2024</div>
+
+<div class="room-type">Booking date</div>
+<div class="reservation-id">20th September 2024</div>
+
+<div class="room-type">Booking Time</div>
+<div class="reservation-id">11:47am</div>
+
+<div class="room-type">Number of Guests</div>
+<div class="reservation-id">2 Adults, 2 Children</div>
+</div>
+<div class="experience-text">Experience add-ons</div>
+
+<!-- experience card -->
+<div class="experience-card"*ngFor="let exp of experiences">
+    <div class="exp-image"></div>
+    <div class="experience-sec" >
+        <h4 class="price-head">Price</h4>
+        <h4  class="experience-head">Experience</h4>
+        
+        <h2 class="exp-price">{{exp.price}}$</h2>
+        <h2 class="exp-name">{{exp.name}}</h2>
+    </div>
+    <div class="description-head">Description</div>
+    <div class="description-text">{{exp.description}}</div>
+
+    <div class="description-head">Location</div>
+
+    <div class="req-btn">Request removal</div>
+    <div class="city-name">{{exp.location}}</div>
+</div>
+
+
+
+
+<!-- payment card -->
+<div class="payment-section">
+    <h4 class="payment-head">Payment details</h4>
+    <div class="paymentmethod">Payment method</div>
+    <div class="methodname">Master card</div>
+
+    <div class="paymentdone">Payment done by</div>
+    <div class="methodname">**** 1278</div>
+
+
+    <div class="paymentdone">Payment done </div>
+    <div class="methodname">10/03/2024</div>
+
+
+    <div class="paymentdone">Payment time </div>
+    <div class="methodname">12.02pm</div>
+
+    <div class="paymentdone">Total cost </div>
+    <div class="methodamt">$500.00</div>
+
+    <div class="paymentdone">Payment status</div>
+    <div class="methodname">Processing</div>
+</div>
+
+<!-- manage booking card -->
+<div class="managebooking">
+    <div class="manage-text">Manage Booking</div>
+    <p class="booking-rule">Free cancellation until 30th March 2024. After this date, a cancellation fee equivalent to one night's stay will apply.</p>
+   <button class="cancel-btn">Request a cancellation</button>
+</div>
+
+<!-- download-print -->
+<div class="print-download">
+    <div class="download-click">  <i class="fa fa-solid fa-download"></i> Download</div>
+    <div class="printsec"><i class="fa fa-solid fa-print"></i> Print</div>
+</div>
+</div>
+
+
+
+<div class="footer">
+    <app-reusable-footer></app-reusable-footer>
+
+</div>
+<!-- <app-reusable-footer></app-reusable-footer> -->
+
+
+
+

@@ -1,0 +1,136 @@
+<div class="container-fluid image-mob h-100">
+  <div class="row h-100">
+    <div class="col-12 col-md-6 order-2 order-md-1 p-0">
+      <div class="leftimg h-100 w-100"></div>
+    </div>
+
+    <div
+      class="col-12 col-md-6 order-1 order-md-2 d-flex flex-column align-items-center justify-content-center"
+    >
+      <img class="signlogo" src="./assets/images/inio.png" alt="Inio Logo" />
+
+      <div class="signupcard">
+        <div class="signup_section">
+          <h5 class="joinin">Join in to unlock best of the Inio.</h5>
+
+          <div class="email-verification">
+            <mat-form-field class="example-half-width firstnameleft">
+              <label class="name_label" for="first-name">First Name *</label>
+              <input
+                type="text"
+                matInput
+                name="First name"
+                [(ngModel)]="signupmodel.firstname"
+              />
+            </mat-form-field>
+
+            <mat-form-field class="example-half-width ml-2">
+              <label class="name_label" for="first-name">Last Name *</label>
+              <input
+                type="text"
+                matInput
+                name="Last name"
+                [(ngModel)]="signupmodel.lastname"
+              />
+            </mat-form-field>
+          </div>
+
+          <mat-form-field class="example-full-width">
+            <label class="password_label" for="first-name">Email id *</label>
+            <input
+              type="text"
+              matInput
+              name="Email Id"
+              [(ngModel)]="signupmodel.emailid"
+            />
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <label class="password_label" for="first-name"
+              >Your Password *</label
+            >
+            <input
+              type="password"
+              matInput
+              [(ngModel)]="signupmodel.password"
+              [type]="hide ? 'password' : 'text'"
+              #passwordField="ngModel"
+              name="password"
+              required
+              minlength="10"
+            />
+            <mat-error
+              class="password_validation"
+              *ngIf="
+                passwordField.invalid &&
+                (passwordField.dirty || passwordField.touched)
+              "
+            >
+              Your password must be at least 10 characters
+            </mat-error>
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="togglePasswordVisibility()"
+            >
+              <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+            </button>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width verifypss">
+            <label class="password_label" for="first-name"
+              >Verify your Password *</label
+            >
+            <input
+              type="password"
+              matInput
+              [(ngModel)]="signupmodel.verifypassword"
+              [type]="verifyhide ? 'password' : 'text'"
+            />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="toggleVefiryPasswordVisibility()"
+            >
+              <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+            </button>
+          </mat-form-field>
+
+          <button type="button" class="btn signinuser">join in</button>
+
+          <div class="signup_member">
+            <div class="line">
+              <div class="left-line"></div>
+              <div class="acc">Already a member?</div>
+              <div class="right-line"></div>
+            </div>
+
+            <p class="text-center createacc">
+              <span
+                routerLink="/email-login"
+                style="
+                  text-decoration: underline;
+                  cursor: pointer;
+                  font-weight: 700;
+                "
+                >Sign in
+              </span>
+              using your Inio Account.
+            </p>
+
+            <p class="terms_cond">
+              By proceeding, you agree to our Terms of Use and confirm you have
+              read our Privacy and Cookie Statement.
+            </p>
+
+            <p class="terms_cond">
+              This site is Protected by reCAPTCHA and the Google Privacy Policy
+              and Terms of Service apply.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-height"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,146 @@
+<app-reusable-headers></app-reusable-headers>
+
+<!-- ###### bookings-top ######## ---->
+
+<div class="booking-section">
+  <h4 class="view_booking">View your bookings</h4>
+  <p class="booking_text">Lorem ipsum dolor sit amet consectetur. Vitae etiam eget vestibulum leo id mattis vel.</p>
+
+  <!-- accomdentation **** sort  -->
+  <div class="accomdentation-sort">
+    <p class="accom-text">Accommodations</p>
+    <p class="transport-text">Transport</p>
+    <p class="experinces-text">Experiences</p>
+
+    <p class="right status">Sort by: Status &nbsp; <i class="fa fa-regular fa-sort"></i></p>
+    <p class="sort_lastyear">Sort by: All/ Last Year &nbsp; <i class="fa fa-regular fa-sort"></i></p>
+  </div>
+
+  <!-- accomdenation for mobile -->
+  <div class="mobile-accomd">
+    <div class="mobile-bar">
+      <i class="fa fa-thin fa-filter filter"></i>
+
+
+      <h3 class="accomendtation-left" (click)="sortContent()">
+        {{currentTabName}} <i class="fa fa-regular fa-sort"></i></h3>
+
+
+      <div class="tab-content">
+        <div *ngIf="selectedTab === 'accommodations'">
+          <div class="mobile-card"*ngFor="let booking of bookings" >
+            <div class="mobile-image"></div>
+            <!-- hotelname & price -->
+            <div class="name-price">
+              <h3 class="hotelprice">{{ booking.price }}</h3>
+
+              <h5 class="propertyname">Hotel name <span class="render-property">{{ booking.hotelName }}</span></h5>
+
+            </div>
+            <!-- date time -->
+            <div class="booking-time">
+              <h3 class="timing">Booking time </h3>
+
+              <h3 class="booking-date">Booking date </h3>
+
+              <h3 class="timing date-sec">{{ booking.bookingTime }}</h3>
+
+              <h3 class="booking-date date-sec">{{ booking.bookingDate }} </h3>
+            </div>
+            <!-- status -->
+            <div class="status-sec">
+              <h4 class="booking-status">Completed</h4>
+              <h3 class="statustext">Status</h3>
+              <!-- view button -->
+              <button routerLink="/booking-details"  class="viewbutton">view</button>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div *ngIf="selectedTab === 'transportation'">
+          <h3>Transportation</h3>
+
+        </div>
+        <div *ngIf="selectedTab === 'experiences'">
+          <h3>Experiences</h3>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!--  boking list card  for large screen-->
+
+  <div class="booking-card">
+    <div *ngFor="let booking of bookings" class="booking-item">
+      <div class="booking-left">
+        <div class="booking-img"></div>
+        <div class="booking-details">
+          <div class="detail-item">
+            <h5 class="table_head">Hotel name</h5>
+            <span>{{ booking.hotelName }}</span>
+          </div>
+          <div class="detail-item">
+            <h5 class="table_head">Booking date</h5>
+            <span>{{ booking.bookingDate }}</span>
+          </div>
+          <div class="detail-item">
+            <h5 class="table_head">Booking time</h5>
+            <span>{{ booking.bookingTime }}</span>
+          </div>
+          <div class="detail-item">
+            <h5 class="table_head">Payment Method</h5>
+            <span>{{ booking.paymentMethod }}</span>
+          </div>
+          <div class="detail-item">
+            <h5 class="table_head">Price</h5>
+            <span>{{ booking.price }}</span>
+          </div>
+          <div class="detail-item">
+            <h5 class="table_head">Status</h5>
+            <span>{{ booking.status }}</span>
+          </div>
+        </div>
+      </div>
+      <button routerLink="/booking-details" class="view_btn">view</button>
+    </div>
+
+
+    <!-- **** PAGINATION ***** -->
+
+    <div class="pagination">
+      <h3 class="prev"><i class="fa fa-solid fa-arrow-left"></i>Prev </h3>
+      <div class="numbers">
+        <div class="numbers">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          <p>...</p>
+          <h3 class="next">Next <i class="fa fa-solid fa-arrow-right"></i> </h3>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- footer -->
+
+
+</div>
+
+<div class="footer">
+  <app-reusable-footer></app-reusable-footer>
+</div>

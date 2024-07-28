@@ -1,0 +1,20 @@
+<ng-container [ngSwitch]="type.toLowerCase()">
+    <ng-container *ngSwitchCase="'time'">
+        <div class="no_data_message" style="height: unset;">
+            <img src="./assets/images/slot-not-available.png" alt="No Data" style="width: 25%;">
+            <p style="font-size: .8rem;">{{ message ? message : 'Oops, No time slots are available!' }}</p>
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="'search'">
+        <div class="no_data_message" style="height: unset;">
+            <img src="./assets/images/search-empty.png" alt="No Data" style="width: 40%;">
+            <p style="font-size: .8rem;">{{ message ? message : 'No , services offered yet !' }}</p>
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+        <div class="no_data_message">
+            <img src="./assets/images/no-data.png" alt="No Data">
+            <p>{{ message ? message : 'No , services offered yet !' }}</p>
+        </div>
+    </ng-container>    
+</ng-container>

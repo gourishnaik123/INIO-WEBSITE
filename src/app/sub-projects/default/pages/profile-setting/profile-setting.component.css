@@ -1,0 +1,201 @@
+
+
+/* second */
+.profile_detail_card {
+    background: #FFFFFF;
+    position: absolute;
+    width: 90%;
+    max-width: 1095px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 194px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile_subcard {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.profile_header {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* text-align: center; */
+    color: #A09935;
+}
+
+.profile_para {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    /* text-align: center; */
+    margin-top: 7px;
+    color: #A3A3A3;
+}
+
+.profile_picture {
+    width: 132px;
+    height: 132px;
+    margin: 20px auto;
+    margin-top: 65px;
+    border-radius: 50%; /* Ensure the image is circular */
+    overflow: hidden; /* Ensure the image fits within the border radius */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container without distortion */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+mat-form-field {
+    width: calc(50% - 10px);
+    /* margin-bottom: 20px; */
+}
+
+.name_label {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #2C321F;
+}
+
+.save-changes {
+    display: flex;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 151.5%;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 30px;
+    color: rgba(236, 230, 222, 1);
+    gap: 10px;
+    margin: 50px auto 0;
+    width: 328px;
+    height: 52px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .profile_detail_card {
+        width: 90%;
+        top: 242px;
+        box-shadow: none;
+    }
+
+    .profile_picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    mat-form-field {
+        width: 100%;
+    }
+
+    .save-changes {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 30px;
+        gap: 10px;
+        width: 326px;
+        margin-left: -18px;
+        height: 52px;
+        background: #A09935;
+        border: 1px solid #A09935;
+        border-radius: 50px;
+    }
+    .profile_header{
+        width: 100%;
+        height: 31px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #A09935;
+    }
+    .profile_para{
+        width: 100%;
+        height: 42px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        color: #A3A3A3;
+    }
+    .profile_subcard{
+        margin-top: 35px;
+    }
+    .profile_picture{
+        margin-top: 50px;
+    }
+    .flex-container{
+        margin-top: 0px!important;
+    }
+    .profile_detail_card{
+        background: #FFFFFF;
+        position:relative;
+        top: 0px;
+    
+    }
+    
+}
+
+
+
+/* footer */
+.footers{
+    margin-top: 1020px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+   
+    
+    .footers{
+        margin-top: 10px;
+    }
+  
+}
+

@@ -1,0 +1,115 @@
+<app-reusable-headers></app-reusable-headers>
+
+<!-- ##### payment methods header ##### -->
+
+<div class="payment">
+<h2 class="payment_heading">Your Payment Methods</h2>
+<p class="payment_subtext">Lorem ipsum dolor sit amet consectetur. Vitae etiam eget vestibulum leo id mattis vel.</p>
+</div>
+
+
+<!-- **** debit card UI ***** -->
+<div class="debit_card">
+    <div class="only-card"> 
+    <div (click)="setDefaultCard(card)" *ngFor="let card of cards; let i = index" 
+         [ngClass]="{'transaction-card-margin': i > 0}" 
+         class="transaction-card">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="well">
+                    <img class="cardimg" [src]="card.imgSrc">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2 class="card-name">
+                    {{ card.name }}
+                    <span class="card-name default" *ngIf="card.isDefault && i === 0">(Default)</span>
+                </h2>
+                <p class="card_number">{{ card.number }}</p>
+            </div>
+            <div class="col-md-2" *ngIf="card.isDefault">
+                <div class="tick-sec">
+                    <div class="tick">
+                        <i class="fas fa-check insidetick"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+
+</div>
+<!-- mobile payment card -->
+
+<div class="mobile-sec">
+  <div class="card" *ngFor="let card of cards; let i = index" (click)="setDefaultCard(card)" [ngClass]="{'transaction-card-margin': i > 0}">
+    <div class="card-body">
+      <div class="well">
+        <img class="cardimg" [src]="card.imgSrc" alt="Card Image">
+      </div>
+      <div class="card_name">{{ card.name }}</div>
+      <span class="def" *ngIf="card.isDefault && i === 0">(Default)</span>
+      <div class="tick-sec" *ngIf="card.isDefault">
+        <div class="tick">
+          <i class="fas fa-check insidetick"></i>
+        </div>
+        <p class="number-card">{{ card.number }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+    
+    <!-- ########### ADDITION OF NEW CARD ############ -->
+
+<div class="new_cardaddition">
+    <h4 class="addcard">Add a new card</h4>
+    <p class="card_para">Enter your card details</p>
+    <!-- *** payment details ***** -->
+    <div class="payment-details">
+        <div class="payment-setler">
+
+            <div class="passworddiv"> 
+                <label class="currentname_label" >Payment method name</label>
+                <input  type="text"class="current_input" id="first-name" name="first_name"  />
+              </div>
+
+              <div class="cardnumdiv"> 
+                <label class="currentname_label" >Card number</label>
+                <input  type="number"class="current_input" id="first-name" name="first_name"  />
+              </div>
+
+            <div class="datecsv"> 
+              <div class="passworddiv"> 
+                <label class="currentname_label">MM/YY</label>
+                <input type="number" class="date_input" id="payment-name" name="payment_name" />
+            </div>
+        
+            <div class="passworddiv"> 
+                <label class="currentname_label csvlbl">CSV</label>
+                <input type="number" class="current_input csv" id="payment-name" name="payment_name" />
+            </div>
+        </div>
+        <p class="setdefault"><span ><input class="cbox" type="checkbox"> </span>Set as default</p>
+
+        </div>
+        
+
+    </div>
+    <button class="addcardbtn">Add card</button>
+    </div>
+    </div>
+
+    <!-- FOOTER __ SECTION -->
+    <div class="footers">
+        <app-reusable-footer></app-reusable-footer> 
+      </div>
+ 
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+
+  <!-- old -->
+  <div class="card" *ngFor="let room of roomsAndPaxs; let i = index">
+    <h5 class="adult-text">Room: {{ i + 1 }} </h5>
+  
+    <!-- Adults input -->
+    <div class="heading-container">
+      <div class="rect-input-container">
+        <div class="symbolminus"(click)="onDecreasePaxCount(i, 'adults')" >-</div>
+        <input type="text" value="{{room.paxs.adults}}"  readonly class="rect-input" />
+        <div class="symbol"(click)="onIncreasePaxCount(i, 'adults')">+</div>
+      </div>
+      <span class="adult-text">Adults</span>
+    </div>
+  
+    <!-- Children input -->
+    <div class="heading-container mt-4">
+      <div class="rect-input-container">
+        <div class="symbolminus"(click)="onDecreasePaxCount(i, 'childrens')" >-</div>
+        <input type="text" value="{{room.paxs.childrens.length}}"  readonly class="rect-input" />
+        <div class="symbol" (click)="onIncreasePaxCount(i, 'childrens')">+</div>
+      </div>
+      <span class="adult-text">Children</span>
+    </div>
+  
+  
+
+  <div class="heading-container mt-2" *ngFor="let child of room.paxs.childrens; let j = index">
+    <div class="rect-input-container">
+      <div class="symbolminus" (click)="onDecreaseChildAge(i, j)">-</div>
+      <input type="text" [(ngModel)]="child.age" readonly class="rect-input" />
+      <div class="symbol"(click)="onIncreaseChildAge(i, j)">+</div>
+  
+
+    </div>
+    <span class="adult-text">Choose child {{ j + 1 }}'s age</span>
+  </div>
+  
+</div>
+
+  
+  <!-- Rooms input -->
+  <div class="card">
+    <div class="heading-container mt-2">
+      <div class="rect-input-container">
+        <div class="symbolminus" (click)="onRemoveRooms()">-</div>
+        <input type="text" value="{{ roomsAndPaxs.length }}" readonly class="rect-input" />
+        <div class="symbol" (click)="onAddMoreRooms()">+</div>
+      </div>
+      <span class="adult-text">Rooms</span>
+    </div>
+  </div>
+
+  
+  <button class="done" (click)=" onClickDoneBtn()">Done</button>

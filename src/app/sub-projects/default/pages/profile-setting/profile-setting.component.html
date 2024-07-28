@@ -1,0 +1,80 @@
+<app-reusable-headers></app-reusable-headers>
+
+
+ <div class="profile_detail_card">
+    <div class="profile_subcard">
+        <h5 class="profile_header">Personalize your profile</h5>
+        <p class="profile_para">Lorem ipsum dolor sit amet consectetur. Vitae etiam eget vestibulum leo id mattis vel</p>
+
+        <!-- Profile Picture -->
+        <div class="profile_picture">
+            <img  [src]=" this.photo ||'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+
+        </div>
+        <!-- <div class="profile_picture"src=" 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'"></div> -->
+<!-- <img routerLink="/profile-setting" class="logo" [src]=" 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'"> -->
+        <!-- Form -->
+        <div class="email-verification flex-container">
+            <mat-form-field class="example-full-width firstname">
+                <label class="name_label" for="first-name">First Name</label>
+                <input type="text" matInput id="first-name" name="first_name" />
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width lastname">
+                <label class="name_label" for="last-name">Last Name</label>
+                <input type="text" matInput id="last-name" name="last_name" />
+            </mat-form-field>
+        </div>
+
+        <div class="flex-container second-container">
+            <mat-form-field class="example-full-width email">
+                <label class="name_label" for="email">Email</label>
+                <input type="email" matInput id="email" name="email" />
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width contact-number">
+                <label class="name_label" for="contact-number">Contact Number</label>
+                <input type="tel" matInput id="contact-number" name="contact_number" />
+            </mat-form-field>
+        </div>
+
+        <div class="flex-container second-container">
+            <mat-form-field class="example-full-width country">
+                <label class="name_label" for="country">Country</label>
+                <input type="text" matInput id="country" name="country" />
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width designation">
+                <label class="name_label" for="designation">Designation</label>
+                <input type="text" matInput id="designation" name="designation" />
+            </mat-form-field>
+        </div>
+
+        <div class="flex-container second-container">
+            <mat-form-field class="example-full-width firstname">
+                <label class="name_label" for="dob">Date of Birth</label>
+                <input type="text" matInput id="dob" name="dob" />
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width lastname">
+                <label class="name_label" for="gender">Gender</label>
+                <input type="text" matInput id="gender" name="gender" />
+            </mat-form-field>
+        </div>
+
+        <button class="save-changes">Save Changes</button>
+    </div>
+</div>
+
+
+
+
+<!-- foooter section -->
+<div class="footers" > 
+
+      
+        
+<app-reusable-footer></app-reusable-footer>
+    
+
+</div>

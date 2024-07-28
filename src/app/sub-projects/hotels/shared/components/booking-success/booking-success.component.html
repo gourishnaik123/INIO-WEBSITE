@@ -1,0 +1,216 @@
+<!--############# mobile section ##############  -->
+<div class="mobile-sec">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand">
+            <div class="Inio_Sub" routerLink="/" (click)="homeroute()"></div>
+        </a>
+        <div class="usericon" *ngIf="this.userDetails">
+            <div class="insid_cont">
+                <img routerLink="/profile-setting" class="logo"
+                    [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+                <div class="text-container">
+                    <p class="top_text">hello</p>
+                    <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+                </div>
+            </div>
+            <div class="down_arrow">
+                <i class="fa fa-solid fa-caret-down font_icon"></i>
+            </div>
+        </div>
+        <button *ngIf="!this.userDetails" routerLink="/login" class="mobilesignin_btn">Sign in</button>
+    </nav>
+
+
+
+    <div class="mob-backgrounds">
+        <div class="mobile-attraction">
+            <div class="all_mobicon">
+                <i class="fa fa-solid fa-hotel fass"></i>
+                <p class="sub-txt">Resorts</p>
+
+                <i class="fa fa-solid fa-city fascity"></i>
+                <p class="sub-txt">City hotels</p>
+
+                <i class="fa fa-solid fa-house-user guest_icon"></i>
+                <p class="sub-txt">Guest house</p>
+
+                <i class="fa fa-home home_icon" aria-hidden="true"></i>
+                <p class="sub-txt">home stay</p>
+
+                <i class="fa fa-solid fa-ship experinces_icon"></i>
+                <p class="sub-txt">Experinces</p>
+
+                <i class="fa fa-regular fa-map destination_icon"></i>
+                <p class="sub-txt">Destinations</p>
+
+                <i class="fa fa-solid fa-taxi transport_icon"></i>
+                <p class="sub-txt">Transport</p>
+
+                <i class="fa fa-solid fa-globe internet_icon"></i>
+                <p class="sub-txt">Internet</p>
+
+                <i class="fa fa-solid fa-child nomads_icon"></i>
+                <p class="sub-txt">Nomads</p>
+            </div>
+            <!-- <div class="line"></div> -->
+        </div>
+
+
+<div class="mobilebooking">
+    <div class="success-tick"></div>
+    <h5 class="head-txt">Your Booking is Success</h5>
+    <p class="mobsub-txt">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying</p>
+
+
+    <div class="hotel-mobile">
+        <h5 class="mobilehotel-name"> {{this.propertydetails.hotelName}}</h5>
+        <p class="mobilehotel-loc">{{this.propertydetails.address}}</p>
+    
+    
+        <div class="ratings-sec">
+            <div class="ratings-box">
+                <span class="rating-num">{{this.propertydetails.starRating}}</span>
+            </div>
+            <p class="stars"*ngFor="let star of [].constructor(propertydetails.starRating)">
+                <i class="fa fa-solid fa-star acom-star"></i>
+               
+            </p>
+    
+        </div>
+</div>
+
+<div class="button-container">
+    <button  class="home-back"routerLink="/">Back to Home</button>
+    <button class="manage-booking">Manage Booking</button>
+  </div>
+    
+
+        </div>
+        <div class="footer">
+            <app-common-footer></app-common-footer>
+        </div>
+        </div>
+       
+</div>
+
+
+<!--**************** laptop screen or larger ****************** -->
+
+<div class="large-screen">
+    <div class="container-fluid blog-header">
+        <div class="container-fluid header">
+            <div class="inio_png">
+                <div class="Inio_Sub" routerLink="/" (click)="homeroute()"></div>
+
+
+                <div class="usericon" *ngIf="this.userDetails">
+                    <div class="insid_cont">
+                        <img routerLink="/profile-setting" class="logo"
+                            [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+                        <div class="text-container">
+                            <p class="top_text">hello</p>
+                            <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+                        </div>
+                    </div>
+                    <div class="down_arrow">
+                        <i class="fa fa-solid fa-caret-down font_icon"></i>
+
+                    </div>
+                </div>
+
+                <div class="header_btn" *ngIf="!this.userDetails">
+                    <button routerLink="/sign-up" class="register_btn">Register</button>
+                    <button routerLink="/login" class="signin_btn">Sign in</button>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-----attraction-->
+        <div class="attraction">
+            <div class="hr_line1"></div>
+
+            <div class="all_icon">
+                <i class="fa fa-solid fa-hotel fass"></i>
+                <p class="dest_name">Resorts</p>
+
+                <i class="fa fa-solid fa-city fascity"></i>
+                <p class="city">City hotels</p>
+
+                <i class="fa fa-solid fa-house-user guest_icon"></i>
+                <p class="guest_text">Guest house</p>
+
+                <i class="fa fa-home home_icon" aria-hidden="true"></i>
+                <p class="home_text">home stay</p>
+
+                <i class="fa fa-solid fa-ship experinces_icon"></i>
+                <p class="experinces_text">Experinces</p>
+
+                <i class="fa fa-regular fa-map destination_icon"></i>
+                <p class="destination_text">Destinations</p>
+
+                <i class="fa fa-solid fa-taxi transport_icon"></i>
+                <p class="transport_text">Transport</p>
+
+                <i class="fa fa-solid fa-globe internet_icon"></i>
+                <p class="internet_text">Internet</p>
+
+                <i class="fa fa-solid fa-child nomads_icon"></i>
+                <p class="nomads_text">Nomads</p>
+            </div>
+
+
+
+
+
+        </div>
+
+
+   
+    </div>
+
+
+
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        
+<div class="booking-success">
+<div class="success-tick"></div>
+<h5 class="head-txt">Your Booking is Success</h5>
+<p class="sub-txt">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying</p>
+
+<div class="hotel-card">
+
+    <div class="name-ratings">
+        <div class="ratings-box">
+            <span class="rating-num">{{this.propertydetails.starRating}}</span>
+        </div>
+        <p class="stars"*ngFor="let star of [].constructor(propertydetails.starRating)">
+            <i class="fa fa-solid fa-star acom-star"></i>
+           
+        </p>
+        <p class="hotel-name">{{this.propertydetails.hotelName}}</p>
+        <p class="location">{{this.propertydetails.address}}</p>
+</div>
+
+<div class="button-container">
+    <button  class="home-back"routerLink="/">Back to Home</button>
+    <button class="manage-booking">Manage Booking</button>
+  </div>
+</div>
+
+  
+
+                    </div>
+
+
+                    </div>
+
+
+                    <div class="footer">
+                        <app-common-footer></app-common-footer>
+                    </div>
+
+                    </div>

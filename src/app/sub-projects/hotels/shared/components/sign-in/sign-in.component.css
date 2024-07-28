@@ -1,0 +1,566 @@
+.logo {
+    width: 110px;
+    height: 55px;
+
+}
+
+.signlogo {
+    width: 110px;
+    height: 55px;
+    margin-top: 20px;
+}
+
+.createacc {
+
+
+    /* position: absolute;
+    left: 20.33%;
+    right: 18.9%;
+    top: 69.07%;
+    bottom: 27.5%; */
+
+    font-family: 'Optima';
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 130%;
+    margin-top: 30px;
+
+
+    color: #2C321F;
+
+
+}
+
+.welcome {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2C321F;
+    margin-left: 25px;
+}
+
+
+
+
+.signinuser {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+
+    /* position: absolute; */
+    width: 328px;
+    height: 52px;
+    /* left: 48px;
+    top: 284px; */
+
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    color: white;
+    text-transform: none !important;
+    margin-left: 25px;
+}
+
+
+
+
+
+.line {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.left-line,
+.right-line {
+    flex: 1;
+    height: 1px;
+    background-color: black;
+}
+
+.right-line {
+    margin-right: 28px;
+}
+
+.acc {
+    color: var(--Olive, #A09935);
+    font-size:
+        16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    padding: 0 10px;
+    /* Adjust padding as needed */
+}
+
+.right-line {
+    width: 1px;
+    /* Adjust the width as needed */
+}
+
+
+
+
+
+
+
+.terms_cond {
+    /* By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement. */
+
+    /* position: absolute;
+    left: 13.64%;
+    right: 13.64%;
+    top: 79.05%;
+    bottom: 15.71%; */
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    /* or 16px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+
+    color: #2C321F;
+
+
+}
+
+.unlockinio {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 24px 27px 50px 28px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2C321F;
+}
+
+.icon_text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    /* display: flex; */
+    align-items: center;
+    color: #2C321F;
+    text-align: center;
+}
+
+.error_text {
+    color: #D93941;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-left: 25px;
+    line-height: 130%;
+}
+
+.signupcard {
+    /* Frame 546 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    /* Center horizontally */
+    padding: 35px 34px;
+    gap: 10px;
+
+    /* position: absolute; */
+    width: 561px;
+    height: 695px;
+    left: 1016px;
+    top: 263px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.signup_section {
+    /* Group 575 */
+    width: 493px;
+    height: 625px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.form-title {
+    /* Join in to unlock best of the Inio. */
+
+    /* position: absolute;
+    left: 12.12%;
+    right: 55.79%;
+    top: 5.04%;
+    bottom: 85.76%; */
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    /* or 32px */
+    display: flex;
+
+
+    color: #2C321F;
+
+
+}
+
+.name_label {
+    width: 87px;
+    /* height: 21px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 130%; */
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.password_label {
+    width: 160px;
+    /* height: 21px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 130%; */
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.joinin {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2C321F;
+    margin-right: 61px;
+    /* margin-left: 25px; */
+    justify-content: center;
+}
+
+.password_validation {
+    /* Your password must be at least 10 characters */
+
+    width: 272px;
+    height: 18px;
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    display: flex;
+    align-items: center;
+    color: #D93941;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+
+}
+
+.forgotcard {
+    /* display: flex; */
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 45px 23px;
+    gap: 10px;
+    /* position: absolute; */
+    width: 418px;
+    height: 555px;
+    left: 1088px;
+    top: 263px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.forgot_heading {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2C321F;
+}
+
+.forgot_text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.example-half-width {
+    width: 190px;
+}
+
+.send_otp {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    width: 328px;
+    height: 52px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    color: white;
+    text-transform: none !important;
+    margin-left: 14px;
+}
+
+.leftimg {
+    background: url(../../../../../../assets/images/beachpic.jpg);
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100%;
+}
+
+.example-full-width {
+    width: 400px;
+}
+
+/* responsiveness  */
+
+@media only screen and (max-width: 768px) {
+
+
+    .logo {
+        width: 100px;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    .unlockinio {
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+
+    .icon_text {
+        font-size: 14px;
+    }
+
+    .icon_card {
+        padding: 10px;
+    }
+    .name_label{
+        width: 100%;
+    }
+    .terms_cond {
+        font-size: 10px;
+        margin-top: 14px;
+        width: 326px;
+    }
+
+    .col-12 {
+        order: unset;
+    }
+
+    .col-12.order-1 {
+        order: 1;
+    }
+
+    .col-12.order-2 {
+        order: 2;
+    }
+
+    .forgotcard {
+        width: 85%;
+        height: 510px;
+        padding: 8px 0px;
+        margin-right: 1rem;
+        margin-top: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        /* margin-left: -1pc; */
+    }
+
+    .example-full-width {
+        width: 270px;
+        margin-left: 28px;
+    }
+
+    .send_otp {
+        width: 298px;
+
+    }
+
+    .container-fluid {
+        padding-left: 0px;
+    }
+
+    .row {
+        padding-right: 0px;
+    }
+
+    .align-items-center {
+        align-items: flex-start !important;
+    }
+
+    .signupcard {
+        width: 100%;
+        padding: 0px;
+        height: 681px;
+        width: 94%;
+        box-shadow: none;
+        margin-top: 50px;
+        margin-left: 5px;
+        /* margin-left: -65px; */
+        /* padding: 20px;
+        margin: 20px auto; */
+    }
+
+    .image-mob {
+        background: none
+    }
+
+    .leftimg {
+        background: none;
+    }
+
+    .right-line {
+        margin-right: 0px;
+    }
+
+    .forgot_heading {
+        margin-left: 70px;
+    }
+
+    .forgot_text {
+        width: 340px;
+        margin-left: 15px;
+    }
+
+    .createacc {
+        margin-right: 0rem;
+        margin-top: 7px;
+    }
+
+    .example-full-width {
+        width: 320px;
+    }
+
+    .example-half-width {
+        width: 320px;
+    }
+
+    .signinuser {
+        flex-direction: column;
+        padding: 0px;
+        gap: 40px;
+        width: 343px;
+        flex: none;
+    }
+
+    .signlogo {
+        margin-top: 69px;
+        margin-left: 119.5px;
+    }
+
+    .joinin {
+        margin-right: 0px;
+        width: 181px;
+        height: 73.93px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #2C321F;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-right:127px;
+
+    }
+
+    .email-verification {
+        display: flex;
+        flex-direction: column;
+        margin-left: 18px;
+    }
+
+    .firstnameleft {
+        margin-left: 10px;
+    }
+    .line{
+        margin-left: 5px;
+    }
+   .right-line{
+    margin-right: -11px;
+   }
+   .responsive-height{
+    margin-top: 64px;
+   }
+   .password_label{
+    width: 100%;
+   }
+   .verifypss{
+    margin-top: 8px;
+   }
+}

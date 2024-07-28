@@ -1,0 +1,571 @@
+/* Responsive
+----------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+    .dbw-close {
+      display: flex;
+      top: 32px;
+      right: 14px;
+      background: none;
+      font-size: 16px;
+    }
+    .dbw-popup {
+       min-width: 100%;
+       min-height: 100%;
+    }
+    .dbw-nav  {
+      left: 20px;
+    }
+    .dbw-btn {
+      height: 64px;
+    }
+    .dbw-back {
+      display: none !important;
+    }
+    #dbw-back {
+      background-color: #fff;
+    }
+    /* Step0 */
+    .dbw-offer-types .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px !important;
+    }
+    .dbw-offer-mob-wrap {
+      height: 50vh;
+      overflow-y: scroll;
+      padding-bottom: 100px;
+    }
+    .dbw-offer-wrap {
+      flex-direction: column;
+      margin-top: 0;
+    }
+    .dbw-offer-item {
+      width: 300px;
+      margin: 0 auto 20px;
+    }
+    .dbw-offer-img {
+      height: 160px;
+    }
+    .dbw-offer-img img {
+      height: 160px;
+    }
+    /* End Step0 */
+  
+    /* Step1 */
+    .dbw-rs-step1, .dbw-r-step1, .dbw-s-step1 {
+      padding: 6vh 8vw 0;
+    }
+    .dbw-rs-step1 .dbw-title, .dbw-r-step1 .dbw-title, .dbw-s-step1 .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px !important;
+      padding-bottom: 20px;
+      margin-bottom: 20px !important;
+      margin-top: 10 !important;
+    }
+    .dbw-rs-step1 .dbw-header .h2, .dbw-r-step1 .dbw-header .h2, .dbw-s-step1 .dbw-header .h2 {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    .dbw-rs-step1 .dbw-header .h2 br {
+      content:' ';
+    }
+    .dbw-rs-step1 .dbw-body {
+      margin-top: 0;
+    }
+    #dbw-wrapper .t-datepicker {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .dbw-check-in {
+      width: 100%;
+      border-radius: 4px 4px 0 0 !important;
+      border-bottom: none;
+    }
+    .dbw-check-out {
+      width: 100%;
+      border-left: 1px solid;
+      border-radius: 0 0 4px 4px !important;
+    }
+    .dbw-popup .dbw-search-form > div {
+      margin-bottom: 50px;
+    }
+    .dbw-rs-step1 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-rs-step1 .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End Step1 */
+  
+    /* Step2 */
+    .dbw-rs-step2 {
+      margin: 0 8vw;
+    }
+    .dbw-rs-step2 .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    .dbw-rs-step2 #labelService:after {
+      display: block;
+      content: ' ';
+    }
+    .dbw-rs-step2 .dbw-body {
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-perks-wrap {
+      margin: 0;
+      overflow-x: hidden;
+      height: 80vh;
+    }
+    .dbw-perks {
+      margin: 0 0 220px;
+      justify-content: space-between;
+    }
+    .dbw-perks li {
+      margin: 8vw 0 0;
+      width: 38vw;
+    }
+    .dbw-name {
+      font-size: 13px;
+    }
+    .dbw-types {
+      font-size: 12px;
+    }
+    .dbw-perk-content {
+      height: 100px;
+    }
+    .dbw-rs-step2 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-rs-step2 .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    #dbw-dates-change {
+      width: 100%;
+    }
+    /* End Step2 */
+  
+    /* Step3 */
+    .dbw-rs-step3 {
+      padding: 0 8vw;
+    }
+    .dbw-rs-step3 .dbw-header .dbw-title {
+      margin: 80px 0 0;
+    }
+    .dbw-rs-step3 .dbw-title {
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    .dbw-roomsblock{
+      height: 80vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+    .dbw-rs-step3 .dbw-body {
+      margin: 0;
+    }
+    .dbw-rooms-wrap {
+      margin: 0;
+      padding-top: 30px;
+      max-height: 60vh !important;
+    }
+    .dbw-rooms-wrap .dbw-room {
+      margin: 0px 0 30px !important;
+    }
+    .dbw-rs-step3 .dbw-inline {
+      display: block;
+    }
+    .dbw-rs-step3 .dbw-inline > div {
+      margin: 0 0 30px !important;
+    }
+    .dbw-rs-step3 .dbw-btn-wrap {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-rs-step3 .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    .dbw-inside .dbw-contents.dbw-room-info {
+      font-weight: bold;
+    }
+    .dbw-rs-step3 .dbw-room-close {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      font-size: 16px;
+    }
+    .dbw-room-arrow {
+      transform: rotate(90deg);
+      margin-bottom: 20px;
+    }
+    /* End Step3 */
+    
+    /* Step4 */
+    .dbw-rs-step4 {
+      padding: 0 8vw;
+    }
+    .dbw-rs-step4 .dbw-title {
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 20px;
+      margin-bottom: 30px !important;
+    }
+    .dbw-rs-step4 .dbw-header .h2 {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    .dbw-rs-step4 .dbw-header .h2 br {
+      content:' ';
+    }
+    .dbw-rs-step4 #dbw-back {
+      display: block;
+    }
+    /* End Step4 */
+  
+    /* Book step */
+    .dbw-rs-book {
+      margin: 0 8vw;
+    }
+    .dbw-rs-book .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    .dbw-book-wrap {
+      display: block;
+      height: 50vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding-bottom: 100px;
+    }
+    .dbw-book-summary {
+      width: 100%;
+      padding-right: 0;
+      max-height: 100%;
+    }
+    .dbw-book-form {
+      margin-top: 20px;
+      width: 100%;
+    }
+    .dbw-rs-book .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-rs-book .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End book */
+    /* Conf step */
+    .dbw-rs-conf, .dbw-r-step5, .dbw-s-step4 {
+      margin: 0 8vw;
+    }
+    .dbw-rs-conf .dbw-title, .dbw-r-step5 .dbw-title, .dbw-s-step4 .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    .dbw-rs-conf .dbw-btn-wrap, .dbw-r-step5 .dbw-btn-wrap, .dbw-s-step4 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-rs-conf .dbw-btn-wrap .dbw-btn, .dbw-r-step5 .dbw-btn-wrap .dbw-btn, .dbw-s-step4 .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End Conf step */
+  
+    /* Step-mail */
+    .dbw-step-mail {
+      padding: 0 8vw;
+    }
+    .dbw-step-mail .dbw-title {
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 20px;
+      margin-bottom: 30px !important;
+    }
+    .dbw-step-mail .dbw-header .h2 {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    .dbw-step-mail .dbw-header .h2 br {
+      content:' ';
+    }
+    .dbw-step-mail .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-step-mail .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End Step-mail */
+  
+    /* DayUse */
+    /* Step 1 */
+    .dbw-r-step1 .dbw-search-form > div {
+      margin-bottom: 10px;
+    }
+    .dbw-r-step1 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-r-step1 .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End Step 1 */
+    /* Step 2 */
+    .dbw-r-step2 {
+      margin: 0 8vw;
+    }
+    .dbw-r-step2 .dbw-room-close {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      font-size: 16px;
+    }
+    .dbw-r-step2 .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    .dbw-r-checkins-pop {
+      left: -55%;
+    }
+    .dbw-r-step2 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-r-step2 .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    .dbw-r-roomsblock {
+      height: 50vh;
+      overflow-y: scroll;
+      padding-bottom: 100px;
+    }
+    .dbw-r-rooms-wrap {
+      max-height: initial;
+    }
+    /* End Step 2 */
+    /* Step 3 */
+    .dbw-r-step3 {
+      margin: 0 8vw;
+    }
+    .dbw-r-step3 .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    .dbw-servs-wrap {
+      height: 50vh;
+      overflow-y: scroll;
+      padding-bottom: 100px;
+    }
+    .dbw-serv-btn {
+      padding: 12px 10px;
+    }
+    .dbw-serv-count-control {
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+    }
+    .dbw-serv-count-span {
+      line-height: 22px;
+    }
+    .dbw-servs {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+    .dbw-serv {
+      position: relative;
+      left: auto !important;
+      width: 100%;
+      max-width: 350px;
+      min-height: 250px;
+      height: auto;
+      margin-bottom: 30px;
+      overflow: auto;
+    }
+    .dbw-serv-wrap {
+      width: 300px;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+    .dbw-serv-left {
+      width: 100%;
+      padding-right: 0;
+    }
+    .dbw-serv-right {
+      display: none;
+      width: calc(100% - 20px);
+      height: initial;
+    }
+    .dbw-serv-right1, .dbw-serv-right2 {
+      width: 100%;
+      padding: 0;
+    }
+    .dbw-serv.dbw-active .dbw-serv-right {
+      display: block;
+    }
+    .dbw-r-step3 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      z-index: 99999;
+    }
+    .dbw-r-step3 .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End Step 3 */
+    /* Step 4 */
+    .dbw-r-step4 {
+      margin: 0 8vw;
+    }
+    .dbw-r-step4 .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    .dbw-r-step4 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      z-index: 99999;
+    }
+    .dbw-r-step4 .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End Step 4 */
+    /* Service only */
+    /* Step 1 */
+    .dbw-s-step1 .dbw-search-form > div {
+      margin-bottom: 10px;
+    }
+    .dbw-s-step1 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-s-step1 .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End Step 1 */
+    /* Step 2 */
+    .dbw-s-step2 {
+      margin: 0 8vw;
+    }
+    .dbw-s-step2 .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    .dbw-s-step2 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .dbw-s-step2 .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End Step 2 */
+    /* Step 3 */
+    .dbw-s-step3 {
+      margin: 0 8vw;
+    }
+    .dbw-s-step3 .dbw-title {
+      font-size: 20px !important;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    .dbw-s-step3 .dbw-btn-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      z-index: 99999;
+    }
+    .dbw-s-step3 .dbw-btn-wrap .dbw-btn {
+      width: 50%;
+      position: relative;
+      margin: 0 !important;
+    }
+    /* End Step 3 */
+  }
+  
+  @media screen and (min-width: 641px) {
+    /* Step3 */
+      .dbw-rooms-wrap.room-scroll {
+      flex-direction: column;
+    }
+    .dbw-rooms-wrap.room-scroll .dbw-room {
+      margin-right: 15px;
+    }
+    /* End Step3 */
+  }
+  
+  

@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <ol class="c-stepper">
+        <ng-container *ngFor="let item of steppers; let i = index">
+            <li class="c-stepper__item">
+                <h3 class="c-stepper__count" [ngClass]="activeStepIndex >= i ? 'active' : ''">{{i + 1}}</h3>
+                <h3 class="c-stepper__title">{{item}}</h3>
+            </li>
+            <hr class="c-stepper__line" *ngIf="i < steppers.length - 1">
+        </ng-container>
+    </ol>
+</div>

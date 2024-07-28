@@ -1,0 +1,220 @@
+/* Step 1
+----------------------------------------------------------- */
+.dbw-r-step1 {
+    padding: 40px 140px 0;
+  }
+  .dbw-r-step1 .dbw-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .dbw-r-date {
+      border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Step 2
+  ----------------------------------------------------------- */
+  .dbw-r-step2 {
+      margin: 0 40px;
+  }
+  .dbw-r-step2 .dbw-header {
+      margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .dbw-r-rooms-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: scroll;
+    max-height: 380px;
+  }
+  .dbw-r-rooms-wrap > div {
+    position: relative;
+    overflow: hidden;
+    width: 360px;
+    /*height: 201px;*/
+    background: #ffffff;
+    color: #3c4b64;
+    margin: 30px 0 0;
+    border-radius: 4px;
+  }
+  .dbw-r-step2 .dbw-room-close {
+    display: none;
+  }
+  .dbw-r-room-img {
+    height: 161px;
+    background: #999;
+    position: relative;
+  }
+  .dbw-r-room .dbw-check {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 32px;
+    z-index: 5;
+    display: none;
+    color: #ffffff;
+  }
+  .dbw-r-room.dbw-active .dbw-check {
+    display: block;
+  }
+  .dbw-r-room.dbw-active .dbw-r-room-img:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .dbw-r-room-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .dbw-r-rooms-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3));
+  }
+  .dbw-r-pack-wrap {
+      text-align: center;
+      padding: 10px;
+  }
+  .dbw-r-packs {
+      display: flex;
+      justify-content: space-around;
+    margin: 10px 0 20px;
+  }
+  .dbw-r-pack {
+      width: 70px;
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  .dbw-r-pack-hour {
+    font-weight: 500;
+  }
+  .dbw-r-price {
+      font-size: 14px;
+    font-weight: normal;
+  }
+  .dbw-r-checkins {
+      width: 50%;
+      border: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 5px 0;
+    margin: 15px auto 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  .dbw-r-checkins-pop {
+      width: 275px;
+      max-height: 206px;
+      overflow-y: scroll;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -35%;
+    bottom: 15px;
+    transform: translate(0, 10px);
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  }
+  .dbw-r-checkins-pop:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: calc(50% - 10px);
+    bottom: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari 3-8 */
+    transform: rotate(180deg);
+  }
+  .dbw-r-checkins.dbw-active .dbw-r-checkins-pop {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+  .dbw-r-checkins-times {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+  }
+  .dbw-r-checkins-times div{
+    width: 45px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  /* Step 3
+  ----------------------------------------------------------- */
+  .dbw-r-step3 {
+      margin: 0 40px;
+  }
+  .dbw-r-step3 .dbw-header {
+      margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  /* Step 4
+  ----------------------------------------------------------- */
+  .dbw-r-step4 {
+    margin: 0 40px;
+  }
+  .dbw-r-step4 .dbw-header {
+    margin-top: 0;
+  }
+  .dbw-r-step4 input {
+      color: #ffffff;
+  }
+  
+  /* Step 5
+  ----------------------------------------------------------- */
+  .dbw-r-step5 {
+    margin: 0 40px;
+  }
+  .dbw-r-step5 .dbw-header {
+    margin-top: 0;
+  }
+  .dbw-r-step5 .dbw-book-form {
+    margin: 20px auto;
+  }
+  .dbw-r-step5 input {
+      color: #ffffff;
+  }
+  .dbw-r-step5 .dbw-resend-code {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+  }

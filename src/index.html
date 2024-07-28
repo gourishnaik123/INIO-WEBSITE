@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Booking Engine</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" id="appFavicon" href="https://s3-alpha-sig.figma.com/img/3f17/e9af/01aa0ece27c0706393000b4a364c59cd?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Az7Tl2qLlPwDCTauIR7X~l~uPzGSRoqDco4l4hDoX0rMl1cjGsPjRJbBkRqILEEAOZgQeJn74LjTpnmx95Foe9ZZ5A1VOiEI0fkSaMvz9axShwYTERaKnfPaSvW8jeRLd3ZJVhy6wfajwq4Sa5ZQMV6kLF7WbIBNgupR40XddLNAloVfkoJMjSNgFzf4oCZzS79mfzeFt52xZ39Zmui0N1Ubr6iKFEuCrOoIlRs6p-oUtEjWuEqlrwIzk0AzlB2h2J~NKR36ED7QLr-9qkIc4Gq1X2k73ZNdxvlX5529jf3NLOBmerb41IddKRAxZKIetb-dtwbjjeB2BphF9tzThw__">
+
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca09a710ca.js" crossorigin="anonymous"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '357444690312614', 
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v12.0'
+        });
+        FB.AppEvents.logPageView();   
+      };
+    </script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+  <body class="mat-typography">
+    <app-root></app-root>
+  </body>
+</html>

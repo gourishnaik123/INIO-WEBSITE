@@ -1,0 +1,584 @@
+.payment {
+    position: relative;
+    width: 50%;
+    /* max-width: 439px; */
+    max-width: 510px;
+    height: 83px;
+    /* margin-top: 87px; */
+    margin: 87px auto;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+.payment_heading {
+
+
+    /* position: absolute; */
+    left: 35.07%;
+    right: 51.04%;
+    top: 10.11%;
+    bottom: 88.33%;
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    display: flex;
+    align-items: center;
+
+    color: #A09935;
+
+
+}
+
+.payment_subtext {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #A3A3A3;
+}
+
+.debit_card {
+    border: 1px solid white;
+    position: absolute;
+    width: 515px;
+    height: 265px;
+    left: calc(50% - 515px/2 + 0.5px);
+    top: 326px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Example shadow */
+    border-radius: 15px;
+
+}
+
+.transcation-card {
+    /* border: 1px solid gray; */
+    margin-top: 19px;
+    margin-left: 23px;
+    height: 68px;
+    width: 473px;
+}
+
+.card-name {
+    /* text */
+    /* margin-top: 19px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    display: flex;
+    align-items: center;
+
+    color: #2C321F;
+
+
+}
+
+.defualt {
+
+    color: #A09935 !important;
+
+}
+
+.tick {
+    color: #A09935 !important;
+    height: 38.31px;
+    background: #A09935 !important;
+    margin-right: 13px;
+    margin-top: 1px;
+    border-radius: 22px;
+}
+
+.default {
+    color: #A09935 !important;
+    ;
+}
+
+.insidetick {
+    color: white;
+    font-size: 20px;
+    /* margin-left: 4px; */
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+.card_number {
+    margin-top: -10px;
+    /* color: var(--SlateGray, #6A7486); */
+    width: 100%;
+    /* bottom: 75.47%; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.line {
+    position: relative;
+    /* Changed from absolute to relative */
+    margin: 0 4.47%;
+    /* Replaces left and right positioning */
+    border: 1px solid #ECE6DE;
+    height: 1px;
+    /* Adjust as needed */
+    top: 20px;
+    /* Adjust as needed */
+}
+
+.cardimg {
+    width: 69px;
+    height: 53px;
+}
+
+.transaction-card-margin {
+    margin-top: 22px;
+    /* cursor: pointer; */
+}
+
+.transaction-card {
+    cursor: pointer;
+}
+
+.new_cardaddition {
+    /* border: 1px solid blue; */
+    margin-top: 28px;
+    height: 483px;
+    width: 516px;
+}
+
+.addcard {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    /* identical to box height, or 32px */
+    display: flex;
+    align-items: center;
+    margin-top: 39px;
+    margin-left: 5px;
+    color: #2C321F;
+
+
+}
+
+.new_cardaddition h4 {
+    margin-bottom: 5px;
+}
+
+.new_cardaddition p {
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.card_para {
+    /* Enter your card details */
+
+
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 133.5%;
+    /* or 21px */
+    display: flex;
+    align-items: center;
+
+    color: #6A7486;
+
+
+}
+
+.payment-details {
+    height: 277px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    width: 515px;
+    background: #FFFFFF;
+    margin-top: 27px;
+}
+
+.payment-setler {
+    /* border: 1px solid red; */
+    width: 439.15px;
+    height: 208px;
+    /* margin-top: 35px; */
+    margin-left: 38px;
+    position: absolute;
+    left: 0.19%;
+    right: 0%;
+    top: 154.71%;
+    bottom: 15.94%;
+    background: #FFFFFF;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); */
+    border-radius: 15px;
+}
+
+.passworddiv {
+    margin-top: 9px;
+}
+
+.currentname_label {
+    bottom: 61.08%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 48%;
+    /* margin-top: -22px; */
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+
+}
+
+.current_input {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+    margin-top: 15px;
+    opacity: 0.5;
+    width: 100%;
+    outline: none;
+    border: none;
+    /* margin-top: -11px; */
+    border-bottom: 2px solid gray;
+}
+
+.date_input {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+    margin-top: 15px;
+    opacity: 0.5;
+    width: 70%;
+    outline: none;
+    border: none;
+    /* margin-top: -11px; */
+    border-bottom: 2px solid gray;
+}
+
+.cardnumdiv {
+    margin-top: 25px;
+}
+
+.datecsv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+
+.setdefault span {
+    margin-right: 8px;
+    /* Adjust the value as needed */
+
+}
+
+.cbox {
+    height: 16px;
+    width: 15.97px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4B5563;
+}
+
+.setdefualt {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #4B5563;
+    margin-top: 21px;
+}
+
+.addcardbtn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    color: #FFFFFF;
+    line-height: 151.5%;
+    gap: 10px;
+    font-size: 16px;
+    /* position: absolute; */
+    width: 100%;
+    left: 0%;
+    right: 0.19%;
+    top: 89.23%;
+    bottom: 0%;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+.footers {
+    /* margin-top: 897px; */
+    margin-top: 880px;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+
+    /* Your CSS rules for mobile screens */
+    .tick {
+        color: #A09935 !important;
+        height: 34.31px;
+        background: #A09935 !important;
+        margin-right: 13px;
+        margin-top: 1px;
+        border-radius: 22px;
+        float: right;
+        width: 47px;
+        margin-top: -57px;
+    }
+
+    .debit_card {
+        border: 1px solid white;
+        position: unset;
+        width: 90%;
+        /* height: none; */
+        margin-left: 0px;
+        left: 0px;
+        /* top: 0px; */
+        /* height: 35%; */
+        margin-top: 0px;
+        box-shadow: none;
+        border-radius: 15px;
+
+    }
+
+    .payment {
+        position: relative;
+        /* width: 50%; */
+        /* max-width: 510px; */
+        height: 83px;
+        width: 100%;
+        margin: 35px auto;
+        box-sizing: border-box;
+
+    }
+
+    .card_number {
+        margin-top: -10px;
+        width: 100%;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        color: #6A7486;
+        margin-left: 74px;
+    }
+
+    .card-name {
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        margin-left: 60px;
+        display: flex;
+        margin-left: 55px;
+        margin-top: -38px;
+        align-items: center;
+        color: #2C321F;
+
+    }
+
+    .current_input {
+        width: 71%;
+    }
+
+    .csv {
+        width: 48% !important;
+        margin-right: 46px !important;
+    }
+
+    .csvlbl {
+        margin-left: 6px !important;
+    }
+
+    .default {
+        margin-top: 3px;
+        margin-left: 2px;
+    }
+
+    .cardimg {
+        width: 58px;
+        height: fit-content;
+        margin-left: -18px;
+        margin-top: -9px;
+
+
+    }
+
+    .payment-setler {
+        position: unset;
+        margin-left: 0px;
+        width: 368px;
+    }
+
+    .payment-details {
+        box-shadow: none;
+        height: 210px;
+        margin-left: 16px;
+    }
+
+    .addcardbtn {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 30px;
+        gap: 10px;
+        width: 294px;
+        height: 52px;
+        background: #A09935;
+        border: 1px solid #A09935;
+        border-radius: 50px;
+    }
+
+    .footers {
+        margin-top: 442px;
+    }
+
+    .card_para {
+        margin-left: 16px !important;
+    }
+
+    .addcard {
+        margin-left: 15px !important;
+    }
+
+    .payment-details {
+        width: 100px;
+    }
+
+    .new_cardaddition {
+        width: 100%;
+        margin-left: 14px;
+    }
+    .only-card{
+        display: none;
+    }
+    .tick{
+        color: #A09935 !important;
+        height: 34.31px;
+        background: #A09935 !important;
+        margin-right: 13px;
+        margin-top: 1px;
+        border-radius: 22px;
+        /* float: right; */
+        width: 47px;
+        /* margin-left: 197px; */
+        margin-top: -33px;
+    }
+    .transaction-card-margin {
+        margin-top: 0; /* If you want to remove the margin for subsequent cards */
+      }
+      .tick-sec{
+        margin-left: 18rem;
+      }
+    .card_name{
+        position: absolute;
+        left: 17.79%;
+        right: 13.08%;
+        top: 36%;
+        bottom: 66.18%;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        color: #2C321F;
+    }
+    .def{
+        position: absolute;
+        left: 55.79%;
+        right: 13.08%;
+        top: 35%;
+        bottom: 66.18%;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        color: #A09935;
+    }
+    .number-card{
+        position: absolute;
+        left: 26.79%;
+        right: 92.31%;
+        width: 100px;
+        top: 75.12%;
+        bottom: 32.35%;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        color: #6A7486;
+    
+    }
+    .mobile-sec{
+        display: flex; 
+        flex-wrap: wrap;
+         gap: 0;
+         margin-left:15px;
+    }
+    .card{
+        width: 343px; height: 80px;
+    }
+}
+@media (min-width: 768px) {
+.mobile-sec{
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .mobile-sec {
+      display: none;
+    }
+  }
+  
+}

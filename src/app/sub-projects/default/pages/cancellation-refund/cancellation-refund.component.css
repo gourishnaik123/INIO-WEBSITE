@@ -1,0 +1,450 @@
+.booking-section {
+    margin-top: 35px;
+    margin-left: 70px;
+}
+
+.view_booking {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A09935;
+}
+
+.booking_text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #A3A3A3;
+}
+
+.accomdentation-sort {
+    display: flex;
+    gap: 40px;
+    /* This adds 40px space between each child element */
+    margin-top: 32px;
+
+}
+
+.accom-text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6A7486;
+    cursor: pointer;
+    /* color: #A09935; */
+}
+.accomdentation-sort p.active {
+    color:#A09935; 
+    
+  }
+  
+.transport-text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6A7486;
+    cursor: pointer;
+}
+
+.experinces-text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+
+.status {
+    /* Sort by: Status */
+
+    /* position: absolute; */
+    left: 75.52%;
+    right: 18.63%;
+    top: 10.97%;
+    bottom: 88.06%;
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #A09935;
+
+
+}
+
+.sort_lastyear {
+    margin-right: 60px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #A09935;
+
+}
+
+.right {
+    margin-left: auto;
+    /* This pushes the elements with the 'right' class to the right */
+}
+
+/* card boking details */
+
+.booking-card {
+    height: auto;
+    background: #FFFFFF;
+    width: 97%;
+    margin-top: 35px;
+    /* border: 1px solid red; */
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.booking-item {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid gray; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+
+
+.booking-item:first-child {
+    margin-top: 0;
+}
+
+
+.booking-left {
+    display: flex;
+    align-items: center;
+    width: 76%;
+    /* border: 1px solid green; */
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+
+.booking-img {
+    background: url('../../../../../assets/images/resortpic.jpg') no-repeat center center;
+    height: 99.81px;
+    width: 160.93px;
+    background-size: cover;
+    /* border: 1px solid blue; */
+}
+
+.booking-details {
+    margin-left: 20px;
+    height: 64px;
+    width: calc(100% - 180.93px);
+    /* border: 1px solid blue; */
+}
+
+.view_btn {
+    width: 114px;
+    height: 35px;
+    border-radius: 40px;
+    border: none;
+    color: rgba(236, 230, 222, 1);
+    background: rgba(160, 153, 53, 1);
+    align-self: flex-start;
+    margin-top: 32.4px;
+}
+
+.booking-details {
+    display: flex;
+    /* flex-direction: column; */
+    /* gap: 80px;  */
+
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* Adjust the gap between h5 and span as needed */
+    width: 100%;
+}
+
+.table_head {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+
+.pagination {
+    margin-top: 80px;
+    height: 24px;
+    width: 419px;
+    /* border: 1px solid black; */
+    margin-left: 36%;
+}
+
+.prev {
+    width: 32px;
+    height: 21px;
+    left: 688.5px;
+    top: 1266.96px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 130%; */
+    display: flex;
+    align-items: center;
+    color: #A09935;
+
+}
+
+.prev i {
+    margin-right: 10px;
+    /* Adjust as needed */
+    margin-top: 3px;
+}
+
+/* align-items: center;
+  margin-left: 24px; */
+.next i {
+    margin-left: 10px;
+    /* Adjust as needed */
+    margin-top: 3px;
+}
+
+.next {
+    width: 32px;
+    height: 21px;
+    left: 688.5px;
+    top: 1266.96px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 130%; */
+    display: flex;
+    align-items: center;
+    color: #A09935;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.numbers {
+    display: flex;
+    margin-left: 35px;
+
+}
+
+.numbers p {
+    margin-right: 29px;
+    /* Adjust as needed */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer {
+    margin-top: 70px;
+}
+@media (min-width: 1024px) {
+    .mobile-section {
+      display: none;
+    }
+  }
+  
+
+@media (max-width: 768px) {
+
+.booking-section{
+    display: none;
+}
+
+.booking_text {
+    width: 326px;
+    height: 42px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #A3A3A3;
+    /* margin-left: 14px; */
+    
+}
+.view_booking{
+    margin-top: 35px;
+    text-align: left;
+}
+.mobile-section{
+    margin-left: 15.68px;
+}
+.accomdentation-sort{
+    margin-top: 30px;
+}
+.booking-sec{
+    width: 343px;
+    height: 707px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-top: 34.7px;
+    padding-top: 1px;
+}
+.booking-img{
+    width: 305.39px;
+    margin-top: 18px;
+    margin-left: 18.8px;
+    height: 112px;
+    border-radius: 10px;
+}
+.property-name{
+    /* Hotel name */
+
+width: max-content;
+height: 30px;
+
+font-family: 'Optima';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+margin-top: 25.43px;
+line-height: 150%;
+/* identical to box height, or 30px */
+display: flex;
+align-items: center;
+margin-left: 18px;
+color: #2C321F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.prop-name{
+    margin-left: 58px;
+    width: 130.9px;
+    height: 29.13px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+.cancel-head{
+    font-family: 'Optima';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+/* identical to box height, or 30px */
+display: flex;
+align-items: center;
+margin-top: 25px;
+margin-left: 18px;
+color: #2C321F;
+
+}
+.date{
+    width: 288.81px;
+    height: 24px;
+    left: 18px;
+    top: 94px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+    margin-top: 9px;
+    margin-left: 18px;
+}
+.refund-btn{
+    margin-left: 18px;
+    color: #ECE6DE;
+    /* Frame 15 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 30px;
+margin-left: 18px;
+gap: 5px;
+/* width: 156px; */
+height: 35px;
+margin-top: 25px;
+background: #A09935;
+border: 1px solid #A09935;
+border-radius: 50px;
+
+}
+.pagination{
+    margin-top: 40px;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 0px;
+}
+.next{
+    margin-left: 0px;
+}
+.numbers{
+    margin-left: 20px;
+}
+}

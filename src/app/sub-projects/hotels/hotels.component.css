@@ -1,0 +1,40 @@
+.page-wrapper-img {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(../../../assets/images/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    object-fit: cover;
+    transition: all .35s ease-out 0s;
+    opacity: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.page-wrapper-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: scaleY(1);
+    transform-origin: bottom;
+    background: rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s;
+}
+
+.page-wrapper-color {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: var(--white-color);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    object-fit: cover;
+    transition: all .35s ease-out 0s;
+    opacity: 1;
+}
+
+.cloudy {
+    background-color: var(--cloudy-wrapper);
+    height: 100vh;
+}

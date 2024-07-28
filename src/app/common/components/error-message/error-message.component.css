@@ -1,0 +1,29 @@
+.no_data_message {
+    background: transparent;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 250px;
+    width: 100%;
+    margin: auto;
+}
+
+.no_data_message p {
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: 400;
+    color: var(--subtitle-color);
+    text-transform: MATH-AUTO;
+}
+
+.no_data_message img {
+    width: 40%;
+}
+
+.no_data_message span {
+    font-size: 60px;
+    color: var(--subtitle-color);
+}

@@ -1,0 +1,5 @@
+::ng-deep .mat-snack-bar-container.custom-snackbar {
+    height: 78px;
+    width: 420px;
+    line-height: 54px!important;
+}

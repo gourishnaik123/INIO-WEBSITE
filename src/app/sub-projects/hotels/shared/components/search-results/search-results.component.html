@@ -1,0 +1,597 @@
+<!-- mobile screen -->
+
+
+<div class="mobile-sec">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <app-loader [show]="isLoading"></app-loader>
+
+    <a class="navbar-brand">
+      <div class="Inio_Sub"routerLink="/"(click)="homeroute()"></div>
+    </a>
+    <div class="usericon"*ngIf="this.userDetails">
+      <div class="insid_cont"> 
+        <img routerLink="/profile-setting" class="logo" [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+          <div class="text-container">
+              <p class="top_text">hello</p>
+              <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+          </div>
+      </div>
+      <div class="down_arrow">
+          <i class="fa fa-solid fa-caret-down font_icon"></i>
+          
+      </div>
+  
+     
+  </div>
+  <button *ngIf="!this.userDetails"routerLink="/login" class="mobilesignin_btn">Sign in</button>
+  </nav>
+
+  <!-- mob-background -->
+  <div class="mob-backgrounds">
+    <div class="mobile-attraction">
+      <div class="all_mobicon">
+        <i class="fa fa-solid fa-hotel fass"></i>
+        <p class="sub-txt">Resorts</p>
+
+        <i class="fa fa-solid fa-city fascity"></i>
+        <p class="sub-txt">City hotels</p>
+
+        <i class="fa fa-solid fa-house-user guest_icon"></i>
+        <p class="sub-txt">Guest house</p>
+
+        <i class="fa fa-home home_icon" aria-hidden="true"></i>
+        <p class="sub-txt">home stay</p>
+
+        <i class="fa fa-solid fa-ship experinces_icon"></i>
+        <p class="sub-txt">Experinces</p>
+
+        <i class="fa fa-regular fa-map destination_icon"></i>
+        <p class="sub-txt">Destinations</p>
+
+        <i class="fa fa-solid fa-taxi transport_icon"></i>
+        <p class="sub-txt">Transport</p>
+
+        <i class="fa fa-solid fa-globe internet_icon"></i>
+        <p class="sub-txt">Internet</p>
+
+        <i class="fa fa-solid fa-child nomads_icon"></i>
+        <p class="sub-txt">Nomads</p>
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <h5 class="embrace">Embracing Comfort and Convenience in Accommodation Getaways</h5>
+   
+    
+
+     <!-- search -->
+     <p class="search_section">Search your stay</p>
+     <div class="search-card">
+       <div class="inner-search">
+        <div *ngIf="showText" class="search-country"(click)="getAllDestinations()"><i class="fa fa-solid fa-bed"></i><span class="country-head">Where are you going?</span>  <span>  </span></div>
+
+        <div *ngIf="destinationOptions.length > 0">
+          <i class="fa fa-solid fa-bed search-bed"></i>
+        <select  class="select-sec" [(ngModel)]="selectedDestination">
+          <option *ngFor="let option of destinationOptions" [value]="option.destinationName">
+            {{ option.destinationName }}
+          </option>
+        </select>
+        </div>
+
+<div class="search-city" (click)="datepaxdialogue()">
+  <i class="fa fa-solid fa-calendar"></i>
+  <span class="country-head">
+    <span *ngIf="this.roomsdata.checkIn; else defaultCheckIn">{{this.roomsdata.checkIn  | date }} - &nbsp; </span>
+    <span *ngIf="this.roomsdata.checkOut; else defaultCheckOut">{{ this.roomsdata.checkOut | date }}</span>
+
+  </span>
+  <span>
+    <i class="fa fa-solid fa-caret-down"></i>
+  </span>
+
+  <!-- Default texts -->
+  <ng-template #defaultCheckIn>
+    <span>Check-in date -&nbsp;</span>
+  </ng-template>
+  <ng-template #defaultCheckOut>
+    <span>Check-out date</span>
+  </ng-template>
+</div>
+
+<div class="search-city"(click)="paxpopup()"><i class="fa fa-regular fa-user"></i><span class="country-head">{{totalAdults}} adults &nbsp; {{totalChildrens}} children &nbsp; {{ roomsAndPaxs ? roomsAndPaxs.length : 1 }} room &nbsp;</span>  <span>  <i class="fa fa-solid fa-caret-down"></i></span></div>
+
+         <button (click)="search()" class="search">search</button>
+       </div>
+     </div>
+
+     
+</div>
+    <!-- hotel filter section -->
+    <div class="hotel-filter">
+      <div class="city-filter">
+        <h5 class="malidives-text"><i class="fa fa-solid fa-globe"></i>{{  this.selectedDestination ||'Maldives'}} </h5>
+      <h4 class="filter-text"></h4>
+      </div>
+
+      <div class="clear-all">
+        <i class="fa fa-solid fa-filter filt-icon"(click)="filtertoggle()"></i>
+        <h4 class="filter-textmob">Filters</h4>
+        <h4 class="clear-filt"(click)="filtertoggle()">Clear all filters</h4>
+      </div>
+
+
+    
+      
+    </div>
+
+
+ 
+  
+
+
+    <div class="filter-names"*ngIf="filterbox">
+      <h4 class="filter-head">Facilities</h4>
+      <div class="form-check"*ngFor="let facility of visibleFacilities">
+        <div class="checkboxresults-length"></div>
+        <input class="form-check-input" type="checkbox" [value]="facility.id" id="{{facility.id}}">
+        <label class="form-check-label" [for]="facility.id">
+          {{facility.name}}
+        </label>
+      </div>
+
+        <!-- Show More / Show Less button -->
+    <p class="showmore" (click)="toggleShowMore()">
+      {{ showMoreFacility ? 'Show Less' : 'Show More' }}
+    </p>
+
+
+
+      <!-- second filter -->
+      <h4 class="filter-head">Property rating</h4>
+
+      <div class="form-check">
+        <div class="checkboxresults-length"></div>
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          2 star
+        </label>
+      </div>
+      <div class="form-check">
+        <div class="checkboxresults-length"></div>
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          3 star
+        </label>
+      </div>
+
+      <div class="form-check">
+        <div class="checkboxresults-length"></div>
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          4 star
+        </label>
+      </div>
+
+      <div class="form-check">
+        <div class="checkboxresults-length"></div>
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          5 star
+        </label>
+      </div>
+      <!-- third -->
+
+      <h4 class="filter-head">Room facilities</h4>
+      <div class="form-check"*ngFor="let room of roomsList">
+        <div class="checkboxresults-length"></div>
+        <input class="form-check-input" type="checkbox" [value]="room.id" id="{{room.id}}">
+        <label class="form-check-label" [for]="room.id">
+          {{room.name}}
+        </label>
+      </div>
+
+      <p class="showmore" (click)="toggleShowMoreRooms()">
+        {{  this.showMoreRooms ? 'Show Less' : 'Show More' }}
+      </p>
+      <button class="filter-btn">Apply Filter</button>
+
+  </div>
+
+
+  <div class="col-md-4 product-card" *ngFor="let hotel of propertyList">
+    <div class="hotel-card">
+      <!-- <div class="product_img image-fluid">
+      
+      </div> -->
+
+      <div class="product_img image-fluid">
+        <img [src]="hotel.propertyDetail?.hotelImageUrl?.length ? hotel.propertyDetail.hotelImageUrl[0] : 'assets/images/resortpic.jpg'" class="img-fluid" >
+      </div>
+      <div class="cardetails">
+        <p class="accom-right">{{ hotel.hotelName }}</p>
+        <p class="accom_ratings">
+          {{ hotel.propertyDetail.
+            starRating
+            }}
+          <i class="fa fa-solid fa-star acom-star"></i>
+        </p>
+      </div>
+      <p class="mald_text">
+        <i class="fas fa-map-marker-alt"></i>&nbsp; {{ hotel.propertyDetail.address}}
+      </p>
+      <div class="view_section">
+        <h5 class="accom_amt"*ngIf="hotel.rooms.length>0">
+          $  {{ hotel.rooms[0].price.actual}}   {{hotel.currency}} 
+          <span class="onwards">&nbsp; Onwards</span>
+        </h5>
+        <button *ngIf="hotel.rooms.length>0" class="view_accom"(click)="roomAvailblity(hotel.propertyDetail.productId,hotel)">View</button>
+        <button class="no-rooms"*ngIf="hotel.rooms.length==0" >No rooms available</button>
+      </div>
+      <p class="strike_price"*ngIf="hotel.rooms.length>0">$ {{ hotel.rooms[0].mop}}</p>
+    </div>
+   
+  </div>
+
+  <!-- pagination mob -->
+
+  <div class="pagination">
+    <h3 class="prev"><i class="fa fa-solid fa-arrow-left"></i>Prev </h3>
+    <div class="numbers">
+        <div class="numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>...</p>
+            <h3 class="next">Next <i class="fa fa-solid fa-arrow-right"></i> </h3>
+        </div>
+    </div>
+</div>
+
+  <!-- footer for mobile -->
+  <div class="mobile-footer">
+    <app-common-footer></app-common-footer>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- laptop screen or larger -->
+  <div class="large-screen">
+    <div class="container-fluid blog-header">
+      <app-loader [show]="isLoading"></app-loader>
+
+      <div class="container-fluid header">
+        <div class="inio_png">
+          <div class="Inio_Sub"routerLink="/"(click)="homeroute()"></div>
+  
+          <!--buttons-->
+    
+          <!-- <div class="header_btn">
+            <button class="register_btn">Register</button>
+            <button routerLink="/login" class="signin_btn">Signin</button>
+          </div> -->
+          <div class="usericon"*ngIf="this.userDetails">
+              <div class="insid_cont"> 
+                <img routerLink="/profile-setting" class="logo" [src]="this.photo || 'https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg'">
+                  <div class="text-container">
+                      <p class="top_text">hello</p>
+                      <p class="name_text">{{this.firstname}} {{this.lastname}}</p>
+                  </div>
+              </div>
+              <div class="down_arrow">
+                  <i class="fa fa-solid fa-caret-down font_icon"></i>
+                  
+              </div>
+          </div>
+  
+          <div class="header_btn"*ngIf="!this.userDetails">
+            <button routerLink="/sign-up" class="register_btn">Register</button>
+            <button routerLink="/login" class="signin_btn">Sign in</button>
+          </div>
+  
+  
+  
+        </div>
+        </div>
+
+      
+      <!-----attraction-->
+      <div class="attraction">
+        <div class="hr_line1"></div>
+
+        <div class="all_icon">
+          <i class="fa fa-solid fa-hotel fass"></i>
+          <p class="dest_name">Resorts</p>
+
+          <i class="fa fa-solid fa-city fascity"></i>
+          <p class="city">City hotels</p>
+
+          <i class="fa fa-solid fa-house-user guest_icon"></i>
+          <p class="guest_text">Guest house</p>
+
+          <i class="fa fa-home home_icon" aria-hidden="true"></i>
+          <p class="home_text">home stay</p>
+
+          <i class="fa fa-solid fa-ship experinces_icon"></i>
+          <p class="experinces_text">Experinces</p>
+
+          <i class="fa fa-regular fa-map destination_icon"></i>
+          <p class="destination_text">Destinations</p>
+
+          <i class="fa fa-solid fa-taxi transport_icon"></i>
+          <p class="transport_text">Transport</p>
+
+          <i class="fa fa-solid fa-globe internet_icon"></i>
+          <p class="internet_text">Internet</p>
+
+          <i class="fa fa-solid fa-child nomads_icon"></i>
+          <p class="nomads_text">Nomads</p>
+        </div>
+
+        <div class="hr_line2"></div>
+
+
+
+        <!--***************************** CENTRAL TEXT **********************-->
+
+        <div>
+          <h5 class="Embrace_text">Embracing Comfort and Convenience in Accommodation Getaways</h5>
+
+        </div>
+
+        <!-- accomedatio cards -->
+        <div class="property-cards" >
+
+          <!-- first -->
+          <div class="row">
+            <div class="col-6"*ngFor="let hotel of propertyList | slice:0:2">
+              <div class="accom_sub_card">
+                <div class="nomad_img image-fluid">
+                  <img [src]="hotel.propertyDetail?.hotelImageUrl?.length ? hotel.propertyDetail.hotelImageUrl[0] : 'assets/images/resortpic.jpg'" class="img-fluid" >
+
+                </div>
+
+                <div class="cardetails">
+                  <p class="accom-right">{{ hotel.hotelName }}</p>
+                  <p class="accom_ratings">
+                    {{ hotel.propertyDetail.
+                      starRating
+                      }}
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                    
+                  </p>
+                </div>
+
+                <p class="mald_text "> <i class="fas fa-map-marker-alt"></i>&nbsp; {{ hotel.propertyDetail.address}}</p>
+
+                <div class="view_section">
+                  <h5 class="accom_amt"*ngIf="hotel.rooms.length>0">$ {{ hotel.rooms[0].price.actual}} {{hotel.currency}} <span class="onwards">&nbsp; Onwards</span></h5>
+                  <button  *ngIf="hotel.rooms.length>0" class="view_accom" (click)="roomAvailblity(hotel.propertyDetail.productId,hotel)">View</button>
+
+                  <button class="no-rooms"*ngIf="hotel.rooms.length==0" >No rooms available</button>
+                </div>
+
+                <!-- $1,890 -->
+                <p class="strike_price"*ngIf="hotel.rooms.length>0">${{ hotel.rooms[0].mop}}</p>
+              </div>
+
+
+            </div>
+
+
+        
+        </div>
+        </div>
+
+        <!---search bar-->
+        <!---search bar-->
+
+      <p class="search_section ml-4">Search your stay</p>
+      <div class="search_card">
+        <div class="auto-layout">
+          <div *ngIf="destinationOptions.length > 0">
+            <i class="fa fa-solid fa-bed search-bed"></i>
+          <select  class="select-sec" [(ngModel)]="selectedDestination">
+            <option *ngFor="let option of destinationOptions" [value]="option.destinationName">
+              {{ option.destinationName }}
+            </option>
+          </select>
+        </div>
+
+          <div *ngIf="showText" class="country-selector"(click)="getAllDestinations()">
+            <i class="fa fa-solid fa-bed"></i>
+            <p >Where are you going?</p> 
+          </div>
+          
+          <span class="line" style="    margin-left: 100px;
+          color: #fff;">|</span>
+
+          <div class="country-selector" (click)="datepaxdialogue()">
+            <i class="fa fa-solid fa-calendar"></i>
+            <p *ngIf="this.roomsdata.checkIn; else defaultCheckIn">{{this.roomsdata.checkIn  | date }} - </p>
+            <p *ngIf="this.roomsdata.checkOut; else defaultCheckOut">{{ this.roomsdata.checkOut | date }}</p>
+            <span class="line">|</span>
+          
+            <!-- Default texts -->
+            <ng-template #defaultCheckIn>
+              <p>Check-in date</p>
+            </ng-template>
+            <ng-template #defaultCheckOut>
+              <p>Check-out date</p>
+            </ng-template>
+          </div>
+
+          <div class="country-selector"(click)=" paxpopup()">
+            <i class="fa fa-regular fa-user"></i>
+            <p>{{this.totalAdults}} adults <span class="pax-no">{{totalChildrens}} children</span> <span class="pax-no"> {{ roomsAndPaxs ? roomsAndPaxs.length : 1 }} room</span> </p>  
+            <i class="fa fa-solid fa-caret-down"></i>    
+          </div>
+        
+          <button (click)="search()" class="align-right">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- second sec -->
+
+
+
+
+
+    <div class="container-fluid filter-sec">
+      <div class="row">
+        <!-- Left column for filter card -->
+        <div class="col-md-3 ">
+          <div class="card filter-card">
+            <div class="filter-category">
+              <div class="filter-section">
+                <h5 class="clear-filters">Clear all filters</h5>
+                <h4 class="filter-text">Filter</h4>
+
+              </div>
+              <!-- filter names -->
+              <div class="filter-names">
+                <h4 class="filter-head">Facilities</h4>
+
+               
+
+                <div class="form-check" *ngFor="let facility of visibleFacilities">
+                  <div class="checkboxresults-length"></div>
+                  <input class="form-check-input" type="checkbox" [value]="facility.id" id="{{facility.id}}">
+                  <label class="form-check-label" [for]="facility.id">
+                    {{facility.name}}
+                  </label>
+                </div>
+                
+                <!-- Show More / Show Less button -->
+                <p class="showmore" (click)="filterPopup()">
+                  {{ showMoreFacility ? 'Show Less' : 'Show More' }}
+                </p>
+                
+               
+                <!-- second filter -->
+                <h4 class="filter-head">Property rating</h4>
+                <div *ngFor="let star of starRatings" class="form-check">
+                  <div class="checkboxresults-length"></div>
+                  <input class="form-check-input" type="checkbox" [value]="star" [id]="star">
+                  <label class="form-check-label" [for]="star">
+                    {{ star }}
+                  </label>
+                </div>
+                
+                <!-- third -->
+                <h4 class="filter-head">Room facilities</h4>
+                <div class="form-check" *ngFor="let room of roomsList">
+                  <div class="checkboxresults-length"></div>
+                  <input class="form-check-input" type="checkbox" [value]="room.id" id="{{room.id}}">
+                  <label class="form-check-label" [for]="room.id">
+                    {{room.name}}
+                  </label>
+                </div>
+
+                <p class="showmore" (click)="filterPopup()">
+                  {{  this.showMoreRooms ? 'Show Less' : 'Show More' }}
+                </p>
+                
+
+</div>
+
+<button class="filter-btn">Apply Filter</button>
+
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+        <!-- Middle column for products -->
+        <div class="col-md-9"*ngIf="this.propertyList.length>0">
+
+
+          <div class="filter-section city-hotels">
+            <h5 class="malidives-text"*ngIf="this.selectedDestination"><i class="fa fa-solid fa-globe"></i> {{  this.selectedDestination ||'Maldives'}} </h5>
+            <h4 class="filter-text"></h4>
+
+          </div>
+
+
+          <div class="row left-side">
+            <!-- Product cards -->
+            <div class="col-md-4 product-card"  *ngFor="let hotel of propertyList">
+              <div class="hotel-card">
+                <div class="product_img image-fluid">
+                  <img [src]="hotel.propertyDetail?.hotelImageUrl?.length ? hotel.propertyDetail.hotelImageUrl[0] : 'assets/images/resortpic.jpg'" class="img-fluid" >
+                </div>
+                <div class="cardetails">
+                  <p class="accom-right">{{ hotel.hotelName }}</p>
+                  <p class="accom_ratings">
+                    {{ hotel.propertyDetail.
+                      starRating
+                      }}
+                    <i class="fa fa-solid fa-star acom-star"></i>
+                  </p>
+                </div>
+                <p class="mald_text">
+                  <i class="fas fa-map-marker-alt"></i>&nbsp; {{ hotel.propertyDetail.address}}
+                </p>
+                <div class="view_section">
+                  <h5 class="accom_amt"*ngIf="hotel.rooms.length>0">
+                    $ {{ hotel.rooms[0].price.actual}} {{hotel.currency}}
+                    <span class="onwards">&nbsp; Onwards</span>
+                  </h5>
+                  <button *ngIf="hotel.rooms.length>0" class="view_accom"(click)="roomAvailblity(hotel.propertyDetail.productId,hotel)">View</button>
+                  <button class="no-rooms"*ngIf="hotel.rooms.length==0" >No rooms available</button>
+                </div>
+                <p *ngIf="hotel.rooms.length>0"class="strike_price">$ {{ hotel.rooms[0].mop}}</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- **** PAGINATION ***** -->
+
+    <div class="pagination">
+      <h3 class="prev"><i class="fa fa-solid fa-arrow-left"></i>Prev </h3>
+      <div class="numbers">
+        <div class="numbers">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          <p>...</p>
+          <h3 class="next">Next <i class="fa fa-solid fa-arrow-right"></i> </h3>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- footers -->
+
+    <div class="footer">
+      <!-- <app-footer> </app-footer> -->
+      <app-common-footer></app-common-footer>
+    </div>

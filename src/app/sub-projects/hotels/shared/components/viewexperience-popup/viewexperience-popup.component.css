@@ -1,0 +1,180 @@
+.container-fluid{
+    margin-top: 32px;
+}
+::ng-deep .mat-dialog-container {
+    border-radius: 20px; 
+    /* overflow-x: hidden; */
+  }
+.image-card{
+    height: 383px;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover !important;
+    background-position: center !important;
+    background: url(../../../../../../assets/images/seaship.jpg);
+    /* transition: transform 0.3s; */
+}
+/* .image-card:hover{
+    transform: scale(0.7);
+} */
+.image-change{
+    width: 85.11px;
+    height: 82px;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    margin-top: 16px;
+    cursor: pointer;
+}
+.small-img{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.img-png {
+    height: 82px;
+    width: 85.11px;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.img-png:hover {
+    transform: scale(1.1);
+}
+
+.head-txt{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+.acom-star {
+    margin: 0 3px;
+    color: gold;
+    font-size: 14px;
+}
+.accom_ratings{
+    margin-left: 15px;
+}
+.right-amt{
+    float: inline-end;
+    /* position: absolute; */
+    /* width: 87px; */
+    height: 36px;
+    left: 1272px;
+    top: 75px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 151.5%;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+}
+.line{
+    color: Ivory;
+}
+.facilities{
+    color: #22B882;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.policy-sub{
+    margin-left: 8px;
+}
+.overview{
+    margin-top: 20px;
+}
+.overview-txt{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+.overview-para{
+    height: auto;
+    top: 223px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+.things-to-do{
+    margin-top: 20px;
+    height: auto;
+    /* width: 645px; */
+}
+.things-para{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+.amenities{
+    height: 18px;
+    left: 746px;
+    top: 455px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+}
+.experience-section{
+    margin-top: 28px;
+}
+.exp-btn{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    color: #fff;
+    /* position: absolute; */
+    width: 196px;
+    height: 52px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+}
+
+
+/* Media queries for smaller resolutions */
+@media (max-width: 768px) {
+    .accom_ratings{
+        position: absolute;
+        margin-top: 45px;
+        margin-left: 0px;
+    }
+.top-text{
+    margin-top: 30px;
+}
+
+}
+
+

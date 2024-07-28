@@ -1,0 +1,14 @@
+.page-center {
+    flex-direction: column;
+    height: 100vh;
+    background: var(--service-bg);
+}
+
+p {
+    color: var(--subtitle-color);
+    margin-bottom: 0;
+}
+
+img {
+    width: 25%;
+}

@@ -1,0 +1,28 @@
+<div>
+  <div class="datepax-container">
+    <p class="skip-browse">Skip and browse rooms</p>
+    <h3 class="head-text">Set your check-in and check-out dates</h3>
+    <span class="room-text">Select your dates to see the available rooms</span>
+
+    <!-- date picker div -->
+    <div class="datepaxinfo">
+      <div>
+        <mat-form-field appearance="outline" class="custom-height">
+          <mat-label>Check in</mat-label>
+          <input matInput [matDatepicker]="picker" [(ngModel)]="checkInDate" [matDatepickerFilter]="dateFilter"(dateChange)="onCheckInDateChange()">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="custom-height left-side">
+          <mat-label>Check out</mat-label>
+          <input matInput [matDatepicker]="picker1" [(ngModel)]="checkOutDate" [matDatepickerFilter]="checkOutDateFilter">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <button class="show-rooms" (click)="onSaveClick()">Done</button>
+    </div>
+  </div>
+</div>

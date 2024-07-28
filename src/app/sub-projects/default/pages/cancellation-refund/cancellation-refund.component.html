@@ -1,0 +1,193 @@
+<app-reusable-headers></app-reusable-headers>
+
+<div class="booking-section">
+    <h4 class="view_booking">View your cancellations and refunds</h4>
+    <p class="booking_text">Lorem ipsum dolor sit amet consectetur. Vitae etiam eget vestibulum leo id mattis vel.</p>
+
+    <!-- accomdentation **** sort  -->
+    <div class="accomdentation-sort">
+        <p class="accom-text" (click)="showTab('cancellation')" [class.active]="activeTab === 'cancellation'">Cancellation</p>
+        <p class="transport-text" (click)="showTab('refund')" [class.active]="activeTab === 'refund'">Refund</p>
+    
+        <p class="right status">Sort by: Status &nbsp; <i class="fa fa-regular fa-sort"></i></p>
+        <p class="sort_lastyear">Sort by: All/ Last Year &nbsp; <i class="fa fa-regular fa-sort"></i></p>
+    </div>
+
+    <!--  booking list card -->
+
+    <div class="booking-card">
+        <div *ngIf="activeTab === 'cancellation'">
+            <div *ngFor="let booking of bookings" class="booking-item">
+                <div class="booking-left">
+                    <div class="booking-img"></div>
+                    <div class="booking-details">
+                        <div class="detail-item">
+                            <h5 class="table_head">Hotel name</h5>
+                            <span>{{ booking.hotelName }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Cancellation date</h5>
+                            <span>{{ booking.bookingDate }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Cancellation time</h5>
+                            <span>{{ booking.bookingTime }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Payment Method</h5>
+                            <span>{{ booking.paymentMethod }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Price</h5>
+                            <span>{{ booking.price }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Status</h5>
+                            <span>{{ booking.status }}</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="view_btn">Request refund</button>
+            </div>
+        </div>
+
+        <div *ngIf="activeTab === 'refund'">
+            <!-- Placeholder content for Refunds, replace with actual refund data -->
+            <div *ngFor="let refund of refunds" class="booking-item">
+                <div class="booking-left">
+                    <div class="booking-img"></div>
+                    <div class="booking-details">
+                        <div class="detail-item">
+                            <h5 class="table_head">Hotel name</h5>
+                            <span>{{ refund.hotelName }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Refund date</h5>
+                            <span>{{ refund.refundDate }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Refund time</h5>
+                            <span>{{ refund.refundTime }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Payment Method</h5>
+                            <span>{{ refund.paymentMethod }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Amount</h5>
+                            <span>{{ refund.amount }}</span>
+                        </div>
+                        <div class="detail-item">
+                            <h5 class="table_head">Status</h5>
+                            <span>{{ refund.status }}</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="view_btn">Request refund</button>
+            </div>
+        </div>
+
+        <!-- **** PAGINATION ***** -->
+
+        <div class="pagination">
+            <h3 class="prev"><i class="fa fa-solid fa-arrow-left"></i>Prev </h3>
+            <div class="numbers">
+                <div class="numbers">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>...</p>
+                    <h3 class="next">Next <i class="fa fa-solid fa-arrow-right"></i> </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- mobile section -->
+<div class="mobile-section">
+    <h4 class="view_booking">View your cancellations and refunds</h4>
+    <p class="booking_text">Lorem ipsum dolor sit amet consectetur. Vitae etiam eget vestibulum leo id mattis vel.</p>
+    <div class="accomdentation-sort">
+        <p class="accom-text" (click)="showTab('cancellation')" [class.active]="activeTab === 'cancellation'">Cancellation</p>
+        <p class="transport-text" (click)="showTab('refund')" [class.active]="activeTab === 'refund'">Refund</p>
+      
+       
+        </div>
+        <p class="right status">Sort by: Status &nbsp; <i class="fa fa-regular fa-sort"></i></p>
+        <p class="sort_lastyear">Sort by: All/ Last Year &nbsp; <i class="fa fa-regular fa-sort"></i></p>
+
+
+
+        <!-- tabs -->
+        <div *ngIf="activeTab === 'cancellation'">
+            <div class="booking-sec"*ngFor="let booking of bookings" >
+                <div class="booking-img"></div>
+                <div class="property-name">Hotel name <span class="prop-name">{{booking.hotelName}}</span></div>
+
+                <div class="cancel-head">Cancelled Date</div>
+                <div class="date">{{booking.bookingDate}}</div>
+
+                <div class="cancel-head">Cancelled time</div>
+                <div class="date">{{booking.bookingTime}}</div>
+
+                <div class="cancel-head">Payment method</div>
+                <div class="date">{{booking.paymentMethod}}</div>
+
+                <div class="cancel-head">Price</div>
+                <div class="date">{{booking.price}}</div>
+
+                <div class="cancel-head">Status</div>
+                <div class="date">{{booking.status}}</div>
+
+                <button class="refund-btn">Request Refund</button>
+            </div>
+            </div>
+            <div *ngIf="activeTab === 'refund'">
+                <div class="booking-sec"*ngFor="let refund of refunds" >
+                    <div class="booking-img"></div>
+                    <div class="property-name">Hotel name <span class="prop-name">{{refund.hotelName}}</span></div>
+    
+                    <div class="cancel-head">Cancelled Date</div>
+                    <div class="date">{{refund.refundDate}}</div>
+    
+                    <div class="cancel-head">Cancelled time</div>
+                    <div class="date">{{refund.refundTime}}</div>
+    
+                    <div class="cancel-head">Payment method</div>
+                    <div class="date">{{refund.paymentMethod}}</div>
+    
+                    <div class="cancel-head">Price</div>
+                    <div class="date">{{refund.amount}}</div>
+    
+                    <div class="cancel-head">Status</div>
+                    <div class="date">{{refund.status}}</div>
+    
+                    <button class="refund-btn">Request Refund</button>
+                </div>
+                </div>
+
+
+
+        <div class="pagination">
+            <h3 class="prev"><i class="fa fa-solid fa-arrow-left"></i>Prev </h3>
+            <div class="numbers">
+                <div class="numbers">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>...</p>
+                    <h3 class="next">Next <i class="fa fa-solid fa-arrow-right"></i> </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- footer -->
+<div class="footer">
+  <app-reusable-footer></app-reusable-footer>
+</div>

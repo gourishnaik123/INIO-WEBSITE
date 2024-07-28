@@ -1,0 +1,3300 @@
+.blog-header {
+    /* height: 
+    1117px; */
+    height:
+        912px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../../../../../../assets/images/landing.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    /* Ensure that child elements do not overflow */
+}
+
+.header {
+    position: absolute;
+    width: 90%;
+    /* Adjust width to a relative unit */
+    max-width: 1588px;
+    /* Set a maximum width */
+    height: 174px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    box-sizing: border-box;
+}
+
+.Inio_Sub {
+    background: url(../../../../../../assets/images/iniologo.png);
+    background-size: cover;
+    position: absolute;
+    left: -1.2%;
+    right: 92.7%;
+    top: 0%;
+    bottom: 50%;
+    cursor: pointer;
+}
+.select-sec{
+    width: 177px;
+    /* background: none; */
+    height: 36px;
+    color: #fff;
+    border: 1px solid rgba(44, 50, 31, 0.5);
+    outline: none;
+    background: rgba(44, 50, 31, 0.5);
+    margin-left: 14px;
+    /* font-family: 'Optima'; */
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.search-bed{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(236, 230, 222, 1);
+    cursor: pointer;
+}
+.usericon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 6px;
+    gap: 10px;
+    position: absolute;
+    left: 87.41%;
+    top: 7.47%;
+    border-radius: 63px;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.insid_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 118px;
+    height: 50px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_text {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ECE6DE;
+    margin: 0;
+    /* Remove default margin */
+
+
+}
+
+.name_text {
+    font-family: 'Optima';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 21px;
+    color: #ECE6DE;
+    margin: 0;
+    /* Remove default margin */
+    font-weight: 700;
+    font-size: 14px;
+
+
+
+
+}
+
+.down_arrow {
+    float: right;
+}
+
+.font_icon {
+    width: 10px;
+    height: 5px;
+    color: #ECE6DE;
+}
+
+
+
+
+
+.attraction {
+    position: absolute;
+    width: 90%;
+    max-width: 1592px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    /* height: 87px;
+   border: 1px solid black; */
+}
+
+.hr_line1 {
+    position: absolute;
+    left: 0.25%;
+    right: 0%;
+    top: 0%;
+    bottom: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.hr_line2 {
+    position: absolute;
+    left: 0.25%;
+    right: 0%;
+    top: 0%;
+    bottom: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 87px;
+}
+
+.all_icon {
+    position: absolute;
+    width: 47.72px;
+    height: 50.53px;
+    left: 4px;
+    top: 17px;
+
+}
+
+.fass {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    left: 15.62%;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+}
+
+.fascity {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    /* left: 163.62%; */
+    left: 97px;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+}
+
+.city {
+    position: absolute;
+    /* left: 142.76%; */
+    left: 175.76%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.dest_name {
+    position: absolute;
+    left: 0.25%;
+    right: 96.75%;
+    top: 83.03%;
+    bottom: 22.38%;
+
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ECE6DE;
+
+
+}
+
+.guest_icon {
+    width: 24.33px;
+    height: 24.33px;
+    position: absolute;
+    /* left: 163.62%; */
+    left: 210.52px;
+    right: 15.63%;
+    top: 12.49%;
+    color: #ECE6DE;
+    font-size: 22px;
+    bottom: 12.51%;
+
+}
+
+.guest_text {
+    position: absolute;
+    left: 410.78%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+
+}
+
+.home_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 313px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+
+}
+
+
+.home_text {
+    position: absolute;
+    left: 626.78%;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+
+.experinces_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left:
+        427.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.experinces_text {
+    position: absolute;
+    left:
+        410.51px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.destination_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 535.17px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+
+.destination_text {
+    position: absolute;
+    left: 515.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.transport_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 640.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.transport_text {
+    position: absolute;
+    left: 628.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+
+.internet_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 726.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+
+.internet_text {
+    position: absolute;
+    left: 716.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.nomads_icon {
+    position: absolute;
+    right: 9.37%;
+    top: 11.32%;
+    left: 811.51px;
+    color: #ECE6DE;
+    font-size: 22px;
+    right: 15.63%;
+    width: 24.33px;
+    height: 24.33px;
+    top: 12.49%;
+    bottom: 12.5%;
+}
+
+.nomads_text {
+    position: absolute;
+    left: 801.17px;
+    right: 149.6%;
+    top: 86.24%;
+    width: 102px;
+    bottom: 22.17%;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.header_btn {
+    float: right;
+}
+
+.register_btn {
+    position: absolute;
+    left: 83%;
+    font-family: Optima;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.24px;
+    width: 104px;
+    height: 52px;
+    top: 17px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    position: absolute;
+    width: 104px;
+    height: 52px;
+    border: 1px solid #ECE6DE;
+    border-radius: 15px;
+    gap: 0px;
+    opacity: 0px;
+    background: transparent;
+    color: var(--Ivory, rgba(236, 230, 222, 1));
+
+}
+
+.signin_btn {
+    position: absolute;
+    left: 92.6%;
+    font-family: Optima;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.24px;
+    width: 104px;
+    height: 52px;
+    top: 17px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    position: absolute;
+    width: 104px;
+    height: 52px;
+    border: 1px solid #ECE6DE;
+    border-radius: 15px;
+    gap: 0px;
+    opacity: 0px;
+    /* background: transparent; */
+    color: var(--Khaki, rgba(44, 50, 31, 1));
+    ;
+}
+
+.joali {
+    width: 102px;
+    font-weight: 700;
+    height: 21px;
+    font-size: 16px;
+    line-height: 20.8px;
+    /* margin-top: 239px; */
+    margin-top: 130px;
+    color: var(--Ivory, rgba(236, 230, 222, 1));
+
+}
+
+.joali_para {
+    position: absolute;
+    /* max-width: 404px; */
+    height: 54px;
+    left: 74%;
+    /* top: 267px; */
+    margin-top: 7px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #ECE6DE;
+}
+
+.maldives_text {
+    float: right;
+}
+
+
+.unleash_text {
+    position: absolute;
+    width: 579px;
+    height: 128px;
+    left: calc(50% - 579px / 2 - 0.5px);
+    /* top: 628px; */
+    margin-top: 405px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.unleash_subtext {
+    position: absolute;
+    width: 475px;
+    height: 63px;
+    /* left: 414px; */
+    /* top: 768px; */
+    margin-top: 548px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    left: calc(50% - 579px / 2 - -44.5px);
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.search_section {
+    position: absolute;
+    width: 100%;
+    height: 21px;
+    top: 625px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.search_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    isolation: isolate;
+    position: absolute;
+    /* width: 1407px; */
+    width: 100%;
+    height: 79px;
+    border-radius: 50px;
+    left: 0%;
+    left: calc(50);
+    top: 665px;
+    background: rgba(44, 50, 31, 0.5);
+
+}
+
+.align-right {
+    margin-left: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 11px;
+    width: 115px;
+    height: 52px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    flex: none;
+    margin-right: 50px;
+    order: 1;
+    flex-grow: 0;
+    color: rgba(236, 230, 222, 1);
+}
+
+.auto-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
+    /* Adjusted for better spacing */
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 28px;
+    top: 14px;
+    z-index: 1;
+}
+
+.country-selector {
+    display: flex;
+    align-items: center;
+    /* Ensures items are centered vertically */
+    padding: 0;
+    gap: 16px;
+    /* Adjusted for tighter spacing between elements */
+    font-family: Optima;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(236, 230, 222, 1);
+    cursor: pointer;
+}
+
+.country-selector i,
+.country-selector p {
+    margin: 0;
+    /* Removes default margins */
+    padding: 0;
+    /* Removes default padding */
+}
+
+.country-selector .line {
+    margin-left: 100px;
+    /* Adds space before the separator line */
+}
+
+.align-right {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    width: 115px;
+    height: 52px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    color: rgba(236, 230, 222, 1);
+}
+
+.line {
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.accommodations_text {
+    position: absolute;
+    width: 252px;
+    height: 32px;
+    left: calc(50% - 252px / 2);
+    /* top: 1254px; */
+    top: 960px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A09935;
+}
+
+
+.guide_text {
+    position: absolute;
+    width: 675px;
+    height: 128px;
+    /* left: calc(50% - 675px / 2 - 0.5px); */
+    top: 1056px;
+    /* left: 25%; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    color: #A09935;
+    margin-left: 215px;
+
+}
+
+.guide_text::before,
+.guide_text::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    width: 334PX;
+    border-top: 1px solid #A09935;
+}
+
+.guide_text::before {
+    left: -339px;
+    position: absolute;
+    /* width: 334px; */
+    /* height: 1px; */
+    /* left: 180px; */
+    /* top: 1284px; */
+    background: #A09935;
+
+}
+
+.guide_text::after {
+    right: -339px;
+}
+
+/* visiting */
+
+.visiting {
+    /* margin-left: 69px; */
+    /* position: absolute;
+    top: 1308px; */
+    /* top: 15; */
+    background: url('../../../../../../assets/images/Group637.jpg') no-repeat;
+    height: 100%;
+    max-width: 100%;
+    /* background-size: cover!important; */
+    background-position: center !important;
+    margin-top: 300px;
+    height: 646px;
+}
+
+
+
+
+
+.card {
+    position: relative;
+    /* Ensure the overlay position is relative to the card */
+}
+
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+
+.overlay h3 {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 105px;
+    color: #ECE6DE;
+    margin-top: 650px;
+
+}
+
+.card {
+    border: none;
+}
+
+
+/* video banner */
+
+.videobanner {
+    position: absolute;
+    width: 100%;
+    height: 841px;
+    left: 0px;
+    top: 2021px;
+    /* border: 1px solid red; */
+    background-size: cover !important;
+    background-position: center !important;
+    /* background:linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url(../../../../../../assets/images/iland.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(44, 50, 31, 0) 55.73%, #2C321F 100%), url(../../../../../../assets/images/scenery.jpg);
+
+    border: none;
+}
+
+
+
+.top_banner {
+    position: absolute;
+    width: 675px;
+    height: 128px;
+    left: calc(50% - 675px / 2 - 0.5px);
+    /* top: 2397px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+    top: 231px;
+
+}
+
+.banner-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+.fa-play {
+    position: absolute;
+    left: 47.38%;
+    /* height: 156px; */
+    font-size: 33px;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2C321F;
+    top: 400px;
+    /* border: 1px solid white; */
+    height: 130px;
+    padding: 21px;
+    /* background: azure; */
+    border-radius: 64px;
+}
+
+.ebark {
+    position: absolute;
+    width: 866px;
+    height: 128px;
+    left: calc(47% - 675px / 2 - 0.5px);
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133.5%;
+    /* display: flex; */
+    align-items: center;
+    /* text-align: center; */
+    color: #ECE6DE;
+    top: 751px;
+}
+
+.experinces_cards {
+    /* Rectangle 116 */
+
+    position: absolute;
+    width: 100%;
+    height: 1568px;
+    /* left: 14px; */
+    top: 2862px;
+
+    background: #2C321F;
+
+
+
+}
+
+.paradise_text {
+    position: absolute;
+    width: 675px;
+    height: 128px;
+    /* left: calc(50% - 675px / 2 - 439.5px); */
+    /* top: 3151px; */
+    font-family: 'Optima';
+    font-style: normal;
+    top: 112px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #ECE6DE;
+}
+
+
+
+.rightside_icons {
+    /* position: absolute; */
+    left: 963px;
+    top: 112px;
+    display: flex;
+    gap: 45px;
+    /* margin-right: -151px; */
+    /* width: 459px; */
+    /* margin-left: -17px; */
+    margin-top: 112px;
+    float: right;
+}
+
+.exp-layout {
+    max-width: 1477px;
+}
+
+.experinces_banner {
+    position: absolute;
+    /* width: 1540px; */
+    height: 756px;
+    /* top: 3067px; */
+    top: 3047px;
+    width: 87%;
+    left: 93px;
+    /* border: 1px solid red; */
+    top: 342px;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 47.92%),url(../../../../../../assets/images/boating.jpg); */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 47.92%), url(../../../../../../assets/images/sea1.jpg);
+    border-radius: 40px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+
+.rightside_icons svg {
+    width: 50px;
+    height: 50px;
+}
+
+.experience_headertext {
+    position: absolute;
+    width: 457px;
+    height: 53px;
+    /* left: calc(50% - 457px / 2 - 475.5px); */
+    margin-left: 33px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 376px;
+    /* top: 376px; */
+    font-size: 40px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #ECE6DE;
+}
+
+.waves {
+    width: 457px;
+    height: 128px;
+    left: calc(50% - 457px / 2 - 475.5px);
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 33px;
+    top: 416px;
+    font-size: 96px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    margin-top: 416px;
+    color: #ECE6DE;
+}
+
+.experiences_paragh {
+    /* position: absolute; */
+    width: 602px;
+    height: 160px;
+    left: calc(50% - 602px / 2 - 403px);
+    /* top: 3893px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #ECE6DE;
+    margin-left: 33px;
+}
+
+
+.experincesrightone {
+    position: absolute;
+    width: auto;
+    height: 32px;
+    left: 82%;
+    /* transform: translateX(311%); */
+    top: 586px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    white-space: nowrap;
+    color: #ECE6DE;
+}
+
+.experincesrighttwo {
+    position: absolute;
+    width: auto;
+    height: 32px;
+    left: 82%;
+    /* transform: translateX(311%); */
+    top: 628px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    white-space: nowrap;
+    color: #ECE6DE;
+}
+
+.experincesrightthree {
+    position: absolute;
+    width: auto;
+    height: 32px;
+    left: 82%;
+    /* transform: translateX(311%); */
+    top: 670px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    white-space: nowrap;
+    color: #ECE6DE;
+}
+
+.experience_slider {
+    width: 100%;
+    margin-top: 1127px;
+    height: 245px;
+    left: 0px;
+    /* border: 1px solid red; */
+    top: 1127px;
+
+
+}
+
+.smallcard {
+    /* position: absolute; */
+    /* width: 400.94px; */
+    width: 100%;
+    height: 245px;
+    left: 0.29px;
+    top: 0px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 100%);
+    border-radius: 20px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.img1 {
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0) 100%), url(../../../../../../assets/images/river.jpg);
+
+}
+
+.img2 {
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0) 100%), url(../../../../../../assets/images/waves2.jpg);
+}
+
+.img3 {
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0) 100%), url(../../../../../../assets/images/waves3.jpg);
+}
+
+.img4 {
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0) 100%), url(../../../../../../assets/images/waves4.jpg);
+}
+
+.smallcard-text {
+    position: absolute;
+    width: 222.98px;
+    height: 30.34px;
+    /* left: calc(50% - 222.98px / 2 - 723.56px); */
+    top: 189.93px;
+    font-family: 'Optima';
+    font-style: normal;
+    /* margin-top: 189px; */
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 133.5%;
+    display: flex;
+    left: 30px;
+    align-items: center;
+    color: #ECE6DE;
+
+}
+
+.smallcard_svg {
+    position: absolute;
+    left: 81.33%;
+    right: 8.33%;
+    top: 78.25%;
+    bottom: 4.17%;
+}
+
+.learn_more {
+    position: absolute;
+    width: 169px;
+    margin-top: 52px;
+    height: 52px;
+    left: calc(50% - 169px / 2 - 0.5px);
+    /* top: 4414px; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    position: absolute;
+    height: 58px;
+    /* width: 102px; */
+    /* height: 30px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 151.5%;
+    display: flex;
+    align-items: center;
+    color: #ECE6DE;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* left: 0%; */
+    /* right: 0%; */
+    /* top: calc(50% - 58px / 2); */
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 40px;
+}
+
+.learn_ebark {
+    position: absolute;
+    width: 866px;
+    /* height: 128px; */
+    left: calc(47% - 675px / 2 - 0.5px);
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133.5%;
+    align-items: center;
+    color: #ECE6DE;
+    margin-top: 131px;
+}
+
+
+.cars {
+    /* border: 1px solid red; */
+    height: 1567px;
+    width: 100%;
+    position: absolute;
+    /* width: 1593px; */
+    height: 1567px;
+    /* left: 65px; */
+    top: 4515px;
+}
+
+.cars_header {
+    position: absolute;
+    width: 675px;
+    height: 128px;
+    left: 66px;
+    /* top: 4660px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+}
+
+.transportation {
+    width: 290px;
+    height: 32px;
+    /* left: 1447px; */
+    /* top: 4678px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    float: right;
+    align-items: center;
+    text-align: right;
+    color: #A09935;
+    margin-top: 19px;
+}
+
+.transportation::after {
+    content: '';
+    position: absolute;
+    /* width: calc(100% - 1447px); */
+    height: 2px;
+    background-color: #A09935;
+    top: calc(32px / 2);
+    left: 44%;
+    width: 33%;
+    margin-top: 19px;
+    background: #A09935;
+
+}
+
+
+.custom-card {
+
+    max-width: 376px;
+    height: 494px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+}
+
+.card-card {
+    margin-top: 207px;
+}
+
+.card-row {
+    margin-left: 33px;
+}
+
+.card_carimg {
+
+    max-width: 347.13px;
+    height: 225.66px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background: url(../../../../../../assets/images/cars.jpg);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.car_text {
+    width: 159.68px;
+    height: 23.69px;
+    left: 94.92px;
+    top: 5120.87px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 15.8px;
+    line-height: 130%;
+    margin-left: 29.92px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 94px; */
+    color: #2C321F;
+}
+
+.cardetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.car_ratings {
+    width: 25.46px;
+    height: 20.31px;
+    left: 366.69px;
+    top: 5123.13px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    margin-right: 48.8px;
+    display: flex;
+    margin-top: 15.8px;
+    align-items: center;
+    color: #2C321F;
+}
+
+.star {
+    margin-left: 3.79px;
+}
+
+.car_name {
+    margin-top: -11.08px;
+    width: 82.47px;
+    left: 95px;
+    top: 5143.08px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    margin-top: -9.92px;
+    color: #6A7486;
+    margin-left: 30px;
+
+}
+
+.car_ammenities {
+    /* width: 90.25px; */
+    height: 11.28px;
+    margin-left: 30px;
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car_ammenities2 {
+    /* width: 90.25px; */
+    height: 11.28px;
+    margin-left: 30px;
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seater {
+
+    width: 90.25px;
+    height: 20.31px;
+    /* position: absolute; */
+    width: 67.11px;
+    height: 20.31px;
+    left: 118.14px;
+    top: 5198px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    /* display: flex; */
+    align-items: center;
+    color: #2A2F44;
+    left: 95px;
+
+}
+
+.seater-right {
+    margin-right: 41.69px;
+    width: 90.25px;
+    height: 20.31px;
+    width: 90.25px;
+    height: 20.31px;
+    left: 118.14px;
+    top: 5198px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    float: right;
+    line-height: 130%;
+    align-items: center;
+    color: #2A2F44;
+
+}
+
+
+.left_seaters {
+    /* position: absolute; */
+    /* width: 114.11px; */
+    height: 20.31px;
+    left: 296.33px;
+    top: 5198px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #2A2F44;
+    margin-right: 77.55px;
+}
+
+
+
+.view_button {
+    float: right;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    /* position: absolute; */
+    width: 95px;
+    color: white;
+    height: 41px;
+    left: 319px;
+    top: 5304px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 40px;
+    margin-right: 27px;
+    margin-top: 22.5px;
+}
+
+.view_amt {
+    margin-top: 43.69px;
+    /* position: absolute; */
+    /* width: 83.31px; */
+    width: 171.31px;
+    height: 23.69px;
+    left: 95px;
+    top: 5325px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    color: #A09935;
+    /* width: 100%; */
+}
+
+.month {
+    /* position: absolute; */
+    width: 75.44px;
+    height: 14.67px;
+    left: 171.92px;
+    top: 5330.75px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 10px;
+    line-height: 215%;
+    display: flex;
+    align-items: center;
+    color: #A3A3A3;
+}
+
+.view_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transprtation {
+    margin-top: 44px;
+}
+
+.common-transportation {
+    width: 302px;
+    height: 32px;
+    left: 65px;
+    top: 5405px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    /* margin-top: 44px; */
+    color: #A09935;
+    margin-left: 65px;
+}
+
+.transportation-row {
+    margin-left: 33px;
+}
+
+.transpo-card {
+    /* position: absolute; */
+    /* width: 514px; */
+    width: 100%;
+    height: 367px;
+    /* left: 66px; */
+    /* top: 5465px; */
+    /* border: 1px solid palevioletred; */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 100%), url(../../../../../../assets/images/boat.jpg);
+    border-radius: 15px;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.transpo-card2 {
+    width: 100%;
+    height: 367px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 100%), url(../../../../../../assets/images/yackt.jpg);
+    border-radius: 15px;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.transpo-card3 {
+    width: 100%;
+    height: 367px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 100%), url(../../../../../../assets/images/ferry.jpg);
+    border-radius: 15px;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.transpo-card4 {
+    width: 100%;
+    height: 367px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 100%), url(../../../../../../assets/images/seaplane.jpg);
+    border-radius: 15px;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.transpo-card5 {
+    width: 100%;
+    height: 367px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 100%), url(../../../../../../assets/images/bus.jpg);
+    border-radius: 15px;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.transpo-card6 {
+    width: 100%;
+    height: 367px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 100%), url(../../../../../../assets/images/dhoni.jpg);
+    border-radius: 15px;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.transpo-head {
+    width: 216px;
+    height: 44px;
+    margin-left: 150px;
+    margin-top: 240px;
+    left: 215px;
+    top: 5705px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.transpo-head6 {
+    width: 364px;
+    height: 44px;
+    margin-left: 75px;
+    margin-top: 240px;
+    left: 215px;
+    top: 5705px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.transpo-para {
+    width: 332px;
+    height: 38px;
+    left: 157px;
+    top: 5755px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154%;
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+
+}
+
+.viewallbtn {
+    /* position: absolute;
+    width: 169px;
+    height: 52px;
+    left: calc(50% - 169px / 2 - 0.5px);
+    margin-top: 27px; */
+
+
+    position: absolute;
+    width: 169px;
+    height: 52px;
+    left: calc(50% - 169px / 2 - 0.5px);
+    margin-top: 27px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 40px;
+    height: 58px;
+    box-sizing: border-box;
+    /* color: #fff; */
+    font-size: 20px;
+    font-family: 'Optima';
+    align-items: center;
+    color: #ECE6DE;
+    font-style: normal;
+}
+
+.featured_places {
+    margin-top: 112px;
+    position: absolute;
+    width: 100%;
+    height: 822px;
+    background: #FFFFFF;
+    /* left: 66px; */
+    /* border: 1px solid red; */
+}
+
+.nomads-row {
+    margin-left: 33px;
+    margin-top: 192px;
+}
+
+.nomads-card {
+    max-width: 376px;
+    height: 520px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+}
+
+.nomads-basic {
+    margin-top: 27px;
+    /* position: absolute; */
+    width: 135px;
+    margin-left: 34px;
+    height: 27px;
+    left: 102px;
+    top: 6641px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+
+.namads_pre {
+    /* position: absolute; */
+    width: 276px;
+    height: 21px;
+    /* margin-top: -9px; */
+    margin-left: 34px;
+    left: 102px;
+    top: 6673px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+
+.nomads_entityone {
+    width: 195.49px;
+    height: 23.28px;
+    left: 124.68px;
+    top: 6740.09px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-top: 46.09px;
+    margin-left: 37px;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+
+.nomads_entitytwo {
+    width: 219.78px;
+    height: 23.28px;
+    left: 124.68px;
+    top: 6782.76px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    margin-top: 19px;
+    align-items: center;
+    color: #2C321F;
+    margin-left: 37px;
+}
+
+.nomads_lorus {
+    /* width: 317px; */
+    width: 90%;
+    height: 52px;
+    left: 102px;
+    top: 7013px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 142%;
+    margin-left: 34px;
+    display: flex;
+    margin-top: 36.27px;
+    align-items: center;
+    color: #6A7486;
+}
+
+.viewnomads_amt {
+    margin-top: 14px;
+    /* position: absolute; */
+    /* width: 83.31px; */
+    width: 171.31px;
+    height: 23.69px;
+    left: 95px;
+    top: 5325px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    color: #A09935;
+    /* width: 100%; */
+}
+
+.nomads_btn {
+    /* position: absolute; */
+    width: 169px;
+    height: 52px;
+    margin-top: 46px;
+    margin-left: 45%;
+    left: calc(50% - 169px / 2 - 0.5px);
+    /* margin-top: 356px; */
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 40px;
+    height: 58px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Optima';
+    align-items: center;
+    color: #ECE6DE;
+    font-style: normal;
+}
+
+.accomendation_section {
+    margin-top: 85px;
+    /* height: 1092px;   */
+    height: 1159px;
+    position: absolute;
+    width: 100%;
+    background: #FFFFFF;
+    /* border: 1px solid red; */
+}
+
+.accom_deals {
+    position: absolute;
+    width: 250px;
+    height: 32px;
+    margin-top: 172px;
+    left: 67px;
+    /* top: 7492px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+}
+
+.accomadation_cards {
+    margin-top: 239px;
+}
+
+.accom_sub_card {
+
+    max-width: 376px;
+    height: 394px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+
+}
+
+.accom-img {
+    max-width: 90%;
+    /* width: 609px; */
+    height: 214.69px;
+    border-radius: 10px;
+    margin-top: 11.81px;
+    background: url(../../../../../../assets/images/accom.jpg);
+    margin-left: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.accom-right {
+    width: 159.68px;
+    height: 22.54px;
+    left: 94.92px;
+    top: 5120.87px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 14.5px;
+    line-height: 130%;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    color: #2C321F;
+}
+
+.accom_ratings {
+    width: auto;
+    height: 20.31px;
+    left: 366.69px;
+    top: 5123.13px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    margin-right: 26.51px;
+    display: flex;
+    margin-top: 15.8px;
+    align-items: center;
+    color: #2C321F;
+}
+
+.mald_text {
+    width: 82.47px;
+    left: 95px;
+    top: 5143.08px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    margin-top: -9.92px;
+    color: #6A7486;
+    margin-left: 24px;
+}
+
+.accom_amt {
+    margin-top: 29.99px;
+    width: 171.31px;
+    /* height: 23.69px; */
+    left: 95px;
+    top: 5325px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    margin-left: 24px;
+    align-items: center;
+    color: #A09935;
+
+}
+
+.onwards {
+    width: 51.99px;
+    height: 13.95px;
+    left: 547.51px;
+    top: 7870px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #6A7486;
+    margin-top: 1.99px;
+}
+
+.view_accom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    /* position: absolute; */
+    width: 109.75px;
+    height: 44.01px;
+    left: 708px;
+    color: #fff;
+    top: 7857px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    margin-right: 27px;
+    margin-top: 22.5px;
+}
+
+.strike_price {
+
+    width: 58.92px;
+    height: 17.18px;
+    left: 493.16px;
+    top: 7885.62px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 12px;
+    margin-top: -10px;
+    margin-left: 24px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-decoration-line: line-through;
+    color: #6A7486;
+}
+
+.discount-cir {
+    float: right;
+    /* position: absolute; */
+    /* width: 100%; */
+    height: 70px;
+    margin-top: -15px;
+    left: 298px;
+    /* top: 3px; */
+    overflow-x: hidden;
+
+}
+
+.travel_deals {
+    position: absolute;
+    width: 250px;
+    height: 32px;
+    margin-top: 56px;
+    left: 67px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+}
+
+.travel_cards {
+    margin-top: 117px;
+}
+
+.travels-row {
+    margin-left: 33px;
+    /* margin-top: 192px; */
+}
+
+.digital_card {
+    position: absolute;
+    /* width: 1729px; */
+    height: 1290px;
+    width: 100%;
+    margin-top: 85px;
+    left: -1px;
+    /* border: 1px solid red;s */
+    /* top: 8497px; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../../../../../../assets/images/wood.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.digital_nomtext {
+    position: absolute;
+    width: 454px;
+    height: 64px;
+    left: calc(50% - 454px / 2);
+    /* top: 8571px; */
+    font-family: 'Optima';
+    /* margin-left: 638px; */
+    font-style: normal;
+    margin-top: 74px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.digital_nompara {
+    position: absolute;
+    width: 1058px;
+    height: 93px;
+    left: calc(50% - 1058px / 2);
+    /* top: 8647px; */
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 150px;
+    font-size: 16px;
+    line-height: 192.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ECE6DE;
+}
+
+.digitalnomads_cards {
+    margin-top: 360px;
+}
+
+.ditalnomads-sec {
+    margin-top: 33px;
+}
+
+.nomad_img {
+    max-width: 90%;
+    /* width: 609px; */
+    height: 214.69px;
+    border-radius: 10px;
+    margin-top: 11.81px;
+    background: url(../../../../../../assets/images/nomad1.jpg);
+    margin-left: 15px;
+    background-size: cover;
+    background-position: center;
+}
+.pax-no{
+    padding-left: 10px;
+}
+.browse-more {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 10px;
+    position: absolute;
+    width: 159px;
+    margin-top: 427px;
+    height: 52px;
+    left: calc(52% - 159px / 2 - 0.5px);
+    /* top: 9627px; */
+    background: #ECE6DE;
+    border: 1px solid #ECE6DE;
+    border-radius: 15px;
+    color: var(--Khaki, rgba(44, 50, 31, 1));
+    font-weight: 700;
+}
+
+.footer {
+    margin-top: 296px;
+}
+
+
+.video-banner {
+    position: absolute;
+    width: 100%;
+    height: 841px;
+    left: 0px;
+    top: 2021px;
+}
+
+.video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#youtube-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 58.25vw; 
+    transform: translate(-50%, -50%);
+    object-fit: cover; 
+}
+
+
+/* large screen */
+@media (min-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-sec {
+        display: none;
+    }
+}
+
+/* Media queries for smaller resolutions */
+@media (max-width: 768px) {
+    .Inio_Sub {
+        background-size: cover;
+        position: absolute;
+        left: -1.2%;
+        right: 56.7%;
+        top: 0%;
+        bottom: 50%;
+        cursor: pointer;
+    }
+
+
+
+    .Inio_Sub {
+        height: 65px;
+        width: 101.49px;
+        position: relative;
+        left: 19px;
+        right: 0;
+        float: left;
+        cursor: pointer;
+        /* margin: 0 auto; */
+        margin-bottom: -24px;
+    }
+
+    .mobilesignin_btn {
+        /* Frame 36929 */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 15px;
+        gap: 10px;
+
+        width: 78px;
+        height: 36px;
+
+        background: #ECE6DE;
+        border-radius: 10px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+    }
+
+    .navbar {
+        background-color: #2C321F;
+        height: 65px;
+        width: 100%;
+
+    }
+
+    .navbar-brand {
+        margin-top: -20px;
+    }
+
+    .large-screen {
+        display: none;
+    }
+
+    .mob-background {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url(../../../../../../assets/images/landing.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 1052px;
+        width: 100%;
+    }
+
+    .mobile-attraction {
+        border: 1px solid;
+        height: 92.94px;
+        /* width: 375px; */
+        /* margin-top: 8.47px; */
+    }
+
+    .line {
+        /* position: absolute; */
+        left: 0.25%;
+        right: 0%;
+        top: 0%;
+        bottom: 100%;
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        margin-top: 87px;
+
+    }
+
+    .all_mobicon {
+        position: absolute;
+        /* width: 100%; */
+        /* width: -webkit-fill-available; */
+        width: 300px;
+        height: 50.53px;
+        margin-top: 8.75px;
+        margin-left: 18px;
+        display: flex;
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        white-space: nowrap;
+    }
+
+    .all_mobicon::-webkit-scrollbar {
+        display: none;
+        /* Hide scrollbar for WebKit-based browsers */
+    }
+
+    .mobicon_item {
+        display: inline-block;
+        text-align: center;
+        margin-right: 10px;
+        /* Adjust as necessary for spacing */
+    }
+
+    .mobicon_item i {
+        font-size: 16px;
+        display: block;
+        /* margin-bottom: 5px; */
+    }
+
+    .fass {
+        width: 24.33px;
+        height: 24.33px;
+        position: absolute;
+        left: 25px;
+        right: 15.63%;
+        top: 12.49%;
+        color: #ECE6DE;
+        font-size: 22px;
+        bottom: 12.51%;
+    }
+
+    .sub-txt {
+        color: white;
+        color: white;
+        margin-top: 32px;
+        margin-left: -4px;
+        padding-left: 18px;
+    }
+
+    .guest_icon {
+        left: 176.52px;
+    }
+
+    .home_icon {
+        left: 260px;
+    }
+
+    .experinces_icon {
+        left: 334px;
+    }
+
+    .destination_icon {
+        left: 420.17px;
+    }
+
+    .internet_icon {
+        left: 579.51px;
+    }
+
+    .transport_icon {
+        left: 512.51px;
+    }
+
+    .nomads_icon {
+        left: 649.51px;
+
+    }
+
+    .maldives_text {
+        margin-top: 53.09px;
+    }
+
+    .joali {
+        width: 102px;
+        font-weight: 700;
+        height: 21px;
+        margin-right: 29px;
+        font-size: 16px;
+        margin-top: 0px;
+        line-height: 20.8px;
+        color: var(--Ivory, rgba(236, 230, 222, 1));
+
+    }
+
+    .joali_para {
+        /* position: absolute; */
+        width: 197.05px;
+        height: 90px;
+        /* left: 121.94px; */
+        /* top: 240.03px; */
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        margin-left: -115px;
+        font-size: 14px;
+        line-height: 130%;
+        display: flex;
+        /* align-items: center; */
+        /* text-align: right; */
+        color: #ECE6DE;
+    }
+
+    .unleash_text {
+        height: 129px;
+        left: calc(50% - 579px / 2 - 0.5px);
+        width: 343px;
+        margin-left: 113px;
+        margin-top: 260.18px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ECE6DE;
+    }
+
+    .unleash_subtext {
+        position: absolute;
+        width: 287.08px;
+        height: 72px;
+        left: 43.46px;
+        top: 5px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        display: flex;
+
+        align-items: center;
+        text-align: center;
+        color: #ECE6DE;
+    }
+
+    .search_section {
+        margin-top: 67.14px;
+        width: fit-content;
+        left: 6%;
+    }
+
+    .search-card {
+        height: 244px;
+        /* width: 100; */
+        max-width: 90%;
+        width: 90%;
+        border-radius: 19px;
+        margin-left: 16px;
+        margin-top: 584px;
+        background: #2C321F80;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inner-search {
+        /* border: 1px solid green; */
+        margin-top:32px;
+        width: 303px;
+        height: 153px;
+    }
+
+    .search {
+        margin-top: 2rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 30px;
+        gap: 10px;
+
+        width: 303px;
+        height: 36px;
+
+        background: #A09935;
+        border: 1px solid #A09935;
+        border-radius: 50px;
+        color: #ECE6DE;
+    }
+
+    .search-country {
+        color: white;
+        height: 24px;
+        font-size: 16px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        /* width: 303px; */
+    }
+
+    .fa-caret-down {
+        float: inline-end;
+        float: inline-end;
+        margin-right: 30px;
+        margin-top: 3px;
+    
+    }
+
+    .country-head {
+        margin-left: 14px;
+    }
+
+    .search-city {
+        margin-top: 20px;
+        color: white;
+        height: 24px;
+        font-size: 16px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .accommodations {
+        width: fit-content;
+        height: 95px;
+        margin-top: 34.83px;
+
+    }
+
+    .acomd-text {
+        height: 21px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #A09935;
+        margin-left: 89.24px;
+    }
+
+    .guide-sub {
+        height: 64px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #A09935;
+    }
+
+    .mobile-images {
+        margin-top: 40px;
+    }
+
+    .resort {
+        background: url(../../../../../../assets/images/mobileresort.jpg);
+        height: 503px;
+        width: 325px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 40px 40px 0px 0px;
+        margin-left: 25.5px;
+    }
+
+    .cityhotel {
+        background: url(../../../../../../assets/images/mobilecityhotel.jpg);
+        height: 503px;
+        width: 325px;
+        background-size: cover;
+        background-position: center;
+        /* border-radius: 40px 40px 0px 0px; */
+        margin-left: 25.5px;
+    }
+
+    .guest-house {
+        background: url(../../../../../../assets/images/mobileguesthouse.jpg);
+        height: 503px;
+        width: 325px;
+        background-size: cover;
+        background-position: center;
+        /* border-radius: 40px 40px 0px 0px; */
+        margin-left: 25.5px;
+    }
+
+    .home-stay {
+        background: url(../../../../../../assets/images/mobilehomestay.jpg);
+        height: 503px;
+        width: 325px;
+        background-size: cover;
+        background-position: center;
+        /* border-radius: 40px 40px 0px 0px; */
+        margin-left: 25.5px;
+        border-bottom-left-radius: 36px;
+        border-bottom-right-radius: 36px;
+    }
+
+    .mobvideobanner {
+        /* height: 804.66px;
+        margin-top: 40.96px;
+        left: 0px;
+        top: 2021px;
+        background-size: cover !important;
+        background-position: center !important;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(44, 50, 31, 0) 55.73%, #2C321F 100%), url(../../../../../assets/images/scenery.jpg);
+        border: none; */
+        height: 176.66px;
+        margin-top: 47.96px;
+        left: 0px;
+        top: 2021px;
+        background-size: cover !important;
+        background-position: center !important;
+        width: 100%;
+        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180deg, rgba(44, 50, 31, 0) 55.73%, #2C321F 100%), url(scenery.jpg); */
+        border: none;
+
+    }
+    .video-container{
+        position: absolute;
+    top: 3425px;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    }
+
+    .mobile-videotxt {
+        position: absolute;
+        width: 329.52px;
+        height: 129px;
+        left: calc(50% - 329.52px / 2 - 7.24px);
+        /* top: 3596.21px; */
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        margin-top: 187.39px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ECE6DE;
+    }
+
+    .fa-plays {
+        margin-top: 328px;
+        align-items: center;
+        text-align: center;
+        margin-left: 149px;
+        width: 81.25px;
+        height: 81.25px;
+    }
+
+    .embk {
+        width: 306.13px;
+        height: 42px;
+        /* margin-left: 34.56px; */
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 6rem;
+        font-size: 16px;
+        line-height: 133.5%;
+        /* display: flex; */
+        align-items: center;
+        text-align: center;
+        color: #ECE6DE;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 133.5%;
+    }
+
+    .mob-exp {
+        height: 1249px;
+        background: var(--Khaki, #2C321F);
+        width: 100%;
+    }
+
+    .transports {
+        margin-top: 21.29px;
+        margin-left: 15.95px;
+        position: absolute;
+        width: 122.06px;
+        height: 18px;
+        /* left: 15.19px; */
+        /* top: 4236.35px; */
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #A09935;
+
+    }
+
+    .paradise {
+        position: absolute;
+        width: 241px;
+        height: 96px;
+        /* left: calc(50% - 241px / 2 - 49.5px); */
+        margin-left: 15px;
+        /* top: 4265.03px; */
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        margin-top: 48.67px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #ECE6DE;
+
+    }
+
+    .icons-svg {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        position: absolute;
+        width: 280px;
+        height: 30px;
+        margin-top: 170px;
+
+    }
+
+    .waves-card {
+        height: 631.26px;
+        width: 343px;
+        margin-left: 16.26px;
+        border-radius: 25px;
+        /* border: 1px solid white; */
+        margin-top: 239.56px;
+        position: absolute;
+        background-size: cover !important;
+        background-position: center !important;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 47.92%), url(../../../../../../assets/images/sea1.jpg);
+    }
+
+    .ridingtext {
+        width: 100%;
+        height: 53px;
+        margin-top: 45.63px;
+        margin-left: 33px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        /* margin-top: 376px; */
+        font-size: 24px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #ECE6DE;
+    }
+
+    .waves-txt {
+        width: 185px;
+        /* height: 85px; */
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        /* line-height: 133.5%; */
+        display: flex;
+        align-items: center;
+        margin-left: 25.38px;
+        color: #ECE6DE;
+    }
+
+    .waves-sec {
+        width: 260.22px;
+        height: 270px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #ECE6DE;
+        margin-top: 35px;
+        margin-left: 25.38px;
+    }
+
+    .maldives {
+        height: 105px;
+        width: 145px;
+        margin-top: 45px;
+        /* border: 1px solid white; */
+        color: var(--Ivory, #ECE6DE);
+        margin-left: 25.83px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .mald-top {
+        margin-top: 18px;
+    }
+
+    .mobile-transport {
+        margin-top: 30px;
+        margin-left: 16px;
+        height: 129px;
+        left: calc(50% - 359.61px / 2 + 8.31px);
+        top: 5493.53px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #A09935;
+    }
+
+    .moving-card {
+        height: 123px;
+        width: 100%;
+        /* Make it responsive */
+        margin-top: 83.98px;
+        /* border: 1px solid white; */
+        display: flex;
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory;
+        /* Snap scrolling for smooth transitions */
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+    }
+
+    .riding-waves1 {
+        width: 200.47px;
+        height: 122.5px;
+        margin-right: 16.15px;
+        /* Add spacing between slides */
+        border-radius: 20px;
+        background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.0) 100%), url(../../../../../../assets/images/river.jpg);
+        background-size: cover !important;
+        background-position: center !important;
+        flex-shrink: 0;
+        /* Prevent the item from shrinking */
+        scroll-snap-align: center;
+        /* Center the item when scrolling stops */
+    }
+
+    .riding-waves2 {
+        width: 200.47px;
+        height: 122.5px;
+        margin-right: 16.15px;
+        /* Add spacing between slides */
+        border-radius: 20px;
+        background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.0) 100%), url(../../../../../../assets/images/waves2.jpg);
+        background-size: cover !important;
+        background-position: center !important;
+        flex-shrink: 0;
+        /* Prevent the item from shrinking */
+        scroll-snap-align: center;
+        /* Center the item when scrolling stops */
+    }
+
+    .riding-waves3 {
+        width: 200.47px;
+        height: 122.5px;
+        margin-right: 16.15px;
+        /* Add spacing between slides */
+        border-radius: 20px;
+        background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.0) 100%), url(../../../../../../assets/images/waves3.jpg);
+        background-size: cover !important;
+        background-position: center !important;
+        flex-shrink: 0;
+        /* Prevent the item from shrinking */
+        scroll-snap-align: center;
+        /* Center the item when scrolling stops */
+    }
+
+    .riding-waves4 {
+        width: 200.47px;
+        height: 122.5px;
+        margin-right: 16.15px;
+        /* Add spacing between slides */
+        border-radius: 20px;
+        background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.0) 100%), url(../../../../../../assets/images/waves4.jpg);
+        background-size: cover !important;
+        background-position: center !important;
+        flex-shrink: 0;
+        /* Prevent the item from shrinking */
+        scroll-snap-align: center;
+        /* Center the item when scrolling stops */
+    }
+
+    .learn-more {
+        position: absolute;
+        width: 169px;
+        height: 52px;
+        /* left: calc(50% - 169px / 2 - 1.62px); */
+        top: 4655px;
+        margin-top: 30px;
+        margin-left: 102.15px;
+        background: #A09935;
+        border: 1px solid #A09935;
+        border-radius: 40px;
+        color: var(--Ivory, #ECE6DE);
+
+    }
+
+    .embark-sub {
+        position: absolute;
+        width: 329.3px;
+        height: 81px;
+        left: calc(50% - 323.9px / 2 - 0.5px);
+        top: 4579px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ECE6DE;
+    }
+
+    .car-section {
+        margin-top: 30px;
+    }
+
+    .card-card {
+        margin-top: 0px;
+    }
+
+    .card-row {
+        /* margin-left: 0px; */
+        margin-left: -15px;
+    }
+   .custom-card{
+    height: 482.3px;
+    width: 342.79px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+   }
+    .card-container {
+        margin-bottom: 20px;
+    }
+
+    .common-transport {
+        margin-top: 50px;
+        margin-left: 13.89px;
+        height: 1770.48px;
+        width: 342px;
+        /* border: 1px solid red; */
+    }
+    .common-transporttext{
+        width: 100%;
+    height: 32px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.5%;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+
+    }
+    .transpo-card{
+        width: 343px;
+    height: 260.08px;
+    }
+    .transpo-para{
+        position: absolute;
+        /* width: auto; */
+        width: 17rem;
+        height: 44px;
+        left: 0px;
+        top: 201.26px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 154%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ECE6DE;
+    
+    }
+    .transpo-head{
+        width: 216px;
+        height: 44px;
+        margin-left: 91px;
+        margin-top: 128px;
+        left: 215px;
+        top: 5705px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 56%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ECE6DE;
+    }
+    .transpo-card2{
+        width: 343px;
+    height: 260.08px;
+    margin-top: 30px;
+    }
+    .transpo-card3{
+        width: 343px;
+        height: 260.08px;
+        margin-top: 30px;    
+    }
+    .transpo-card4{
+        width: 343px;
+        height: 260.08px;
+        margin-top: 30px;    
+    }
+    .transpo-card5{
+        width: 343px;
+        height: 260.08px;
+        margin-top: 30px;    
+    }
+    .transpo-head6{
+        margin-left: 10px;
+    margin-top: 125px;
+
+    }
+    .transpo-card6{
+        width: 343px;
+        height: 260.08px;
+        margin-top: 30px;    
+        
+        
+    }
+    .busleft{
+        margin-left: 110px!important;
+    }
+    .unleash-head{
+        width: 344.94px;
+        height: 120px;
+        margin-top: 50px;
+        margin-left: 14.53px;
+        left: calc(50% - 344.94px / 2 - 0.5px);
+        top: 9529.88px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 133.5%;
+        display: flex;
+        align-items: center;
+        color: #A09935;
+    }
+    .nomads-card{
+        width: 343px;
+        height: 520px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        margin-left: 16px;
+        margin-bottom: 30px;
+    
+    }
+    .nomads-basic{
+        width: 100%;
+    }
+    .nomads_pre{
+        margin-left: 34px;
+    }
+    .viewallbtn{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 30px;
+        margin-left: 25.5px;
+        gap: 10px;
+        width: 304px;
+        position: static;
+        height: 58px;
+        left: 0%;
+        right: 0%;
+        background: #A09935;
+        border: 1px solid #A09935;
+        border-radius: 40px;
+        margin-top: 0px;
+    }
+    .guide{
+        width: 343px;
+    height: 80px;
+    left: 15.5px;
+    top: 11435.88px;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 133.5%;
+    margin-top: 39px;
+    margin-left: 15.5px;
+    display: flex;
+    align-items: center;
+    color: #A09935;
+    position: static;
+    }
+    .deals-accom{
+        width: 250px;
+        height: 32px;
+        left: 14px;
+        top: 11536px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133.5%;
+        display: flex;
+        margin-left: 14px;
+        align-items: center;
+        color: #A09935;
+    }
+    .accomdeals-sec{
+        margin-top: 40px;
+        height: 1536.77px;
+        width: 342.06px;
+        /* border: 1px solid green; */
+        margin-left: 15.59px;
+    }
+    .view_accom{
+        margin-top: 0px;
+    }
+    .accom_sub_card{
+        height: 368.45px;
+        margin-bottom: 20px;
+        max-width: 325px;
+    }
+    .accom_travel_card{
+        height: 368.45px;
+        margin-bottom: 20px;
+        max-width: 336px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        /* margin-left: 4px; */
+    }
+    .travel-accom{
+        width: 250px;
+        height: 32px;
+        left: 14px;
+        top: 11536px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133.5%;
+        display: flex;
+        margin-left: 14px;
+        align-items: center;
+        color: #A09935;
+        margin-top: 40px;
+    }
+    .digital-nomads{
+      height: 2197.51px;
+      width: 100%;
+      margin-top: 40px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(../../../../../../assets/images/wood.jpg)no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .digital-text{
+        margin-top: 99px;
+        margin-left: 14.99px;
+        width: 343.51px;
+        height: 339px;
+        position: absolute;
+        /* border: 1px solid red; */
+    }
+    .digi-nomad{
+        width: 100%;
+        height: 48px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 133.5%;
+        /* display: flex; */
+        align-items: center;
+        text-align: center;
+        color: #ECE6DE;
+    }
+    .nomad-para{
+        width: 100%;
+        height: 279px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 192.5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ECE6DE;
+    }
+    .nomad_amt{
+        margin-top: 8.99px;
+        width: 171.31px;
+        left: 95px;
+        top: 5325px;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        display: flex;
+        margin-left: 24px;
+        align-items: center;
+        color: #A09935;
+    }
+    .browse{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 30px;
+        margin-left: 92px;
+        gap: 10px;
+        margin-top: 50px;
+        /* position: absolute; */
+        width: 159px;
+        height: 52px;
+        left: calc(50% - 159px / 2 + 0.01px);
+        top: 2077.56px;
+        background: #ECE6DE;
+        border: 1px solid #ECE6DE;
+        border-radius: 15px;
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+        z-index: 3;
+    }
+    .footer{
+        margin-top: 60px;
+    }
+    .select-sec{
+        width: 82%;
+        height: 36px;
+        color: #fff;
+        border: 1px solid rgba(44, 50, 31, 0.5);
+        outline: none;
+        background: rgba(44, 50, 31, 0.5);
+        margin-left: 6px;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+    
+    }
+}

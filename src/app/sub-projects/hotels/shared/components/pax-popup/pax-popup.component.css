@@ -1,0 +1,132 @@
+::ng-deep .mat-dialog-container {
+  border-radius: 20px 0px 20px 20px;
+  overflow-x: hidden;
+  height: auto;
+}
+.done{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 30px;
+  margin-left: 30px;
+  gap: 10px;
+  width: 320px;
+  color: #fff;
+  margin-top: 30px;
+  height: 52px;
+  background: #A09935;
+  border: 1px solid #A09935;
+  border-radius: 50px;
+  font: 'optima';
+  font-weight: 700;
+}
+.card {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 320px;
+  border: none;
+}
+
+.adult-text {
+  /* Adults */
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  color: #2C321F;
+
+
+}
+
+.symbol {
+  background: none;
+  border: none;
+  font-size: 24px;
+  margin-right: 5px;
+  color: olive;
+  cursor: pointer;
+
+}
+
+.symbolminus {
+  background: none;
+  border: none;
+  font-size: 24px;
+  margin-left: 5px;
+  color: olive;
+  cursor: pointer;
+
+}
+
+.rect-input-container {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid ; */
+  border: 1px solid olive;
+  border-radius: 5px;
+  overflow: hidden;
+  width: fit-content;
+  float: inline-end;
+  border-radius: 20px;
+}
+
+
+
+
+.rect-input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+
+/* mob-scren */
+@media (max-width: 768px) {
+
+  .card {
+
+
+
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 233px;
+    border: none;
+
+  }
+  .done{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    margin-left: 12px;
+    gap: 10px;
+    width: 278px;
+    color: #fff;
+    margin-top: 30px;
+    height: 52px;
+    background: #A09935;
+    border: 1px solid #A09935;
+    border-radius: 50px;
+    font: 'optima';
+    font-weight: 700;
+  }
+}
+/* 
+
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 233px;
+  border: none; */
