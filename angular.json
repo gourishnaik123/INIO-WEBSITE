@@ -1,46 +1,169 @@
 {
-  "dependencies": {
-    "@angular/animations": "^14.2.0",
-    "@angular/cdk": "^14.2.0",
-    "@angular/common": "^14.2.0",
-    "@angular/compiler": "^14.2.0",
-    "@angular/core": "^14.2.0",
-    "@angular/fire": "^7.2.0",
-    "@angular/forms": "^14.2.0",
-    "@angular/material": "^14.2.0",
-    "@angular/platform-browser": "^14.2.0",
-    "@angular/platform-browser-dynamic": "^14.2.0",
-    "@angular/platform-server": "^14.2.0",
-    "@angular/router": "^14.2.0",
-    "@nguniversal/express-engine": "^14.2.3",
-    "@ngx-loading-bar/core": "^6.0.2",
-    "@ngx-loading-bar/http-client": "^6.0.2",
-    "bootstrap": "^4.5.3",
-    "bootstrap-icons": "^1.5.0",
-    "express": "^4.15.2",
-    "firebase": "^9.6.1",
-    "jquery": "^3.5.1",
-    "moment": "^2.24.0",
-    "ngx-csv": "^0.3.2",
-    "ngx-spinner": "^14.0.0",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.6.2",
-    "zone.js": "~0.11.4"
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "newangular": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/newangular/browser",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/ngx-spinner/animations/timer.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "1000mb",
+                  "maximumError": "1000mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "1000mb",
+                  "maximumError": "1000mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "newangular:build:production"
+            },
+            "development": {
+              "browserTarget": "newangular:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "newangular:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/newangular/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "newangular:build:development",
+              "serverTarget": "newangular:server:development"
+            },
+            "production": {
+              "browserTarget": "newangular:build:production",
+              "serverTarget": "newangular:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "newangular:build:production",
+              "serverTarget": "newangular:server:production"
+            },
+            "development": {
+              "browserTarget": "newangular:build:development",
+              "serverTarget": "newangular:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    }
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^14.2.12",
-    "@angular/cli": "~14.2.12",
-    "@angular/compiler-cli": "^14.2.0",
-    "@nguniversal/builders": "^14.0.3",
-    "@types/express": "^4.17.0",
-    "@types/jasmine": "~4.0.0",
-    "@types/node": "^14.18.56",
-    "jasmine-core": "~4.3.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2"
+  "cli": {
+    "analytics": "59825b15-536f-4e09-941b-8b189d1a97bf"
   }
 }
